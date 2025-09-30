@@ -18,7 +18,66 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Portafolio
+
+Portafolio es una aplicación web moderna desarrollada para mostrar proyectos, experiencia profesional y datos de contacto de manera visual, profesional y personalizable. El objetivo es servir como carta de presentación digital para desarrolladores, diseñadores o cualquier profesional que desee destacar su trabajo y habilidades.
+
+## Descripción del Proyecto
+
+Este portafolio está diseñado para ser rápido, responsivo y fácil de mantener. Incluye secciones como:
+- Acerca de mí
+- Proyectos
+- Experiencia
+- Línea de tiempo
+- Contacto
+
+El diseño está inspirado en una estética tech/terminal, con tipografías modernas y colores personalizables.
+
+## Tecnologías Utilizadas
+
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS** (con configuración personalizada de colores y fuentes)
+- **Radix UI** (para menús accesibles)
+- **Lucide React** (iconos)
+- **Google Fonts**: Share Tech Mono (títulos), Inter (cuerpo)
+
+## Características
+- Navegación responsiva y accesible
+- Tematización y personalización de colores y fuentes
+- Componentes reutilizables
+- Código limpio y modular
+- Internacionalización (futuro)
+
+## Instalación y uso
+
+1. Clona el repositorio:
+	```bash
+	git clone https://github.com/victortelles/Portafolio.git
+	cd Portafolio
+	```
+2. Instala las dependencias:
+	```bash
+	pnpm install
+	```
+3. Inicia el servidor de desarrollo:
+	```bash
+	pnpm run dev
+	```
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+
+## Personalización
+- Cambia los datos de navegación y branding en los archivos JSON de `src/components/common/Navbar/`.
+- Modifica los colores y fuentes en `tailwind.config.js` y `globals.css`.
+- Agrega tus proyectos y experiencia en las secciones correspondientes.
+
+## Licencia
+Este proyecto está bajo la licencia MIT.
+
+---
+
+¡Personaliza y haz crecer tu portafolio a tu gusto!
 
 ## Learn More
 

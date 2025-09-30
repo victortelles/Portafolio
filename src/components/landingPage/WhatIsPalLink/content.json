@@ -1,0 +1,27 @@
+{
+    "title": "Connect, Create, and Collaborate",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
+    "description": "PalLink brings developers together... Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.",
+    "backgroundImage": "/assets/background.webp",
+    "whatDescription": "Lorem ipsum dolor sit amet consectetur adipiscing elit semper dalar elementum tempus hac tellus libero.",
+    "cards": [
+        {
+            "panelTitle": "Tittle",
+            "panelDescription": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orci, netus nisl laoreet phasellus. Pellentesque non nunc placerat mi quis vitae cursus ornare.",
+            "panelImage": "/assets/chibi.webp",
+            "panelImageAlt": "Illustrative placeholder"
+        },
+        {
+            "panelTitle": "Tittle",
+            "panelDescription": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere.",
+            "panelImage": "/assets/AHTyler_Logo_der.PNG",
+            "panelImageAlt": "Collaboration illustration"
+        },
+        {
+            "panelTitle": "Tittle",
+            "panelDescription": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices scelerisque mi sed interdum lacus tellus in mi orci.",
+            "panelImage": "/assets/placeholder-image.svg",
+            "panelImageAlt": "Network illustration"
+        }
+    ]
+}

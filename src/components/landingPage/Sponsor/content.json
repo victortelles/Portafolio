@@ -1,0 +1,70 @@
+{
+    "title": "Sponsors",
+    "description": "Join the companies and organizations that trust PalLink to power their development workflows",
+    "sponsors": [
+        {
+            "name": "Qonzer",
+            "logo": "/assets/Qonzer/QonzerBanner.png",
+            "banner": "/assets/Qonzer/QonzerBanner.png",
+            "alt": "Qonzer logo",
+            "link": "https://qonzer.com/aff.php?aff=61",
+            "description": "Qzoner is a sponsor of this project and if you click the arrow you get a -% discount with us."
+        },
+        {
+            "name": "DevStudio",
+            "logo": "/assets/sponsors/devstudio.png",
+            "banner": "/assets/sponsors/devstudio.png",
+            "alt": "DevStudio logo",
+            "link": "#",
+            "description": "Design and development at scale."
+        },
+        {
+            "name": "CodeWorks",
+            "logo": "/assets/sponsors/codeworks.png",
+            "banner": "/assets/sponsors/codeworks.png",
+            "alt": "CodeWorks logo",
+            "link": "#",
+            "description": "Crafting robust codebases."
+        },
+        {
+            "name": "InnovateLab",
+            "logo": "/assets/sponsors/innovatelab.png",
+            "banner": "/assets/sponsors/innovatelab.png",
+            "alt": "InnovateLab logo",
+            "link": "#",
+            "description": "Innovation through research."
+        },
+        {
+            "name": "BuildTech",
+            "logo": "/assets/sponsors/buildtech.png",
+            "banner": "/assets/sponsors/buildtech.png",
+            "alt": "BuildTech logo",
+            "link": "#",
+            "description": "Building the future of infra."
+        },
+        {
+            "name": "NextGen",
+            "logo": "/assets/sponsors/nextgen.png",
+            "banner": "/assets/sponsors/nextgen.png",
+            "alt": "NextGen logo",
+            "link": "#",
+            "description": "Next generation platforms."
+        },
+        {
+            "name": "CloudFirst",
+            "logo": "/assets/sponsors/cloudfirst.png",
+            "banner": "/assets/sponsors/cloudfirst.png",
+            "alt": "CloudFirst logo",
+            "link": "#",
+            "description": "Cloud-native excellence."
+        },
+        {
+            "name": "DataFlow",
+            "logo": "/assets/sponsors/dataflow.png",
+            "banner": "/assets/sponsors/dataflow.png",
+            "alt": "DataFlow logo",
+            "link": "#",
+            "description": "Data pipelines made easy."
+        }
+    ]
+}

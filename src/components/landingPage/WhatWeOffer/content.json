@@ -1,0 +1,25 @@
+{
+    "title": "What We Offer",
+    "subtitle": "Everything you need to succeed as a developer",
+    "features": [
+        {
+            "title": "Comprehensive Wiki",
+            "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.",
+            "icon": "book"
+        },
+        {
+            "title": "Developer Documentation",
+            "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.",
+            "icon": "code"
+        },
+        {
+            "title": "Easy Downloads",
+            "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.",
+            "icon": "download"
+        }
+    ],
+    "banner": {
+        "title": "Join thousands of developers already using PalLink",
+        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit."
+    }
+}

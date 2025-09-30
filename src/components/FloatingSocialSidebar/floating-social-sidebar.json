@@ -1,0 +1,14 @@
+[
+    {
+        "label": "Qonzer",
+        "image": "/assets/Qonzer/Qonzer.png",
+        "url": "https://qonzer.com/aff.php?aff=61",
+        "description": "Qzoner is a sponsor of \nthis project and if you click \nyou get a -% discount with us."
+    },
+    {
+        "label": "Discord",
+        "icon": "FaDiscord",
+        "url": "https://discord.com/",
+        "description": "Join our community on Discord. \nChat and support."
+    }
+]

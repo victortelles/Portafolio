@@ -1,0 +1,30 @@
+:root {
+  --color-base-100: oklch(12% 0.042 264.695);
+  --color-base-200: oklch(20% 0.042 265.755);
+  --color-base-300: oklch(27% 0.041 260.031);
+  --color-base-content: oklch(96% 0.007 247.896);
+  --color-primary: oklch(62% 0.214 259.815);
+  --color-primary-content: oklch(28% 0.091 267.935);
+  --color-secondary: oklch(70% 0.213 47.604);
+  --color-secondary-content: oklch(27% 0.072 132.109);
+  --color-accent: oklch(78% 0.154 211.53);
+  --color-accent-content: oklch(27% 0.046 192.524);
+  --color-neutral: oklch(27% 0.041 260.031);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+  --color-info: oklch(54% 0.245 262.881);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(58% 0.253 17.585);
+  --color-error-content: oklch(96% 0.015 12.422);
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 0;
+}

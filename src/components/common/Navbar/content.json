@@ -1,0 +1,25 @@
+{
+    "brandLogo": "/assets/AHTyler_Logo_der.PNG",
+    "navigation": [
+        {
+            "label": "Acerca de mi",
+            "href": "/about"
+        },
+        {
+            "label": "Proyectos",
+            "href": "/projects"
+        },
+        {
+            "label": "Experiencia",
+            "href": "/experience"
+        },
+        {
+            "label": "Linea de tiempo",
+            "href": "/timeline"
+        },
+        {
+            "label": "Contacto",
+            "href": "/contact"
+        }
+    ]
+}

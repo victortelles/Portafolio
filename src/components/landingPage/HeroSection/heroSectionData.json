@@ -1,0 +1,40 @@
+{
+    "title": {
+        "prefix": "Ing.",
+        "main": "Desarrollo De Software"
+    },
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Desarrollador apasionado por crear soluciones tecnológicas innovadoras.",
+    "badges": [
+        {
+            "title": "Frontend",
+            "icon": "monitor",
+            "color": "var(--color-primary)"
+        },
+        {
+            "title": "Backend", 
+            "icon": "server",
+            "color": "var(--color-secondary)"
+        },
+        {
+            "title": "Database",
+            "icon": "database",
+            "color": "var(--color-accent)"
+        },
+        {
+            "title": "DevOps",
+            "icon": "git-branch",
+            "color": "var(--color-info)"
+        }
+    ],
+    "primaryCTA": {
+        "label": "Ver Proyectos",
+        "href": "/projects",
+        "variant": "primary"
+    },
+    "secondaryCTA": {
+        "label": "Contactar",
+        "href": "/contact",
+        "variant": "ghost"
+    },
+    "backgroundImage": "/assets/background.webp"
+}

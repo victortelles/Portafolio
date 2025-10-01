@@ -1,0 +1,15 @@
+{
+    "title": "Terminal:      ~/portfolio/developer.ts",
+    "developerName": "Your Name",
+    "methods": [
+        "setSkills(['React', 'TypeScript', 'Node.js'])",
+        "createProject('Amazing Web App')",
+        "deployToProduction()",
+        "optimizePerformance()",
+        "writeCleanCode()",
+        "solveComplexProblems()"
+    ],
+    "typingSpeed": 80,
+    "deleteSpeed": 40,
+    "pauseTime": 2500
+}

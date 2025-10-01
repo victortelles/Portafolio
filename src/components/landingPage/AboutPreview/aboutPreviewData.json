@@ -1,0 +1,15 @@
+{
+    "title": "Acerca de mi",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras y eficientes. Me especializo en el desarrollo web moderno con experiencia en múltiples tecnologías.",
+    "cta": {
+        "label": "Conoce más sobre mí",
+        "href": "/about"
+    },
+    "profileImage": "/assets/chibi.webp",
+    "highlights": [
+        "Desarrollador Full Stack",
+        "Especialista en tecnologías modernas",
+        "Apasionado por la innovación",
+        "Enfoque en soluciones eficientes"
+    ]
+}

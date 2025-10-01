@@ -1,11 +1,13 @@
 {
     "title": "Terminal:      ~/portfolio/developer.ts",
-    "developerName": "Your Name",
+    "developerName": "Victor Manuel Telles Amezcua",
     "methods": [
-        "setSkills(['React', 'TypeScript', 'Node.js'])",
+        "setSkills(['Frontend', 'Backend', 'Database', 'Testing', 'DevOps'])",
+        "KnowledgeFrameworkFront(['React', 'Angular', 'Next.js'])",
+        "KnowledgeFrameworkBack(['Node.js', 'Express', 'Django'])",
         "createProject('Amazing Web App')",
         "deployToProduction()",
-        "optimizePerformance()",
+        "optimizePerformance(['Jest', 'Cypress'])",
         "writeCleanCode()",
         "solveComplexProblems()"
     ],

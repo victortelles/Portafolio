@@ -1,16 +1,24 @@
 import type React from "react"
 import { ArrowRight, MessageCircle } from "lucide-react"
 import { FaChevronDown } from "react-icons/fa"
-import content from "./content.json"
+import TerminalAnimation from "./TerminalAnimation"
+import BadgeComponent from "./BadgeComponent"
+import content from "./heroSectionData.json"
+import terminalData from "./terminalData.json"
+import type { HeroSectionData, TerminalData } from "@/types/landingPage"
 
 const HeroSection: React.FC = () => {
+    const heroData = content as Omit<HeroSectionData, 'terminal'>
+    const terminal = terminalData as TerminalData
+
     return (
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+
             {/* Static Background */}
             <div
                 className="absolute inset-0 bg-gradient-to-br from-[var(--color-base-200)] to-[var(--color-base-100)]"
                 style={{
-                    backgroundImage: `url('${content.backgroundImage}')`,
+                    backgroundImage: `url('${heroData.backgroundImage}')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
@@ -21,35 +29,45 @@ const HeroSection: React.FC = () => {
 
             {/* Content */}
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div className="max-w-4xl mx-auto">
-                    <h1 className="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--color-base-content)] mb-6 leading-tight">
-                        {content.title}
+                <div className="max-w-5xl mx-auto">
+
+                    {/* Terminal Animation */}
+                    <TerminalAnimation data={terminal} />
+
+                    {/* Main Title */}
+                    <h1 className="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        <span className="text-[var(--color-base-content)]">{heroData.title.prefix}</span>{" "}
+                        <span className="text-[var(--color-primary)]">{heroData.title.main}</span>
                     </h1>
 
-                    <p className="font-sans text-xl sm:text-2xl text-[var(--color-neutral-content)] mb-8 leading-relaxed">
-                        {content.subtitle}
+                    {/* Subtitle */}
+                    <p className="font-sans text-xl sm:text-2xl lg:text-3xl font-semibold text-[var(--color-neutral-content)] mb-12 leading-relaxed max-w-3xl mx-auto">
+                        {heroData.subtitle}
                     </p>
 
-                    <p className="font-sans text-lg text-[var(--color-neutral-content)]/80 mb-12 max-w-2xl mx-auto">
-                        {content.description}
-                    </p>
+                    {/* Badges Grid */}
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-12 max-w-4xl mx-auto">
+                        {heroData.badges.map((badge, index) => (
+                            <BadgeComponent key={index} badge={badge} />
+                        ))}
+                    </div>
 
                     {/* CTAs */}
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                         <a
-                            href={content.primaryCTA.href}
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-[var(--color-primary-content)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold group"
+                            href={heroData.primaryCTA.href}
+                            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary)]/80 text-[var(--color-primary-content)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold group"
                         >
-                            {content.primaryCTA.label}
+                            {heroData.primaryCTA.label}
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </a>
 
                         <a
-                            href={content.secondaryCTA.href}
+                            href={heroData.secondaryCTA.href}
                             className="inline-flex items-center gap-2 px-8 py-4 border border-[var(--color-base-300)] hover:border-[var(--color-primary)] text-[var(--color-base-content)] hover:text-[var(--color-primary)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold"
                         >
                             <MessageCircle size={20} />
-                            {content.secondaryCTA.label}
+                            {heroData.secondaryCTA.label}
                         </a>
                     </div>
                 </div>

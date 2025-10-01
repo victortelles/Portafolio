@@ -26,7 +26,7 @@ function PageNotFound({ content }: PageNotFoundProps) {
                     <div className="grid grid-cols-1 gap-0 overflow-hidden rounded-[var(--radius-box)] bg-[var(--color-base-100)]/50 backdrop-blur-md shadow-lg sm:grid-cols-[1fr_2fr]">
                         {/* Left image (hidden on small screens) */}
                         <div className="hidden h-full sm:flex items-center justify-end pl-4 pr-0 sm:pl-6 sm:pr-0 py-6 sm:py-8">
-                            <img src="/assets/chilletPB_2.png" alt="Preview" className="block max-h-full w-auto object-contain" />
+                            <img src="/assets/chibi.webp" alt="Preview" className="block max-h-full w-auto object-contain" />
                         </div>
 
                         {/* Right content */}

@@ -1,3 +1,8 @@
+
+## Colores globales del proyecto
+Los colores globales del proyecto se encuentran en el archivo ( src\app\globals.css ) y tailwind.config.ts
+
+```css
 :root {
   --color-base-100: oklch(12% 0.042 264.695);
   --color-base-200: oklch(20% 0.042 265.755);
@@ -28,3 +33,8 @@
   --depth: 1;
   --noise: 0;
 }
+
+## Tipografía
+Para la tipografia debes de utilizar la que se encuentra en **tailwind.config.ts** fontFamily
+- Para los titulos grandes y textos importantes y cortos usar la tipografia **'Share Tech Mono', 'ui-monospace', 'SFMono-Regular'**
+- para textos largos y parrafos usar la tipografia **'Inter', 'ui-sans-serif', 'system-ui'**

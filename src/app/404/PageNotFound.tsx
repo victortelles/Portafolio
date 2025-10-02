@@ -11,7 +11,7 @@ function PageNotFound({ content }: PageNotFoundProps) {
         <main className="relative min-h-screen w-full overflow-hidden">
             {/* Background image */}
             <img
-                src="/assets/background.webp"
+                src="/assets/background.jpg"
                 alt="Background"
                 className="absolute inset-0 h-full w-full object-cover"
             />

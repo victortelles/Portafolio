@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
                     </div>
 
                     {/* CTAs */}
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                         <a
                             href={heroData.primaryCTA.href}
                             className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary)]/80 text-[var(--color-primary-content)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold group"
@@ -71,11 +71,6 @@ const HeroSection: React.FC = () => {
                         </a>
                     </div>
                 </div>
-            </div>
-
-            {/* Scroll Indicator: arrow animated */}
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce hidden sm:block">
-                <FaChevronDown size={32} className="text-[var(--color-base-content)]/70" />
             </div>
         </section>
     )

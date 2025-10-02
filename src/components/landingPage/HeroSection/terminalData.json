@@ -6,9 +6,9 @@
         "KnowledgeFrameworkFront(['React', 'Angular', 'Next.js'])",
         "KnowledgeFrameworkBack(['Node.js', 'Express', 'Django'])",
         "createProject('Amazing Web App')",
-        "deployToProduction()",
-        "optimizePerformance(['Jest', 'Cypress'])",
-        "writeCleanCode()",
+        "deployToProductionTools(['Git', 'CI/CD', 'Docker', 'AWS'])",
+        "testingTools(['Jest', 'Cypress','selenium'])",
+        "documentationTools(['Markdown', 'Swagger'])",
         "solveComplexProblems()"
     ],
     "typingSpeed": 80,

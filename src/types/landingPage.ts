@@ -49,7 +49,6 @@ export interface ProfileCard {
     socialLinks: {
         github?: string
         linkedin?: string
-        twitter?: string
     }
 }
 

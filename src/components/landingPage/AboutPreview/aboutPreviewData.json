@@ -1,15 +1,79 @@
 {
     "title": "Acerca de mi",
     "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras y eficientes. Me especializo en el desarrollo web moderno con experiencia en múltiples tecnologías.",
+    "profileCard": {
+        "name": "Victor Telles",
+        "role": "Full Stack Developer",
+        "description": "Creando soluciones tecnológicas innovadoras",
+        "image": "/assets/chibi.webp",
+        "socialLinks": {
+            "github": "https://github.com/victortelles",
+            "linkedin": "https://linkedin.com/in/victortelles",
+            "twitter": "https://twitter.com/victortelles"
+        }
+    },
+    "roleCards": [
+        {
+            "title": "Frontend Expert",
+            "description": "Lorem ipsum dolor sit amet, interfaces modernas y responsivas",
+            "icon": "monitor"
+        },
+        {
+            "title": "Backend Architect",
+            "description": "Lorem ipsum dolor sit amet, APIs robustas y escalables",
+            "icon": "server"
+        },
+        {
+            "title": "Database Designer",
+            "description": "Lorem ipsum dolor sit amet, estructuras de datos eficientes",
+            "icon": "database"
+        },
+        {
+            "title": "DevOps Engineer",
+            "description": "Lorem ipsum dolor sit amet, automatización y despliegues",
+            "icon": "git-branch"
+        }
+    ],
+    "floatingTech": [
+        {
+            "name": "JavaScript",
+            "icon": "SiJavascript",
+            "color": "var(--color-warning)",
+            "position": { "top": "10%", "left": "15%" }
+        },
+        {
+            "name": "TypeScript",
+            "icon": "SiTypescript",
+            "color": "var(--color-info)",
+            "position": { "top": "20%", "left": "85%" }
+        },
+        {
+            "name": "React",
+            "icon": "SiReact",
+            "color": "var(--color-accent)",
+            "position": { "top": "70%", "left": "10%" }
+        },
+        {
+            "name": "Node.js",
+            "icon": "SiNodedotjs",
+            "color": "var(--color-success)",
+            "position": { "top": "60%", "left": "90%" }
+        },
+        {
+            "name": "Python",
+            "icon": "SiPython",
+            "color": "var(--color-primary)",
+            "position": { "top": "40%", "left": "5%" }
+        },
+        {
+            "name": "Next.js",
+            "icon": "SiNextdotjs",
+            "color": "var(--color-base-content)",
+            "position": { "top": "80%", "left": "80%" }
+        }
+    ],
     "cta": {
         "label": "Conoce más sobre mí",
         "href": "/about"
-    },
-    "profileImage": "/assets/chibi.webp",
-    "highlights": [
-        "Desarrollador Full Stack",
-        "Especialista en tecnologías modernas",
-        "Apasionado por la innovación",
-        "Enfoque en soluciones eficientes"
-    ]
+    }
 }

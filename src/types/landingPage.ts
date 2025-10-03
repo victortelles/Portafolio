@@ -41,13 +41,42 @@ export interface HeroSectionData {
 }
 
 // AboutPreview.tsx - data structure
+export interface ProfileCard {
+    name: string
+    role: string
+    description: string
+    image: string
+    socialLinks: {
+        github?: string
+        linkedin?: string
+        twitter?: string
+    }
+}
+
+export interface RoleCard {
+    title: string
+    description: string
+    icon: string
+}
+
+export interface FloatingTech {
+    name: string
+    icon: string
+    color: string
+    position: {
+        top: string
+        left: string
+    }
+}
+
 export interface AboutPreviewData {
     title: string
     description: string
+    profileCard: ProfileCard
+    roleCards: RoleCard[]
+    floatingTech: FloatingTech[]
     cta: {
         label: string
         href: string
     }
-    profileImage: string
-    highlights: string[]
 }

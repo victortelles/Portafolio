@@ -2,7 +2,7 @@
     "title": "Terminal:      ~/portfolio/developer.ts",
     "developerName": "Victor Manuel Telles Amezcua",
     "methods": [
-        "setSkills(['Frontend', 'Backend', 'Database', 'Testing', 'DevOps'])",
+        "setSkills(['Frontend', 'Backend', 'Database','DevOps'])",
         "KnowledgeFrameworkFront(['React', 'Angular', 'Next.js'])",
         "KnowledgeFrameworkBack(['Node.js', 'Express', 'Django'])",
         "createProject('Amazing Web App')",

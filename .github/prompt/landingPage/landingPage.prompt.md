@@ -65,6 +65,9 @@ Secciones (7):
 - En esta sección tengo pensado la siguiente estructura que tenga
 - - Un titulo que diga "Acerca de mi"
 - - Un breve resumen corto sobre mí de quien soy, que soy, que rol tengo etc...,
+- - Una tarjeta de perfil (ProfileCard) que incluya una imagen, nombre, rol y enlaces a redes sociales (GitHub, LinkedIn, etc...)
+- - 4 listas 2 filas 2 columnas que contengan textos cortos sobre mi rol y mis enfoques, pasiones, etc...
+- - Dejar como al aire en esta seccion algunos iconos de lenguaje de programacion y tecnologias por ejemplo (JS, TS, React, Node.js, Python, etc...) que esten flotando o haciendo una animacion de respiracion lentamente o talvez como si estuvieran en el aire y que al pasar el mouse por encima tenga una leve animacion de zoom in y un tooltip que diga el nombre de la tecnologia.
 - - Un boton de llamada a la acción (CTA) que dirigirá a los usuarios a la página /about-me. para invitar a los usuarios a conocer más sobre mí.
 
 ### SkillsCarousel

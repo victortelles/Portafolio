@@ -8,27 +8,28 @@
         "image": "/assets/chibi.webp",
         "socialLinks": {
             "github": "https://github.com/victortelles",
-            "linkedin": "https://www.linkedin.com/in/vmta/"
+            "linkedin": "https://www.linkedin.com/in/vmta/",
+            "website": "https://victortelles.dev"
         }
     },
     "roleCards": [
         {
-            "title": "Frontend Expert",
+            "title": "Frontend",
             "description": "Lorem ipsum dolor sit amet, interfaces modernas y responsivas",
             "icon": "monitor"
         },
         {
-            "title": "Backend Architect",
+            "title": "Backend",
             "description": "Lorem ipsum dolor sit amet, APIs robustas y escalables",
             "icon": "server"
         },
         {
-            "title": "Database Designer",
+            "title": "Database",
             "description": "Lorem ipsum dolor sit amet, estructuras de datos eficientes",
             "icon": "database"
         },
         {
-            "title": "DevOps Engineer",
+            "title": "DevOps",
             "description": "Lorem ipsum dolor sit amet, automatización y despliegues",
             "icon": "git-branch"
         }
@@ -37,38 +38,152 @@
         {
             "name": "JavaScript",
             "icon": "SiJavascript",
-            "color": "var(--color-warning)",
-            "position": { "top": "10%", "left": "15%" }
+            "color": "#F7DF1E",
+            "position": { "top": "2%", "left": "12%" }
         },
         {
             "name": "TypeScript",
             "icon": "SiTypescript",
-            "color": "var(--color-info)",
-            "position": { "top": "20%", "left": "85%" }
-        },
-        {
-            "name": "React",
-            "icon": "SiReact",
-            "color": "var(--color-accent)",
-            "position": { "top": "70%", "left": "10%" }
-        },
-        {
-            "name": "Node.js",
-            "icon": "SiNodedotjs",
-            "color": "var(--color-success)",
-            "position": { "top": "60%", "left": "90%" }
+            "color": "#3178C6",
+            "position": { "top": "15%", "left": "90%" }
         },
         {
             "name": "Python",
             "icon": "SiPython",
-            "color": "var(--color-primary)",
-            "position": { "top": "40%", "left": "5%" }
+            "color": "#3776AB",
+            "position": { "top": "25%", "left": "8%" }
+        },
+        {
+            "name": "HTML5",
+            "icon": "SiHtml5",
+            "color": "#E34F26",
+            "position": { "top": "18%", "left": "76%" }
+        },
+        {
+            "name": "CSS3",
+            "icon": "SiCss3",
+            "color": "#1572B6",
+            "position": { "top": "35%", "left": "92%" }
+        },
+        {
+            "name": "React",
+            "icon": "SiReact",
+            "color": "#61DAFB",
+            "position": { "top": "75%", "left": "6%" }
+        },
+        {
+            "name": "Angular",
+            "icon": "SiAngular",
+            "color": "#DD0031",
+            "position": { "top": "45%", "left": "3%" }
         },
         {
             "name": "Next.js",
             "icon": "SiNextdotjs",
             "color": "var(--color-base-content)",
-            "position": { "top": "80%", "left": "80%" }
+            "position": { "top": "82%", "left": "85%" }
+        },
+        {
+            "name": "Sass",
+            "icon": "SiSass",
+            "color": "#CC6699",
+            "position": { "top": "55%", "left": "95%" }
+        },
+        {
+            "name": "TailwindCSS",
+            "icon": "SiTailwindcss",
+            "color": "#06B6D4",
+            "position": { "top": "6%", "left": "75%" }
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "SiBootstrap",
+            "color": "#7952B3",
+            "position": { "top": "65%", "left": "2%" }
+        },
+        {
+            "name": "Flutter",
+            "icon": "SiFlutter",
+            "color": "#02569B",
+            "position": { "top": "42%", "left": "52%" }
+        },
+        {
+            "name": "Figma",
+            "icon": "SiFigma",
+            "color": "#F24E1E",
+            "position": { "top": "18%", "left": "18%" }
+        },
+        {
+            "name": "Node.js",
+            "icon": "SiNodedotjs",
+            "color": "#339933",
+            "position": { "top": "68%", "left": "92%" }
+        },
+        {
+            "name": "Express",
+            "icon": "SiExpress",
+            "color": "var(--color-base-content)",
+            "position": { "top": "52%", "left": "25%" }
+        },
+        {
+            "name": "Django",
+            "icon": "SiDjango",
+            "color": "#092E20",
+            "position": { "top": "88%", "left": "15%" }
+        },
+        {
+            "name": "Flask",
+            "icon": "SiFlask",
+            "color": "#eef2f6",
+            "position": { "top": "32%", "left": "72%" }
+        },
+        {
+            "name": "MongoDB",
+            "icon": "SiMongodb",
+            "color": "#47A248",
+            "position": { "top": "85%", "left": "45%" }
+        },
+        {
+            "name": "MySQL",
+            "icon": "SiMysql",
+            "color": "#4479A1",
+            "position": { "top": "22%", "left": "82%" }
+        },
+        {
+            "name": "AWS",
+            "icon": "SiAmazon",
+            "color": "#FF9900",
+            "position": { "top": "78%", "left": "25%" }
+        },
+        {
+            "name": "Vercel",
+            "icon": "SiVercel",
+            "color": "#eef2f6",
+            "position": { "top": "38%", "left": "85%" }
+        },
+        {
+            "name": "Docker",
+            "icon": "SiDocker",
+            "color": "#2496ED",
+            "position": { "top": "62%", "left": "53%" }
+        },
+        {
+            "name": "Git",
+            "icon": "SiGit",
+            "color": "#F05032",
+            "position": { "top": "48%", "left": "75%" }
+        },
+        {
+            "name": "GitHub",
+            "icon": "SiGithub",
+            "color": "var(--color-base-content)",
+            "position": { "top": "92%", "left": "65%" }
+        },
+        {
+            "name": "GitLab",
+            "icon": "SiGitlab",
+            "color": "#FC6D26",
+            "position": { "top": "58%", "left": "12%" }
         }
     ],
     "cta": {

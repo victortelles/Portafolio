@@ -5,7 +5,26 @@ import {
     SiReact,
     SiNodedotjs,
     SiPython,
-    SiNextdotjs
+    SiNextdotjs,
+    SiHtml5,
+    SiCss3,
+    SiAngular,
+    SiSass,
+    SiTailwindcss,
+    SiBootstrap,
+    SiFlutter,
+    SiFigma,
+    SiExpress,
+    SiDjango,
+    SiFlask,
+    SiMongodb,
+    SiMysql,
+    SiAmazon,
+    SiVercel,
+    SiDocker,
+    SiGit,
+    SiGithub,
+    SiGitlab
 } from "react-icons/si"
 import type { FloatingTech as FloatingTechType } from "@/types/landingPage"
 
@@ -20,6 +39,25 @@ const iconMap: Record<string, React.ComponentType<any>> = {
     SiNodedotjs,
     SiPython,
     SiNextdotjs,
+    SiHtml5,
+    SiCss3,
+    SiAngular,
+    SiSass,
+    SiTailwindcss,
+    SiBootstrap,
+    SiFlutter,
+    SiFigma,
+    SiExpress,
+    SiDjango,
+    SiFlask,
+    SiMongodb,
+    SiMysql,
+    SiAmazon,
+    SiVercel,
+    SiDocker,
+    SiGit,
+    SiGithub,
+    SiGitlab,
 }
 
 const FloatingTech: React.FC<FloatingTechProps> = ({ tech }) => {

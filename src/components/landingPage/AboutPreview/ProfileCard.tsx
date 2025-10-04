@@ -1,12 +1,37 @@
+"use client"
+
 import React from "react"
-import { User, Github, Linkedin, Twitter } from "lucide-react"
+import { User, Github, Linkedin, Globe } from "lucide-react"
 import type { ProfileCard as ProfileCardType } from "@/types/landingPage"
 
 interface ProfileCardProps {
     profileCard: ProfileCardType
 }
 
+// Mapeo de iconos y colores para cada red social
+const socialConfig = {
+    github: {
+        icon: Github,
+        hoverColor: "var(--color-primary)",
+        hoverTextColor: "var(--color-primary-content)"
+    },
+    linkedin: {
+        icon: Linkedin,
+        hoverColor: "var(--color-info)",
+        hoverTextColor: "var(--color-info-content)"
+    },
+    website: {
+        icon: Globe,
+        hoverColor: "var(--color-secondary)",
+        hoverTextColor: "var(--color-secondary-content)"
+    }
+}
+
 const ProfileCard: React.FC<ProfileCardProps> = ({ profileCard }) => {
+    // Obtener las redes sociales disponibles y limitarlas a 4
+    const availableSocials = Object.entries(profileCard.socialLinks)
+        .filter(([_, url]) => url) // Solo incluir las que tienen URL
+        .slice(0, 4) // Limitar a máximo 4
     return (
         <div className="bg-[var(--color-base-200)] border border-[var(--color-neutral)] rounded-[var(--radius-box)] p-8 relative overflow-hidden">
             {/* Profile Content */}
@@ -34,39 +59,51 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ profileCard }) => {
                     {profileCard.description}
                 </p>
 
-                {/* Social Links */}
-                <div className="flex justify-center gap-4">
-                    {profileCard.socialLinks.github && (
-                        <a
-                            href={profileCard.socialLinks.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full bg-[var(--color-base-300)] hover:bg-[var(--color-primary)] flex items-center justify-center transition-colors group"
-                        >
-                            <Github size={18} className="text-[var(--color-base-content)] group-hover:text-[var(--color-primary-content)]" />
-                        </a>
-                    )}
-                    {profileCard.socialLinks.linkedin && (
-                        <a
-                            href={profileCard.socialLinks.linkedin}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full bg-[var(--color-base-300)] hover:bg-[var(--color-info)] flex items-center justify-center transition-colors group"
-                        >
-                            <Linkedin size={18} className="text-[var(--color-base-content)] group-hover:text-[var(--color-info-content)]" />
-                        </a>
-                    )}
-                    {profileCard.socialLinks.twitter && (
-                        <a
-                            href={profileCard.socialLinks.twitter}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-10 h-10 rounded-full bg-[var(--color-base-300)] hover:bg-[var(--color-accent)] flex items-center justify-center transition-colors group"
-                        >
-                            <Twitter size={18} className="text-[var(--color-base-content)] group-hover:text-[var(--color-accent-content)]" />
-                        </a>
-                    )}
-                </div>
+                {/* Social Links - Dynamic */}
+                {availableSocials.length > 0 && (
+                    <div className="flex justify-center gap-4">
+                        {availableSocials.map(([platform, url]) => {
+                            const config = socialConfig[platform as keyof typeof socialConfig]
+                            if (!config) return null
+
+                            const IconComponent = config.icon
+
+                            return (
+                                <a
+                                    key={platform}
+                                    href={url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-full bg-[var(--color-base-300)] flex items-center justify-center transition-colors group"
+                                    style={{
+                                        '--hover-bg': config.hoverColor,
+                                        '--hover-text': config.hoverTextColor
+                                    } as React.CSSProperties}
+                                    onMouseEnter={(e) => {
+                                        e.currentTarget.style.backgroundColor = config.hoverColor
+                                    }}
+                                    onMouseLeave={(e) => {
+                                        e.currentTarget.style.backgroundColor = 'var(--color-base-300)'
+                                    }}
+                                >
+                                    <IconComponent 
+                                        size={18} 
+                                        className="text-[var(--color-base-content)] transition-colors" 
+                                        style={{
+                                            color: 'var(--color-base-content)'
+                                        }}
+                                        onMouseEnter={(e) => {
+                                            e.currentTarget.style.color = config.hoverTextColor
+                                        }}
+                                        onMouseLeave={(e) => {
+                                            e.currentTarget.style.color = 'var(--color-base-content)'
+                                        }}
+                                    />
+                                </a>
+                            )
+                        })}
+                    </div>
+                )}
             </div>
         </div>
     )

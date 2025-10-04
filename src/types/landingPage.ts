@@ -49,6 +49,8 @@ export interface ProfileCard {
     socialLinks: {
         github?: string
         linkedin?: string
+        website?: string
+        [key: string]: string | undefined // Permite agregar más redes sociales dinámicamente
     }
 }
 

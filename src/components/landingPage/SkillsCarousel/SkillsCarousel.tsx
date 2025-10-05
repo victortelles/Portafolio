@@ -22,7 +22,7 @@ const SkillsCarousel: React.FC = () => {
     const isExpanded = (categoryId: string) => expandedCategories.includes(categoryId)
 
     const getVisibleSkills = (category: SkillCategory) => {
-        const maxVisible = 8 // 2 filas x 4 columnas
+        const maxVisible = 4 // 1 fila x 4 columnas
         const isCurrentlyExpanded = isExpanded(category.id)
 
         if (category.skills.length <= maxVisible || isCurrentlyExpanded) {
@@ -32,9 +32,9 @@ const SkillsCarousel: React.FC = () => {
         return category.skills.slice(0, maxVisible)
     }
 
-    // Varaible para expandir o contraer la lista de tecnologías
+    // Variable para expandir o contraer la lista de tecnologías
     const shouldShowExpandButton = (category: SkillCategory) => {
-        return category.skills.length > 8
+        return category.skills.length > 4
     }
 
     return (
@@ -85,7 +85,7 @@ const SkillsCarousel: React.FC = () => {
                                                 </>
                                             ) : (
                                                 <>
-                                                    <span>Ver más ({category.skills.length - 8})</span>
+                                                    <span>Ver más ({category.skills.length - 4})</span>
                                                     <ChevronDown size={16} />
                                                 </>
                                             )}

@@ -4,6 +4,7 @@ import HeroSection from "@/components/landingPage/HeroSection/HeroSection"
 import SkillsCarousel from "@/components/landingPage/SkillsCarousel/SkillsCarousel"
 import FeaturedProjects from "@/components/landingPage/FeaturedProjects/FeaturedProjects"
 import AboutPreview from "@/components/landingPage/AboutPreview/AboutPreview"
+import ContactCTA from "@/components/landingPage/ContactCTA/ContactCTA"
 import WhatIsPalLink from "@/components/landingPage/WhatIsPalLink/WhatIsPalLink"
 import WhatWeOffer from "@/components/landingPage/WhatWeOffer/WhatWeOffer"
 import OurMission from "@/components/landingPage/OurMission/OurMission"
@@ -22,6 +23,7 @@ const LandingPage: React.FC = () => {
                 <AboutPreview />
                 <SkillsCarousel />
                 <FeaturedProjects />
+                <ContactCTA />
                 <WhatIsPalLink />
                 <Sponsor />
                 <WhatWeOffer />

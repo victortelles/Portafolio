@@ -123,3 +123,72 @@ export interface FeaturedProjectsData {
     }
     projects: Project[]
 }
+
+// ContactCTA.tsx - data structure
+export interface FormField {
+    label: string
+    placeholder: string
+    required: boolean
+    validation: {
+        minLength?: number
+        maxLength?: number
+        pattern?: string
+        errorMessage: string
+    }
+}
+
+export interface SubmitButton {
+    text: string
+    icon: string
+    phoneNumber?: string
+    emailAddress?: string
+    backgroundColor: string
+    hoverColor: string
+}
+
+export interface ContactForm {
+    fields: {
+        name: FormField
+        email: FormField
+        subject: FormField
+        message: FormField
+    }
+    submitButtons: {
+        whatsapp: SubmitButton
+        email: SubmitButton
+    }
+}
+
+export interface ValidationMessages {
+    required: string
+    email: string
+    minLength: string
+    maxLength: string
+    success: string
+    error: string
+}
+
+export interface ContactCTAData {
+    title: string
+    subtitle: string
+    description: string
+    responseNote: string
+    form: ContactForm
+    validation: {
+        messages: ValidationMessages
+    }
+}
+
+export interface FormData {
+    name: string
+    email: string
+    subject: string
+    message: string
+}
+
+export interface FormErrors {
+    name?: string
+    email?: string
+    subject?: string
+    message?: string
+}

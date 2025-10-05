@@ -2,6 +2,7 @@ import type React from "react"
 import Navbar from "@/components/common/Navbar/Navbar"
 import HeroSection from "@/components/landingPage/HeroSection/HeroSection"
 import SkillsCarousel from "@/components/landingPage/SkillsCarousel/SkillsCarousel"
+import FeaturedProjects from "@/components/landingPage/FeaturedProjects/FeaturedProjects"
 import AboutPreview from "@/components/landingPage/AboutPreview/AboutPreview"
 import WhatIsPalLink from "@/components/landingPage/WhatIsPalLink/WhatIsPalLink"
 import WhatWeOffer from "@/components/landingPage/WhatWeOffer/WhatWeOffer"
@@ -20,6 +21,7 @@ const LandingPage: React.FC = () => {
                 <HeroSection />
                 <AboutPreview />
                 <SkillsCarousel />
+                <FeaturedProjects />
                 <WhatIsPalLink />
                 <Sponsor />
                 <WhatWeOffer />

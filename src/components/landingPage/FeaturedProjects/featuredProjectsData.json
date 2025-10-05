@@ -1,0 +1,79 @@
+{
+    "title": "Proyectos Destacados",
+    "description": "Una selección de mis proyectos más relevantes que demuestran mis habilidades técnicas y creatividad.",
+    "cta": {
+        "label": "Ver todos los proyectos",
+        "href": "/projects"
+    },
+    "projects": [
+        {
+            "id": "mythbots-page",
+            "title": "Mythbots Page",
+            "shortDescription": "Landing page para dar a conocer sobre MythBots y sus servicios.",
+            "fullDescription": "Una Landing page moderna para dar a conocer sobre Mythbots y conocer sus servicios. La cual fue desarrollada con React y TypeScript con estilos de TailwindCSS incluyendo un diseño completamente responsivo.",
+            "image": "/assets/projects/mythbots/Mythbots.webp",
+            "tags": [
+                "React",
+                "TypeScript",
+                "TailwindCSS"
+            ],
+            "github": "https://github.com/victortelles/Mythbots_Static",
+            "demo": "https://mythbots.com/",
+            "featured": true
+        },
+        {
+            "id": "task-manager",
+            "title": "Task Management System",
+            "shortDescription": "Sistema de gestión de tareas colaborativo con funcionalidades de tiempo real y seguimiento de proyectos.",
+            "fullDescription": "Una aplicación web de gestión de tareas que permite a los equipos colaborar en tiempo real. Desarrollada con React, Node.js y Socket.io para actualizaciones en vivo. Incluye drag & drop para organizar tareas, asignación de usuarios, fechas límite, comentarios, archivos adjuntos y reportes de productividad. Integrada con notificaciones push y calendario.",
+            "image": "/assets/projects/task-manager-preview.jpg",
+            "tags": [
+                "React",
+                "Node.js",
+                "Socket.io",
+                "MongoDB",
+                "Express",
+                "JWT"
+            ],
+            "github": "https://github.com/usuario/task-manager",
+            "demo": "https://task-manager-demo.herokuapp.com",
+            "featured": true
+        },
+        {
+            "id": "ai-chatbot",
+            "title": "AI Customer Support Bot",
+            "shortDescription": "Chatbot inteligente para atención al cliente usando procesamiento de lenguaje natural y machine learning.",
+            "fullDescription": "Un sistema de chatbot avanzado para atención al cliente que utiliza procesamiento de lenguaje natural (NLP) y machine learning. Desarrollado con Python, integra APIs de OpenAI para respuestas contextuales inteligentes. Incluye panel de análisis de conversaciones, entrenamiento personalizado, escalación automática a agentes humanos y soporte multiidioma. Reduce significativamente el tiempo de respuesta al cliente.",
+            "image": "/assets/projects/ai-chatbot-preview.jpg",
+            "tags": [
+                "Python",
+                "OpenAI",
+                "FastAPI",
+                "PostgreSQL",
+                "Docker",
+                "React"
+            ],
+            "github": "https://github.com/usuario/ai-chatbot",
+            "demo": null,
+            "featured": true
+        },
+        {
+            "id": "crypto-tracker",
+            "title": "Cryptocurrency Tracker",
+            "shortDescription": "Aplicación para monitorear precios de criptomonedas con gráficos interactivos y alertas personalizadas.",
+            "fullDescription": "Una aplicación completa para el seguimiento de criptomonedas que proporciona datos en tiempo real de múltiples exchanges. Desarrollada con Vue.js y integra APIs de CoinGecko y Binance. Incluye gráficos interactivos con Chart.js, sistema de alertas de precios, calculadora de ganancias/pérdidas, portafolio personal y análisis técnico básico. Cuenta con dark mode y sincronización entre dispositivos.",
+            "image": "/assets/projects/crypto-tracker-preview.jpg",
+            "tags": [
+                "Vue.js",
+                "Chart.js",
+                "Node.js",
+                "Redis",
+                "WebSockets",
+                "PWA"
+            ],
+            "github": "https://github.com/usuario/crypto-tracker",
+            "demo": "https://crypto-tracker-demo.netlify.app",
+            "featured": true
+        }
+    ]
+}

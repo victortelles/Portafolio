@@ -69,7 +69,7 @@ Secciones (7):
 - - Dejar como al aire en esta seccion algunos iconos de lenguaje de programacion y tecnologias por ejemplo (JS, TS, React, Node.js, Python, etc...) que esten flotando o haciendo una animacion de respiracion lentamente o talvez como si estuvieran en el aire y que al pasar el mouse por encima tenga una leve animacion de zoom in y un tooltip que diga el nombre de la tecnologia.
 - - Un boton de llamada a la acción (CTA) que dirigirá a los usuarios a la página /about-me. para invitar a los usuarios a conocer más sobre mí.
 
-### SkillsCarousel
+### ✅SkillsCarousel
 En esta seccion tengo pensado 2 opciones:
 Opcion 1:
 - Un titulo que diga "Habilidades Técnicas"
@@ -92,36 +92,19 @@ Lo mismo que la opcion 1 pero en vez de carrusel sean cards de tecnologias (Fron
 
 Basicamente alguna de esas opciones, me gustaria iniciar con la opcion 1, pero si veo que no queda bien, o que para otros dispositivos tarda mucho en cargar, optaria por la opcion 2
 
-### FeaturedProjects
-EN esta seccion tengo pensado poner entre 2 a 4 proyectos en pantallas de laptops y si es tableta 2 y si es mobile 1 que sean cards donde se visualice una imagen como banner, Titulo, descripcion, Tags (tecnologias), Botones de github y demo (Si hay)
+### ✅FeaturedProjects
+EN esta seccion tengo pensado poner entre 2 a 4 proyectos en pantallas de laptops y pc grandes y si es tableta 2 y si es mobile 1 que sean cards donde se visualice una imagen como banner, Titulo, descripcion, Tags (tecnologias), Botones de github y demo (Si hay)
 Estructura de los datos en JSON ( featuredProjectsData.json )
-- Imagen/banner
-- Titulo
-- breve descripcion
-- Tags (tecnologias)
-- Boton GitHub (url)
-- Boton Demo (url) (Si hay)
+- Imagen/banner (cubriendo la parte superior de la card)
+- Titulo (tipografia de  mono: ['Share Tech Mono', 'ui-monospace', 'SFMono-Regular'],)
+- breve descripcion ( Limite de caracteres 150-200 y como opcion opcional que puedas expandir la descripcion si quieres leer mas y con tipografia sans: ['Inter', 'ui-sans-serif', 'system-ui'])
+- Tags (tecnologias) mono: ['Share Tech Mono', 'ui-monospace', 'SFMono-Regular']
+- Boton GitHub (url) (Icono de GitHub) (recuerda que con react-icons)
+- Boton Demo (url) (Si hay) (Icono de Demo) (recuerda que con react-icons)
 
 Al final de esa seccion lo ideal seria colocar un boton CTA que diga "Ver todos los proyectos" que redirija a /projects
 
-### ExperiencePreview
-En esta seccion tengo pensado poner un timeline vertical que muestre los hitos profesionales mas importantes (3-4) y al final colocar un boton CTA que redirija a /experience
-Estructura de los datos en JSON ( experiencePreviewData.json )
-Requisitos:
-- Tener la timeline en vertical y centrado
-- Que tenga nodos por año o DD/MM/AAAA
-- Cada nodo debe tener:
-- Fecha de cuando empezo
-
-y en intervalos Derecha o izquierda colocar una card que contenga:
--  - Titulo
--  - Empresa/organizacion
--  - Fecha (DD/MM/AAAA - DD/MM/AAAA o Actualidad)
--  - Breve descripcion de responsabilidades y logros
-
-y una vez terminado el timeline colocar un boton CTA que diga "Ver experiencia completa" que redirija a /experience
-
-Debe de ser responsivo y adaptarse a pantallas de mobile, tablet y desktop
+- El fondo de esta seccion tiene que ser si o si lo que esta en ( .github\prompt\color.prompt.md ) y mas aparte el fondo sea diferente al de AboutPreview y skillsCarousel.
 
 ### ContactCTA
 **Contenido:**
@@ -129,6 +112,10 @@ Debe de ser responsivo y adaptarse a pantallas de mobile, tablet y desktop
 - Un breve resumen invitando a los usuarios a ponerse en contacto conmigo.
 - Un formulario de contacto que incluya campos para nombre, correo electrónico y mensaje.
 - Un boton de enviar que permita a los usuarios enviar el formulario.
+- Debe de ser responsivo y adaptarse a pantallas de mobile, tablet y desktop
+- El formulario debe de tener buenas practicas de colocar los inputs.
+- Debe de tener botones par poder enviar el formulario (whatsApp, Email) y todo lo que el usuario coloque en los inputs deberan de reflejarse al enviarlo con el mismo contenido.
+- - Por ejemplo si yo coloco algo en el mensaje al darle enviar contactar por whats o email, al darle click el mensaje que coloque debera de reflejarse en el mensaje que se envia.
 
 ## Reglas
 Cada que termines de leer el contenido debes pasarte a leer el archivo de ( .github/prompt/rules.prompt.md ) para que puedas seguir las reglas del proyecto.

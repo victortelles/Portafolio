@@ -100,3 +100,26 @@ export interface SkillsCarouselData {
     description: string
     categories: SkillCategory[]
 }
+
+// FeaturedProjects.tsx - data structure
+export interface Project {
+    id: string
+    title: string
+    shortDescription: string
+    fullDescription: string
+    image: string
+    tags: string[]
+    github: string
+    demo: string | null
+    featured: boolean
+}
+
+export interface FeaturedProjectsData {
+    title: string
+    description: string
+    cta: {
+        label: string
+        href: string
+    }
+    projects: Project[]
+}

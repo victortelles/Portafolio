@@ -40,8 +40,7 @@ Secciones (7):
 
 - ✅ <Navbar /> - Header con navegación y branding (Ya esta hecho)
 
-- <HeroSection /> - Crear una seccion de una Terminal que esta animado con texto de introducción de portafolio y Tecnologias que se (Developer Frontend, Backend, Database, DevOps, etc...) pero que se vea una animacion de que se esta escribiendo el texto en la terminal
-- <AboutPreview /> - Resumen corto sobre mi con un boton CTA hacia /about-me
+- ✅ <HeroSection /> - Crear una seccion de una Terminal que esta animado con texto de introducción de portafolio y Tecnologias que se (Developer Frontend, Backend, Database, DevOps, etc...) pero que se vea una animacion de que se esta escribiendo el texto en la terminal
 - <SkillsCarousel /> - Carrusel de tecnologías principales
 - <FeaturedProjects /> - 3-4 proyectos destacados con CTA hacia /projects
 - <ExperiencePreview /> - Timeline resumido con CTA hacia /experience
@@ -49,7 +48,7 @@ Secciones (7):
 
 - ✅ <Footer /> - Footer con información de contacto y redes sociales (Ya esta hecho)
 
-### HeroSection
+### ✅ HeroSection
 **Contenido:**
 - En esta seccion tengo pensado hacer una terminal que este animada con un texto de introduccion y tecnologias que se especializa el portafolio (Developer Frontend, Backend, Database, DevOps, etc...) pero que se vea una animacion de que se esta escribiendo el texto en la terminal
 
@@ -60,10 +59,10 @@ Secciones (7):
 -  - Multiples titulos = Ya que se puede ir cambiando el titulo cada cierto tiempo y se vera como si lo escribiera.
 -  - Subtítulo o descripción = Fuera de la Terminal
 
-### AboutPreview
+### ✅ AboutPreview
 **Contenido:**
 - En esta sección tengo pensado la siguiente estructura que tenga
-- - Un titulo que diga "Acerca de mi"
+- - Un título que diga "Acerca de mi"
 - - Un breve resumen corto sobre mí de quien soy, que soy, que rol tengo etc...,
 - - Una tarjeta de perfil (ProfileCard) que incluya una imagen, nombre, rol y enlaces a redes sociales (GitHub, LinkedIn, etc...)
 - - 4 listas 2 filas 2 columnas que contengan textos cortos sobre mi rol y mis enfoques, pasiones, etc...

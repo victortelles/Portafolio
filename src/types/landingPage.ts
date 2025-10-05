@@ -81,3 +81,22 @@ export interface AboutPreviewData {
         href: string
     }
 }
+
+// SkillsCarousel.tsx - data structure
+export interface Skill {
+    name: string
+    icon: string
+    color: string
+}
+
+export interface SkillCategory {
+    id: string
+    name: string
+    skills: Skill[]
+}
+
+export interface SkillsCarouselData {
+    title: string
+    description: string
+    categories: SkillCategory[]
+}

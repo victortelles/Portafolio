@@ -106,7 +106,7 @@ Al final de esa seccion lo ideal seria colocar un boton CTA que diga "Ver todos 
 
 - El fondo de esta seccion tiene que ser si o si lo que esta en ( .github\prompt\color.prompt.md ) y mas aparte el fondo sea diferente al de AboutPreview y skillsCarousel.
 
-### ContactCTA
+### ✅ContactCTA
 **Contenido:**
 - Un titulo que diga "Contacto"
 - Un breve resumen invitando a los usuarios a ponerse en contacto conmigo.

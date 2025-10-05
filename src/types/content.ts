@@ -60,3 +60,37 @@ export type FooterColumn = {
         href: string
     }>
 }
+
+//Type for Footer Brand
+export type FooterBrand = {
+    name: string
+    tagline: string
+    avatar: string
+}
+
+//Type for Footer Social Link  
+export type FooterSocial = {
+    platform: string
+    href: string
+    label: string
+}
+
+//Type for Footer Quick Link
+export type FooterQuickLink = {
+    label: string
+    href: string
+}
+
+//Type for Footer Content
+export type FooterContent = {
+    brand: FooterBrand
+    socials: FooterSocial[]
+    quickLinks: FooterQuickLink[]
+    footer: {
+        copyright: string
+        credits: {
+            label: string
+            href: string
+        }
+    }
+}

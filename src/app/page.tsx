@@ -24,12 +24,12 @@ const LandingPage: React.FC = () => {
                 <SkillsCarousel />
                 <FeaturedProjects />
                 <ContactCTA />
-                <WhatIsPalLink />
+                {/* <WhatIsPalLink />
                 <Sponsor />
                 <WhatWeOffer />
                 <OurMission />
                 <HowWeHelp />
-                <OurTeam />
+                <OurTeam /> */}
             </main>
             <Footer />
             {/* <FloatingSocialSidebar /> */}

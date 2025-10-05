@@ -1,4 +1,4 @@
-import content from "./404/content.json";
+import content from "./404/notFoundData.json";
 import PageNotFound from "./404/PageNotFound";
 import type { NotFoundContent } from "@/types/notFound";
 

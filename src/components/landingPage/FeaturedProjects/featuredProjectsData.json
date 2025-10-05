@@ -22,11 +22,11 @@
             "featured": true
         },
         {
-            "id": "task-manager",
-            "title": "Task Management System",
-            "shortDescription": "Sistema de gestión de tareas colaborativo con funcionalidades de tiempo real y seguimiento de proyectos.",
-            "fullDescription": "Una aplicación web de gestión de tareas que permite a los equipos colaborar en tiempo real. Desarrollada con React, Node.js y Socket.io para actualizaciones en vivo. Incluye drag & drop para organizar tareas, asignación de usuarios, fechas límite, comentarios, archivos adjuntos y reportes de productividad. Integrada con notificaciones push y calendario.",
-            "image": "/assets/projects/task-manager-preview.jpg",
+            "id": "pallink",
+            "title": "PalLink",
+            "shortDescription": "",
+            "fullDescription": "",
+            "image": "/assets/projects/pallink/SS_PalLink.png",
             "tags": [
                 "React",
                 "Node.js",
@@ -35,8 +35,7 @@
                 "Express",
                 "JWT"
             ],
-            "github": "https://github.com/usuario/task-manager",
-            "demo": "https://task-manager-demo.herokuapp.com",
+            "demo": "https://pallink.net/",
             "featured": true
         },
         {

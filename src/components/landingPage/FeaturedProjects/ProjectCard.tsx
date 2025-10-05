@@ -59,7 +59,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                             href={project.demo}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 px-4 py-2 bg-[var(--color-primary)] text-[var(--color-primary-content)] rounded-[var(--radius-field)] font-mono text-sm hover:bg-[var(--color-secondary)] hover:text-[var(--color-secondary-content)] transition-colors duration-300"
+                            className="flex items-center gap-2 px-4 py-2 bg-[var(--color-primary)] text-[var(--color-primary-content)] rounded-[var(--radius-field)] font-mono text-sm hover:bg-[var(--color-accent)] hover:text-[var(--color-accent-content)] transition-colors duration-300"
                         >
                             <FaExternalLinkAlt size={14} />
                             <span>Demo</span>

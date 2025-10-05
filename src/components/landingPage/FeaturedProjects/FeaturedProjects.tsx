@@ -33,7 +33,7 @@ const FeaturedProjects: React.FC = () => {
                 <div className="text-center">
                     <a
                         href={projectsData.cta.href}
-                        className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-secondary)] text-[var(--color-primary-content)] hover:text-[var(--color-secondary-content)] rounded-[var(--radius-selector)] transition-all duration-300 text-lg font-mono font-semibold group shadow-lg hover:shadow-[var(--color-primary)]/40"
+                        className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-info)] text-[var(--color-primary-content)] hover:text-[var(--color-info-content)] rounded-[var(--radius-selector)] transition-all duration-300 text-lg font-mono font-semibold group shadow-lg hover:shadow-[var(--color-primary)]/40"
                     >
                         {projectsData.cta.label}
                         <FaArrowRight size={18} className="group-hover:translate-x-1 transition-transform duration-300" />

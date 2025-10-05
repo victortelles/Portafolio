@@ -9,17 +9,41 @@ type PageNotFoundProps = {
 
 function PageNotFound({ content }: PageNotFoundProps) {
     return (
-        <main className="relative min-h-screen w-full bg-[var(--color-base-100)] overflow-hidden">
-            {/* Decorative background elements */}
-            <div className="absolute inset-0 opacity-10">
+        <main className="relative min-h-screen w-full overflow-hidden">
+            {/* Background image from HeroSection */}
+            <div
+                className="absolute inset-0 bg-gradient-to-br from-[var(--color-base-200)] to-[var(--color-base-100)]"
+                style={{
+                    backgroundImage: "url('/assets/background.jpg')",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundRepeat: "no-repeat",
+                }}
+            >
+                <div className="absolute inset-0 bg-black/70"></div>
+            </div>
+
+            {/* Enhanced Decorative background elements */}
+            <div className="absolute inset-0 opacity-15 z-5">
+                {/* Large circles */}
                 <div className="absolute top-20 left-20 w-40 h-40 border-2 border-[var(--color-primary)] rounded-full animate-pulse"></div>
-                <div className="absolute bottom-20 right-20 w-32 h-32 border-2 border-[var(--color-accent)] rounded-full animate-pulse"></div>
-                <div className="absolute top-1/2 left-1/4 w-24 h-24 border-2 border-[var(--color-secondary)] rounded-full animate-pulse"></div>
-                <div className="absolute bottom-1/3 left-1/2 w-16 h-16 border-2 border-[var(--color-info)] rounded-full animate-pulse"></div>
+                <div className="absolute bottom-20 right-20 w-32 h-32 border-2 border-[var(--color-accent)] rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                <div className="absolute top-1/2 left-1/4 w-24 h-24 border-2 border-[var(--color-secondary)] rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+                <div className="absolute bottom-1/3 left-1/2 w-16 h-16 border-2 border-[var(--color-info)] rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                
+                {/* Additional small circles */}
+                <div className="absolute top-1/4 right-1/3 w-12 h-12 border-2 border-[var(--color-warning)] rounded-full animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+                <div className="absolute bottom-1/4 left-1/6 w-8 h-8 border-2 border-[var(--color-success)] rounded-full animate-pulse" style={{ animationDelay: '2.5s' }}></div>
+                <div className="absolute top-3/4 right-1/6 w-20 h-20 border-2 border-[var(--color-primary)]/50 rounded-full animate-pulse" style={{ animationDelay: '3s' }}></div>
+                <div className="absolute top-1/6 left-3/4 w-14 h-14 border-2 border-[var(--color-accent)]/70 rounded-full animate-pulse" style={{ animationDelay: '0.8s' }}></div>
+                
+                {/* Squares for variety */}
+                <div className="absolute top-1/3 left-1/5 w-6 h-6 border-2 border-[var(--color-secondary)]/60 rotate-45 animate-pulse" style={{ animationDelay: '1.2s' }}></div>
+                <div className="absolute bottom-1/5 right-1/4 w-10 h-10 border-2 border-[var(--color-info)]/80 rotate-45 animate-pulse" style={{ animationDelay: '2.8s' }}></div>
             </div>
 
             {/* Grid pattern background */}
-            <div className="absolute inset-0 opacity-5">
+            <div className="absolute inset-0 opacity-5 z-5">
                 <div className="w-full h-full" style={{
                     backgroundImage: `radial-gradient(circle, var(--color-primary) 1px, transparent 1px)`,
                     backgroundSize: '50px 50px'
@@ -72,30 +96,18 @@ function PageNotFound({ content }: PageNotFoundProps) {
                                 <FaHome size={18} />
                                 {content.cta.label}
                             </Link>
-
-                            <Link
-                                href={content.secondaryCta.href}
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-base-100)] hover:bg-[var(--color-accent)] border-2 border-[var(--color-base-300)] hover:border-[var(--color-accent)] text-[var(--color-base-content)] hover:text-[var(--color-accent-content)] rounded-[var(--radius-selector)] transition-all duration-300 text-lg font-mono font-semibold group shadow-lg hover:shadow-[var(--color-accent)]/40 hover:scale-105"
-                            >
-                                <FaEnvelope size={18} />
-                                {content.secondaryCta.label}
-                            </Link>
                         </div>
-                    </div>
-
-                    {/* Additional Info */}
-                    <div className="text-center">
-                        <p className="font-sans text-sm text-[var(--color-neutral-content)]/70">
-                            Si crees que esto es un error, por favor contáctanos.
-                        </p>
                     </div>
                 </div>
             </section>
 
-            {/* Floating decorative elements */}
-            <div className="absolute top-10 right-10 w-4 h-4 bg-[var(--color-primary)] rounded-full animate-ping"></div>
-            <div className="absolute bottom-10 left-10 w-3 h-3 bg-[var(--color-accent)] rounded-full animate-ping" style={{ animationDelay: '1s' }}></div>
-            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-[var(--color-secondary)] rounded-full animate-ping" style={{ animationDelay: '2s' }}></div>
+            {/* Enhanced floating decorative elements */}
+            <div className="absolute top-10 right-10 w-4 h-4 bg-[var(--color-primary)] rounded-full animate-ping z-20"></div>
+            <div className="absolute bottom-10 left-10 w-3 h-3 bg-[var(--color-accent)] rounded-full animate-ping z-20" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute top-1/3 right-1/4 w-2 h-2 bg-[var(--color-secondary)] rounded-full animate-ping z-20" style={{ animationDelay: '2s' }}></div>
+            <div className="absolute bottom-1/4 right-1/3 w-5 h-5 bg-[var(--color-info)] rounded-full animate-ping z-20" style={{ animationDelay: '1.5s' }}></div>
+            <div className="absolute top-2/3 left-1/5 w-3 h-3 bg-[var(--color-warning)] rounded-full animate-ping z-20" style={{ animationDelay: '2.5s' }}></div>
+            <div className="absolute top-1/5 right-1/5 w-2 h-2 bg-[var(--color-success)] rounded-full animate-ping z-20" style={{ animationDelay: '3s' }}></div>
         </main>
     );
 }

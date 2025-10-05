@@ -1,0 +1,13 @@
+{
+    "badge": "404 | Página no encontrada",
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "cta": {
+        "label": "Ir al inicio",
+        "href": "/"
+    },
+    "secondaryCta": {
+        "label": "Contactar soporte",
+        "href": "/#contact"
+    }
+}

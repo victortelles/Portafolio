@@ -1,0 +1,44 @@
+{
+    "brand": {
+        "name": "AHTyler",
+        "tagline": "Desarrollador Full Stack apasionado por crear soluciones innovadoras",
+        "avatar": "/assets/AHTyler_Logo_der.PNG"
+    },
+    "socials": [
+        {
+            "platform": "github",
+            "href": "https://github.com/victortelles",
+            "label": "GitHub Profile"
+        },
+        {
+            "platform": "linkedin",
+            "href": "https://www.linkedin.com/in/vmta/",
+            "label": "LinkedIn Profile"
+        }
+    ],
+    "quickLinks": [
+        {
+            "label": "Inicio",
+            "href": "/"
+        },
+        {
+            "label": "Proyectos",
+            "href": "/projects"
+        },
+        {
+            "label": "Acerca de",
+            "href": "/about"
+        },
+        {
+            "label": "Contacto",
+            "href": "/#contact"
+        }
+    ],
+    "footer": {
+        "copyright": "© 2025 AHTyler. Todos los derechos reservados.",
+        "credits": {
+            "label": "Créditos",
+            "href": "/credits"
+        }
+    }
+}

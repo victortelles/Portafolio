@@ -4,7 +4,7 @@ import type React from "react"
 import { useState } from "react"
 import { Menu, X, User } from "lucide-react"
 import * as NavigationMenu from "@radix-ui/react-navigation-menu"
-import content from "./content.json"
+import content from "./navbarData.json"
 import type { NavItem } from "@/types/content"
 
 const Navbar: React.FC = () => {

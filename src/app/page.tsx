@@ -5,14 +5,7 @@ import SkillsCarousel from "@/components/landingPage/SkillsCarousel/SkillsCarous
 import FeaturedProjects from "@/components/landingPage/FeaturedProjects/FeaturedProjects"
 import AboutPreview from "@/components/landingPage/AboutPreview/AboutPreview"
 import ContactCTA from "@/components/landingPage/ContactCTA/ContactCTA"
-import WhatIsPalLink from "@/components/landingPage/WhatIsPalLink/WhatIsPalLink"
-import WhatWeOffer from "@/components/landingPage/WhatWeOffer/WhatWeOffer"
-import OurMission from "@/components/landingPage/OurMission/OurMission"
-import HowWeHelp from "@/components/landingPage/HowWeHelp/HowWeHelp"
-import Sponsor from "@/components/landingPage/Sponsor/Sponsor"
-import OurTeam from "@/components/landingPage/OurTeam/OurTeam"
 import Footer from "@/components/common/Footer/Footer"
-import FloatingSocialSidebar from "@/components/FloatingSocialSidebar/FloatingSocialSidebar"
 
 const LandingPage: React.FC = () => {
     return (
@@ -24,15 +17,8 @@ const LandingPage: React.FC = () => {
                 <SkillsCarousel />
                 <FeaturedProjects />
                 <ContactCTA />
-                {/* <WhatIsPalLink />
-                <Sponsor />
-                <WhatWeOffer />
-                <OurMission />
-                <HowWeHelp />
-                <OurTeam /> */}
             </main>
             <Footer />
-            {/* <FloatingSocialSidebar /> */}
         </div>
     )
 }

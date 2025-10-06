@@ -7,72 +7,81 @@
     },
     "projects": [
         {
-            "id": "mythbots-page",
-            "title": "Mythbots Page",
+            "id": "mythbots",
+            "title": "Mythbots",
             "shortDescription": "Landing page para dar a conocer sobre MythBots y sus servicios.",
             "fullDescription": "Una Landing page moderna para dar a conocer sobre Mythbots y conocer sus servicios. La cual fue desarrollada con React y TypeScript con estilos de TailwindCSS incluyendo un diseño completamente responsivo.",
-            "image": "/assets/projects/mythbots/Mythbots.webp",
+            "image": "/assets/projects/mythbots/SS_mythbots.webp",
             "tags": [
                 "React",
                 "TypeScript",
-                "TailwindCSS"
+                "TailwindCSS",
+                "Radix-UI",
+                "lucide-react",
+                "react-dom"
             ],
             "github": "https://github.com/victortelles/Mythbots_Static",
             "demo": "https://mythbots.com/",
-            "featured": true
+            "featured": true,
+            "icon": "/assets/projects/mythbots/Mythbots_Logo.webp"
         },
         {
             "id": "pallink",
             "title": "PalLink",
-            "shortDescription": "",
-            "fullDescription": "",
-            "image": "/assets/projects/pallink/SS_PalLink.png",
+            "shortDescription": "Landing page para dar a conocer sobre que es PalLink y cual es su proposito",
+            "fullDescription": "Un proyecto externo de apoyo a una startup llamada PalLink, la cual se tiene pensado a hacer una app web que permite a usuarios que usan un mod para servidores del video juego de Palworld. tener una documentacion clara de su mod y posteriormente extenderla a mas, como por ejemplo descargas anticipadas, mods para testers etc. La App web está diseñada para ser fácil de usar y facil de entender y accesible desde cualquier dispositivo con conexión a Internet. Esta desarrollada con React, TailwindCSS, CSS,en el frontend y Node.js en el backend, utilizando Socket.io para la funcionalidad de chat en tiempo real y MongoDB como base de datos.",
+            "image": "/assets/projects/pallink/SS_PalLink.webp",
             "tags": [
                 "React",
                 "Node.js",
-                "Socket.io",
-                "MongoDB",
-                "Express",
-                "JWT"
+                "Radix-UI",
+                "embla-carousel",
+                "React-Icons",
+                "TailwindCSS"
             ],
+            "github": null,
             "demo": "https://pallink.net/",
-            "featured": true
+            "featured": true,
+            "icon": "/assets/projects/pallink/PalLink.png"
         },
         {
-            "id": "ai-chatbot",
-            "title": "AI Customer Support Bot",
-            "shortDescription": "Chatbot inteligente para atención al cliente usando procesamiento de lenguaje natural y machine learning.",
-            "fullDescription": "Un sistema de chatbot avanzado para atención al cliente que utiliza procesamiento de lenguaje natural (NLP) y machine learning. Desarrollado con Python, integra APIs de OpenAI para respuestas contextuales inteligentes. Incluye panel de análisis de conversaciones, entrenamiento personalizado, escalación automática a agentes humanos y soporte multiidioma. Reduce significativamente el tiempo de respuesta al cliente.",
-            "image": "/assets/projects/ai-chatbot-preview.jpg",
+            "id": "portafolio",
+            "title": "Portafolio",
+            "shortDescription": "Pagina web para mostrar mis proyectos, habilidades y progreso.",
+            "fullDescription": "Un portafolio personal que exhibe mis proyectos más destacados, habilidades técnicas y trayectoria profesional. Desarrollado con tecnologías modernas para asegurar una experiencia de usuario fluida y atractiva.",
+            "image": "/assets/projects/portafolio/SS_Portafolio.webp",
+            "tags": [
+                "Next.js",
+                "TailwindCSS",
+                "React-Icons",
+                "Radix-UI",
+                "TailwindCSS",
+                "TailwindCSS"
+            ],
+            "github": "https://github.com/victortelles/Portafolio",
+            "demo": null,
+            "featured": true,
+            "icon": "/assets/projects/portafolio/AHTyler_logo.webp"
+        },
+        {
+            "id": "analisis-reseñas",
+            "title": "Analisis de reseñas Steam",
+            "shortDescription": "Aplicacion hecha en python para hacer un analisis de sentimiento mediante reseñas de steam.",
+            "fullDescription": "Una aplicación para el análisis de reseñas de Steam que utiliza técnicas de procesamiento de lenguaje natural para determinar el sentimiento detrás de cada reseña. Desarrollada con Python y bibliotecas como NLTK y Scikit-learn, permite a los usuarios obtener información valiosa sobre la recepción de los juegos en la plataforma. y desplegada con Streamlit.",
+            "image": "/assets/projects/analisis-reseñas/SS_Streamlit.webp",
             "tags": [
                 "Python",
-                "OpenAI",
-                "FastAPI",
-                "PostgreSQL",
-                "Docker",
-                "React"
+                "Streamlit",
+                "NLTK",
+                "Scikit-learn",
+                "Wordcloud",
+                "Seaborn",
+                "Pandas"
             ],
-            "github": "https://github.com/usuario/ai-chatbot",
-            "demo": null,
-            "featured": true
-        },
-        {
-            "id": "crypto-tracker",
-            "title": "Cryptocurrency Tracker",
-            "shortDescription": "Aplicación para monitorear precios de criptomonedas con gráficos interactivos y alertas personalizadas.",
-            "fullDescription": "Una aplicación completa para el seguimiento de criptomonedas que proporciona datos en tiempo real de múltiples exchanges. Desarrollada con Vue.js y integra APIs de CoinGecko y Binance. Incluye gráficos interactivos con Chart.js, sistema de alertas de precios, calculadora de ganancias/pérdidas, portafolio personal y análisis técnico básico. Cuenta con dark mode y sincronización entre dispositivos.",
-            "image": "/assets/projects/crypto-tracker-preview.jpg",
-            "tags": [
-                "Vue.js",
-                "Chart.js",
-                "Node.js",
-                "Redis",
-                "WebSockets",
-                "PWA"
-            ],
-            "github": "https://github.com/usuario/crypto-tracker",
-            "demo": "https://crypto-tracker-demo.netlify.app",
-            "featured": true
+            "github": "https://github.com/victortelles/Stream_Analisis_Sentimiento_ReviewsGames.git",
+            "demo": "https://6mlvyynq4ukyd4zxlgyo88.streamlit.app/",
+            "featured": true,
+            "icon": "/assets/projects/analisis-reseñas/Streamlit.svg"
         }
     ]
 }

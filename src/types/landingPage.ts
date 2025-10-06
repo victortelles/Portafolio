@@ -86,11 +86,10 @@ export interface AboutPreviewData {
 export interface Skill {
     name: string
     icon: string
-    color: string
+    category: string
 }
 
 export interface SkillCategory {
-    id: string
     name: string
     skills: Skill[]
 }
@@ -109,9 +108,10 @@ export interface Project {
     fullDescription: string
     image: string
     tags: string[]
-    github: string
+    github: string | null
     demo: string | null
     featured: boolean
+    icon?: string
 }
 
 export interface FeaturedProjectsData {
@@ -122,73 +122,4 @@ export interface FeaturedProjectsData {
         href: string
     }
     projects: Project[]
-}
-
-// ContactCTA.tsx - data structure
-export interface FormField {
-    label: string
-    placeholder: string
-    required: boolean
-    validation: {
-        minLength?: number
-        maxLength?: number
-        pattern?: string
-        errorMessage: string
-    }
-}
-
-export interface SubmitButton {
-    text: string
-    icon: string
-    phoneNumber?: string
-    emailAddress?: string
-    backgroundColor: string
-    hoverColor: string
-}
-
-export interface ContactForm {
-    fields: {
-        name: FormField
-        email: FormField
-        subject: FormField
-        message: FormField
-    }
-    submitButtons: {
-        whatsapp: SubmitButton
-        email: SubmitButton
-    }
-}
-
-export interface ValidationMessages {
-    required: string
-    email: string
-    minLength: string
-    maxLength: string
-    success: string
-    error: string
-}
-
-export interface ContactCTAData {
-    title: string
-    subtitle: string
-    description: string
-    responseNote: string
-    form: ContactForm
-    validation: {
-        messages: ValidationMessages
-    }
-}
-
-export interface FormData {
-    name: string
-    email: string
-    subject: string
-    message: string
-}
-
-export interface FormErrors {
-    name?: string
-    email?: string
-    subject?: string
-    message?: string
 }

@@ -1,0 +1,54 @@
+{
+    "sectionTitle": "Mis hobbies",
+    "sectionDescription": "Las actividades que me inspiran y mantienen mi creatividad fuera del código",
+    "hobbies": [
+        {
+            "id": 1,
+            "title": "Gaming",
+            "description": "Los videojuegos me ayudan a relajarme y también me inspiran para crear mejores interfaces de usuario.",
+            "icon": "FaGamepad",
+            "category": "Entretenimiento",
+            "tags": ["League of Legends", "Valorant", "Minecraft", "The Witcher 3", "Estrategia", "Multijugador"]
+        },
+        {
+            "id": 2,
+            "title": "Lectura técnica",
+            "description": "Leer libros de programación, arquitectura de software y nuevas tecnologías para mantenerme actualizado.",
+            "icon": "FaBook",
+            "category": "Educación",
+            "tags": ["Clean Code", "System Design", "JavaScript", "React", "Arquitectura", "Best Practices"]
+        },
+        {
+            "id": 3,
+            "title": "Fotografía",
+            "description": "Capturar momentos y paisajes me ayuda a desarrollar mi ojo para el diseño y la composición visual.",
+            "icon": "FaCamera",
+            "category": "Arte",
+            "tags": ["Paisajes urbanos", "Fotografía nocturna", "Retratos", "Arquitectura", "Composición", "Edición"]
+        },
+        {
+            "id": 4,
+            "title": "Fitness",
+            "description": "Mantener una rutina de ejercicio regular me ayuda a mantener la mente clara y la energía alta.",
+            "icon": "FaDumbbell",
+            "category": "Salud",
+            "tags": ["Gimnasio", "Cardio", "Yoga", "Caminatas", "Disciplina", "Bienestar"]
+        },
+        {
+            "id": 5,
+            "title": "Cocina",
+            "description": "Experimentar con nuevas recetas y sabores es como experimentar con nuevas tecnologías.",
+            "icon": "FaUtensils",
+            "category": "Creatividad",
+            "tags": ["Comida mexicana", "Pasta italiana", "Postres", "Comida asiática", "Experimentación", "Recetas"]
+        },
+        {
+            "id": 6,
+            "title": "Música",
+            "description": "Escuchar y descubrir nueva música me mantiene inspirado y productivo mientras programo.",
+            "icon": "FaMusic",
+            "category": "Arte",
+            "tags": ["Lo-fi Hip Hop", "Synthwave", "Jazz", "Electrónica", "Rock progresivo", "Concentración"]
+        }
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "sectionTitle": "Mis valores",
+    "sectionDescription": "Los principios fundamentales que guían mi trabajo y desarrollo profesional",
+    "values": [
+        {
+            "id": 1,
+            "title": "Calidad del código",
+            "description": "Escribir código limpio, mantenible y bien documentado es fundamental para crear software que perdure en el tiempo.",
+            "icon": "🔧",
+            "color": "primary",
+            "keywords": [
+                "Clean Code",
+                "Documentación",
+                "Best Practices",
+                "Testing"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Aprendizaje continuo",
+            "description": "La tecnología evoluciona constantemente, por lo que mantenerse actualizado y aprender nuevas herramientas es esencial.",
+            "icon": "📚",
+            "color": "secondary",
+            "keywords": [
+                "Cursos",
+                "Certificaciones",
+                "Experimentación",
+                "Investigación"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Colaboración efectiva",
+            "description": "El trabajo en equipo y la comunicación clara son clave para el éxito de cualquier proyecto de desarrollo.",
+            "icon": "🤝",
+            "color": "accent",
+            "keywords": [
+                "Teamwork",
+                "Comunicación",
+                "Code Review",
+                "Mentoring"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Experiencia del usuario",
+            "description": "Crear interfaces intuitivas y accesibles que resuelvan problemas reales de los usuarios es mi prioridad.",
+            "icon": "FaPalette",
+            "color": "info",
+            "keywords": [
+                "UX/UI",
+                "Accesibilidad",
+                "Usabilidad",
+                "Design Thinking"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Innovación responsable",
+            "description": "Implementar nuevas tecnologías de manera estratégica, evaluando beneficios y riesgos para el proyecto.",
+            "icon": "FaRocket",
+            "color": "success",
+            "keywords": [
+                "Innovación",
+                "Evaluación",
+                "Estrategia",
+                "Impacto"
+            ]
+        },
+        {
+            "id": 6,
+            "title": "Ética profesional",
+            "description": "Mantener la honestidad, transparencia y responsabilidad en cada aspecto del desarrollo de software.",
+            "icon": "⚖️",
+            "color": "warning",
+            "keywords": [
+                "Transparencia",
+                "Responsabilidad",
+                "Honestidad",
+                "Privacidad"
+            ]
+        }
+    ],
+    "additionalInfo": {
+        "quote": "La programación no es solo escribir código, es resolver problemas de manera creativa y eficiente.",
+        "author": "Victor Telles"
+    }
+}

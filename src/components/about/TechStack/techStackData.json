@@ -1,0 +1,191 @@
+{
+    "sectionTitle": "Stack Tecnológico",
+    "sectionDescription": "Tecnologías y herramientas que domino para crear soluciones digitales innovadoras y escalables",
+    "categories": [
+        {
+            "id": 1,
+            "name": "Frontend",
+            "description": "Tecnologías para interfaces de usuario modernas y responsivas",
+            "color": "primary",
+            "borderColor": "border-[var(--color-primary)]",
+            "technologies": [
+                {
+                    "id": 1,
+                    "name": "React",
+                    "icon": "FaReact",
+                    "experience": "3+ años",
+                    "color": "info"
+                },
+                {
+                    "id": 2,
+                    "name": "Next.js",
+                    "icon": "SiNextdotjs",
+                    "experience": "2+ años",
+                    "color": "primary"
+                },
+                {
+                    "id": 3,
+                    "name": "TypeScript",
+                    "icon": "SiTypescript",
+                    "experience": "2+ años",
+                    "color": "accent"
+                },
+                {
+                    "id": 4,
+                    "name": "Tailwind CSS",
+                    "icon": "SiTailwindcss",
+                    "experience": "2+ años",
+                    "color": "secondary"
+                },
+                {
+                    "id": 5,
+                    "name": "HTML5",
+                    "icon": "FaHtml5",
+                    "experience": "4+ años",
+                    "color": "warning"
+                },
+                {
+                    "id": 6,
+                    "name": "CSS3",
+                    "icon": "FaCss3Alt",
+                    "experience": "4+ años",
+                    "color": "info"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Backend",
+            "description": "Tecnologías del lado del servidor para APIs robustas",
+            "color": "secondary",
+            "borderColor": "border-[var(--color-secondary)]",
+            "technologies": [
+                {
+                    "id": 7,
+                    "name": "Node.js",
+                    "icon": "FaNodeJs",
+                    "experience": "2+ años",
+                    "color": "success"
+                },
+                {
+                    "id": 8,
+                    "name": "Python",
+                    "icon": "FaPython",
+                    "experience": "3+ años",
+                    "color": "warning"
+                },
+                {
+                    "id": 9,
+                    "name": "Express.js",
+                    "icon": "SiExpress",
+                    "experience": "2+ años",
+                    "color": "primary"
+                },
+                {
+                    "id": 10,
+                    "name": "Java",
+                    "icon": "FaJava",
+                    "experience": "2+ años",
+                    "color": "error"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Base de Datos",
+            "description": "Sistemas de gestión de datos relacionales y NoSQL",
+            "color": "accent",
+            "borderColor": "border-[var(--color-accent)]",
+            "technologies": [
+                {
+                    "id": 11,
+                    "name": "MongoDB",
+                    "icon": "SiMongodb",
+                    "experience": "2+ años",
+                    "color": "success"
+                },
+                {
+                    "id": 12,
+                    "name": "PostgreSQL",
+                    "icon": "SiPostgresql",
+                    "experience": "1+ año",
+                    "color": "accent"
+                },
+                {
+                    "id": 13,
+                    "name": "MySQL",
+                    "icon": "SiMysql",
+                    "experience": "2+ años",
+                    "color": "info"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "DevOps & Herramientas",
+            "description": "Herramientas de desarrollo, versionado y despliegue",
+            "color": "warning",
+            "borderColor": "border-[var(--color-warning)]",
+            "technologies": [
+                {
+                    "id": 14,
+                    "name": "Git",
+                    "icon": "FaGitAlt",
+                    "experience": "3+ años",
+                    "color": "warning"
+                },
+                {
+                    "id": 15,
+                    "name": "Docker",
+                    "icon": "FaDocker",
+                    "experience": "1+ año",
+                    "color": "info"
+                },
+                {
+                    "id": 16,
+                    "name": "VS Code",
+                    "icon": "FaCode",
+                    "experience": "4+ años",
+                    "color": "accent"
+                },
+                {
+                    "id": 17,
+                    "name": "Figma",
+                    "icon": "FaFigma",
+                    "experience": "2+ años",
+                    "color": "secondary"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Cloud & Servicios",
+            "description": "Plataformas en la nube y servicios de hosting",
+            "color": "success",
+            "borderColor": "border-[var(--color-success)]",
+            "technologies": [
+                {
+                    "id": 18,
+                    "name": "Vercel",
+                    "icon": "SiVercel",
+                    "experience": "1+ año",
+                    "color": "primary"
+                },
+                {
+                    "id": 19,
+                    "name": "GitHub",
+                    "icon": "FaGithub",
+                    "experience": "3+ años",
+                    "color": "accent"
+                },
+                {
+                    "id": 20,
+                    "name": "Netlify",
+                    "icon": "SiNetlify",
+                    "experience": "1+ año",
+                    "color": "success"
+                }
+            ]
+        }
+    ]
+}

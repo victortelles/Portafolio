@@ -1,0 +1,62 @@
+{
+    "personalInfo": {
+        "name": "Victor Telles",
+        "title": "Desarrollador Full Stack",
+        "location": "México",
+        "email": "victor-tah@outlook.com",
+        "description": "Soy un desarrollador apasionado por crear soluciones innovadoras que impacten positivamente la vida de las personas. Con experiencia en desarrollo web full stack, me especializo en crear aplicaciones modernas, escalables y centradas en el usuario.",
+        "avatar": "/assets/chibi.webp",
+        "yearsOfExperience": 3,
+        "projectsCompleted": 25,
+        "technologiesUsed": 15,
+        "currentRole": "Desarrollador Frontend",
+        "company": "Freelance"
+    },
+    "quickFacts": [
+        {
+            "icon": "FaBullseye",
+            "label": "Años de experiencia",
+            "value": "3+"
+        },
+        {
+            "icon": "FaCode",
+            "label": "Proyectos completados",
+            "value": "25+"
+        },
+        {
+            "icon": "FaRocket",
+            "label": "Tecnologías dominadas",
+            "value": "15+"
+        },
+        {
+            "icon": "FaCoffee",
+            "label": "Tazas de café al día",
+            "value": "∞"
+        }
+    ],
+    "socialLinks": [
+        {
+            "platform": "LinkedIn",
+            "url": "https://linkedin.com/in/vmta",
+            "icon": "linkedin",
+            "username": "@vmta"
+        },
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/victortelles",
+            "icon": "github",
+            "username": "@victortelles"
+        },
+        {
+            "platform": "Email",
+            "url": "mailto:victor-tah@outlook.com",
+            "icon": "email",
+            "username": "victor-tah@outlook.com"
+        }
+    ],
+    "currentStatus": {
+        "availability": "Disponible para proyectos",
+        "location": "México, trabajando remotamente",
+        "interests": "Buscando oportunidades en desarrollo web y aplicaciones móviles"
+    }
+}

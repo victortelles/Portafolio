@@ -1,8 +1,11 @@
+"use client"
+
 import type React from "react"
 import { FaArrowRight } from "react-icons/fa"
 import ProjectCard from "./ProjectCard"
 import content from "./featuredProjectsData.json"
 import type { FeaturedProjectsData } from "@/types/landingPage"
+import { motion } from "framer-motion"
 
 const FeaturedProjects: React.FC = () => {
     const projectsData = content as FeaturedProjectsData
@@ -21,13 +24,34 @@ const FeaturedProjects: React.FC = () => {
                 </div>
 
                 {/* Grid de proyectos */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-12">
+                <motion.div
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8 mb-12"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.18
+                            }
+                        }
+                    }}
+                >
                     {projectsData.projects
                         .filter(project => project.featured)
                         .map((project) => (
-                            <ProjectCard key={project.id} project={project} />
+                            <motion.div
+                                key={project.id}
+                                variants={{
+                                    hidden: { opacity: 0, y: 40 },
+                                    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+                                }}
+                            >
+                                <ProjectCard project={project} />
+                            </motion.div>
                         ))}
-                </div>
+                </motion.div>
 
                 {/* CTA Button */}
                 <div className="text-center">

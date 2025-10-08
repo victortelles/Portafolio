@@ -3,12 +3,13 @@
 import type React from "react"
 import { useState } from "react"
 import { ChevronDown, ChevronUp } from "lucide-react"
+import { motion } from "framer-motion"
 import SkillBadge from "./SkillBadge"
 import content from "./skillsData.json"
 import type { SkillsCarouselData, SkillCategory } from "@/types/landingPage"
 
 const SkillsCarousel: React.FC = () => {
-    const skillsData = content as SkillsCarouselData
+    const skillsData = content as unknown as SkillsCarouselData
     const [expandedCategories, setExpandedCategories] = useState<string[]>([])
 
     const toggleCategory = (categoryId: string) => {
@@ -38,22 +39,44 @@ const SkillsCarousel: React.FC = () => {
     }
 
     return (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[var(--color-base-100)]">
-            <div className="max-w-7xl mx-auto">
+        <section className="py-20 bg-[var(--color-base-100)]">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Encabezado de la sección */}
                 <div className="text-center mb-12">
+                    {/* Título */}
                     <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
                         {skillsData.title}
                     </h2>
+                    {/* Descripción */}
                     <p className="font-sans text-lg sm:text-xl text-[var(--color-neutral-content)] max-w-3xl mx-auto">
                         {skillsData.description}
                     </p>
                 </div>
 
-                {/* Grid de categorías */}
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-8">
+                {/* Grid de categorías*/}
+                <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.2 }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                            transition: {
+                                staggerChildren: 0.15
+                            }
+                        }
+                    }}
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-8"
+                >
                     {skillsData.categories.map((category) => (
-                        <div key={category.id} className="group">
+                        <motion.div
+                            key={category.id}
+                            variants={{
+                                hidden: { opacity: 0, y: 40 },
+                                visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+                            }}
+                            className="group"
+                        >
                             {/* Card de categoría */}
                             <div className="bg-[var(--color-base-200)] border-2 border-[var(--color-base-300)] hover:border-[var(--color-primary)] rounded-[var(--radius-box)] p-6 transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/20">
                                 {/* Título de la categoría */}
@@ -93,9 +116,9 @@ const SkillsCarousel: React.FC = () => {
                                     </div>
                                 )}
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     )

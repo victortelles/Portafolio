@@ -48,7 +48,25 @@ const ContactButton: React.FC<ContactButtonProps> = ({ button, formData, type, d
         <button
             onClick={handleClick}
             disabled={disabled}
-            className={`w-full sm:w-auto flex items-center justify-center gap-3 px-6 py-3 ${button.backgroundColor} ${button.hoverColor} text-white font-mono text-sm rounded-[var(--radius-field)] transition-all duration-300 hover:shadow-lg hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none`}
+            className={`w-full 
+                sm:w-auto 
+                flex items-center 
+                justify-center 
+                gap-3 px-6 py-3 
+                ${button.backgroundColor} ${button.hoverColor} 
+                text-white 
+                font-mono 
+                text-sm 
+                rounded-[var(--radius-field)] 
+                transition-all 
+                duration-300 hover:shadow-lg 
+                hover:scale-105 
+                cursor-pointer 
+                disabled:opacity-50 
+                disabled:cursor-not-allowed 
+                disabled:hover:scale-100 
+                disabled:hover:shadow-none`
+            }
         >
             {getIcon()}
             <span>{button.text}</span>

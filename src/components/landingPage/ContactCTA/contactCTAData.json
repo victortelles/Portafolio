@@ -47,16 +47,18 @@
         },
         "submitButtons": {
             "whatsapp": {
+                "label": "WhatsApp",
                 "text": "Contactar por WhatsApp",
                 "icon": "FaWhatsapp",
-                "phoneNumber": "+1234567890",
+                "phoneNumber": "+523929401715",
                 "backgroundColor": "bg-green-600",
                 "hoverColor": "hover:bg-green-700"
             },
             "email": {
+                "label": "Email",
                 "text": "Enviar por Email",
                 "icon": "FaEnvelope",
-                "emailAddress": "contact@example.com",
+                "emailAddress": "victor-tah@outlook.com",
                 "backgroundColor": "bg-[var(--color-primary)]",
                 "hoverColor": "hover:bg-[var(--color-accent)]"
             }

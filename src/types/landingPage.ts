@@ -124,3 +124,83 @@ export interface FeaturedProjectsData {
     }
     projects: Project[]
 }
+
+// ContactCTA.tsx - data structure
+export interface FormData {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+}
+
+export type FormErrors = Partial<Record<keyof FormData, string>>;
+
+export interface ContactCTAData {
+    title: string;
+    subtitle: string;
+    description: string;
+    responseNote: string;
+    validation: {
+        messages: {
+            required: string;
+            error: string;
+            success: string;
+        };
+    };
+    form: {
+        fields: {
+            name: {
+                label: string;
+                placeholder: string;
+                required: boolean;
+                validation: {
+                    minLength?: number;
+                    maxLength?: number;
+                    errorMessage: string;
+                };
+            };
+            email: {
+                label: string;
+                placeholder: string;
+                required: boolean;
+                validation: {
+                    errorMessage: string;
+                };
+            };
+            subject: {
+                label: string;
+                placeholder: string;
+                required: boolean;
+                validation: {
+                    minLength?: number;
+                    maxLength?: number;
+                    errorMessage: string;
+                };
+            };
+            message: {
+                label: string;
+                placeholder: string;
+                required: boolean;
+                validation: {
+                    minLength?: number;
+                    maxLength?: number;
+                    errorMessage: string;
+                };
+            };
+        };
+        submitButtons: {
+            whatsapp: SubmitButton;
+            email: SubmitButton;
+        };
+    };
+}
+
+export interface SubmitButton {
+    label: string
+    text: string
+    icon: string
+    phoneNumber?: string
+    emailAddress?: string
+    backgroundColor: string
+    hoverColor: string
+}

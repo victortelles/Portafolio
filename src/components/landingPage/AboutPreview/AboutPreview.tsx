@@ -1,4 +1,7 @@
+"use client"
+
 import React from "react"
+import { motion } from "framer-motion"
 import { ArrowRight, Monitor, Server, Database, GitBranch } from "lucide-react"
 import ProfileCard from "./ProfileCard"
 import FloatingTech from "./FloatingTech"
@@ -22,20 +25,51 @@ const AboutPreview: React.FC = () => {
                 <FloatingTech key={index} tech={tech} />
             ))}
 
+            {/* Titulo - Descripcion*/}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Section Header */}
-                <div className="text-center mb-16">
+                {/* Section Header animado (de abajo hacia arriba) */}
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="text-center mb-16"
+                >
+                    {/* Titulo */}
                     <h2 className="font-mono text-3xl sm:text-4xl font-bold text-[var(--color-base-content)] mb-6">
                         {data.title}
                     </h2>
-                    <p className="font-sans text-lg text-[var(--color-neutral-content)]/80 max-w-2xl mx-auto leading-relaxed">
-                        {data.description}
-                    </p>
-                </div>
 
+                    {/* Descripcion */}
+                    <div className="relative flex justify-center">
+                        {/* Fondo difuminado con gradiente radial para bordes suaves */}
+                        <div
+                            className="absolute inset-0 max-w-3xl mx-auto z-0 pointer-events-none"
+                            aria-hidden="true"
+                            style={{
+                                borderRadius: '1rem',
+                                background: `radial-gradient(ellipse at center, rgba(var(--color-base-100-rgb),0.85) 70%, rgba(var(--color-base-100-rgb),0.0) 100%)`,
+                                backdropFilter: 'blur(6px)',
+                                WebkitBackdropFilter: 'blur(6px)'
+                            }}
+                        ></div>
+                        {/* Descripcion */}
+                        <p className="font-sans text-lg text-[var(--color-neutral-content)]/80 max-w-3xl mx-auto leading-relaxed text-justify relative z-10 px-6 py-4">
+                            {data.description}
+                        </p>
+                    </div>
+                </motion.div>
+
+                {/* Role Cards - Boton CTA */}
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
-                    {/* Left Side - Role Cards Grid */}
-                    <div className="space-y-8">
+                    {/* Left Side - Role Cards Grid y CTA animados (de izquierda a derecha) */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -80 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        className="space-y-8"
+                    >
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {data.roleCards.map((card, index) => {
                                 const IconComponent = iconMap[card.icon]
@@ -73,14 +107,20 @@ const AboutPreview: React.FC = () => {
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                             </a>
                         </div>
-                    </div>
+                    </motion.div>
 
-                    {/* Right Side - Profile Card */}
-                    <div className="flex justify-center lg:justify-end">
+                    {/* Right Side - Profile Card animada (de derecha a izquierda) */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 80 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        viewport={{ once: true, amount: 0.5 }}
+                        className="flex justify-center lg:justify-end"
+                    >
                         <div className="w-full max-w-md">
                             <ProfileCard profileCard={data.profileCard} />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

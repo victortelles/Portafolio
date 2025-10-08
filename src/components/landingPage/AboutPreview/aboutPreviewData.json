@@ -1,9 +1,10 @@
 {
     "title": "Acerca de mi",
-    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Soy un desarrollador Full Stack apasionado por crear soluciones tecnológicas innovadoras y eficientes. Me especializo en el desarrollo web moderno con experiencia en múltiples tecnologías.",
+    "description": "Soy desarrollador de software con 4 años de experiencia y mi objetivo es crecer profesionalmente hasta convertirme en Full Stack Developer. Me especializo en la parte visual, creando interfaces modernas, responsivas, claras y eficientes para el usuario final. Me motiva construir aplicaciones que resuelvan problemáticas reales para personas, microempresas y empresas. Apasionado por la tecnología, siempre busco aprender y asumir nuevos retos que me permitan seguir creciendo.",
+
     "profileCard": {
         "name": "Victor Telles",
-        "role": "Full Stack Developer",
+        "role": "Ing. Desarrollo de Software",
         "description": "Creando soluciones tecnológicas innovadoras",
         "image": "/assets/chibi.webp",
         "socialLinks": {
@@ -12,6 +13,7 @@
             "website": "https://victortelles.dev"
         }
     },
+
     "roleCards": [
         {
             "title": "Frontend",
@@ -34,6 +36,12 @@
             "icon": "git-branch"
         }
     ],
+
+    "cta": {
+        "label": "Conoce más sobre mí",
+        "href": "/about"
+    },
+
     "floatingTech": [
         {
             "name": "JavaScript",
@@ -185,9 +193,5 @@
             "color": "#FC6D26",
             "position": { "top": "58%", "left": "12%" }
         }
-    ],
-    "cta": {
-        "label": "Conoce más sobre mí",
-        "href": "/about"
-    }
+    ]
 }

@@ -56,12 +56,11 @@ const HeroSection: React.FC = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
                         <a
                             href={heroData.primaryCTA.href}
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary)]/80 text-[var(--color-primary-content)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold group"
+                            className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-info)] text-[var(--color-primary-content)] hover:text-[var(--color-info-content)] rounded-[var(--radius-selector)] transition-all duration-300 text-lg font-mono font-semibold group shadow-lg hover:shadow-[var(--color-primary)]/40"
                         >
                             {heroData.primaryCTA.label}
                             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                         </a>
-
                         <a
                             href={heroData.secondaryCTA.href}
                             className="inline-flex items-center gap-2 px-8 py-4 border border-[var(--color-base-300)] hover:border-[var(--color-primary)] text-[var(--color-base-content)] hover:text-[var(--color-primary)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold"

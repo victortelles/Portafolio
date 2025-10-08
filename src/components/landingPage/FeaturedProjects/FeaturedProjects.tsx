@@ -8,7 +8,7 @@ const FeaturedProjects: React.FC = () => {
     const projectsData = content as FeaturedProjectsData
 
     return (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[var(--color-base-200)]">
+        <section id="proyectos" className="py-16 px-4 sm:px-6 lg:px-8 bg-[var(--color-base-200)]">
             <div className="max-w-7xl mx-auto">
                 {/* Encabezado de la sección */}
                 <div className="text-center mb-12">

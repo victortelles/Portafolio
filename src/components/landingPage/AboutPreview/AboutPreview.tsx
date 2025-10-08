@@ -67,7 +67,7 @@ const AboutPreview: React.FC = () => {
                         <div className="text-center sm:text-left">
                             <a
                                 href={data.cta.href}
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-primary)]/80 text-[var(--color-primary-content)] rounded-[var(--radius-selector)] transition-colors text-lg font-semibold group"
+                                className="inline-flex items-center gap-3 px-8 py-4 bg-[var(--color-primary)] hover:bg-[var(--color-info)] text-[var(--color-primary-content)] hover:text-[var(--color-info-content)] rounded-[var(--radius-selector)] transition-all duration-300 text-lg font-mono font-semibold group shadow-lg hover:shadow-[var(--color-primary)]/40"
                             >
                                 {data.cta.label}
                                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />

@@ -3,7 +3,7 @@
         "prefix": "Ing.",
         "main": "Desarrollo De Software"
     },
-    "subtitle": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Desarrollador apasionado por crear soluciones tecnológicas innovadoras.",
+    "subtitle": "Con +4 años de experiencia, creo aplicaciones web y móviles con diseño moderno. Mi enfoque está en la parte visual y en ofrecer soluciones prácticas a necesidades reales.",
     "badges": [
         {
             "title": "Frontend",
@@ -28,7 +28,7 @@
     ],
     "primaryCTA": {
         "label": "Ver Proyectos",
-        "href": "/projects",
+        "href": "#proyectos",
         "variant": "primary"
     },
     "secondaryCTA": {

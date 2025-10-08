@@ -90,6 +90,7 @@ export interface Skill {
 }
 
 export interface SkillCategory {
+    id: string
     name: string
     skills: Skill[]
 }

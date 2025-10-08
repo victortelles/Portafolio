@@ -6,6 +6,7 @@ import FeaturedProjects from "@/components/landingPage/FeaturedProjects/Featured
 import AboutPreview from "@/components/landingPage/AboutPreview/AboutPreview"
 import ContactCTA from "@/components/landingPage/ContactCTA/ContactCTA"
 import Footer from "@/components/common/Footer/Footer"
+import ScrollToTopButton from "@/components/common/ScrollToTopButton/ScrollToTopButton"
 
 const LandingPage: React.FC = () => {
     return (
@@ -17,9 +18,11 @@ const LandingPage: React.FC = () => {
                 <SkillsCarousel />
                 <FeaturedProjects />
                 <ContactCTA />
+                <ScrollToTopButton />
             </main>
             <Footer />
         </div>
+
     )
 }
 

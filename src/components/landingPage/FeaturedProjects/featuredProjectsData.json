@@ -9,8 +9,8 @@
         {
             "id": "mythbots",
             "title": "Mythbots",
-            "shortDescription": "Landing page para dar a conocer sobre MythBots y sus servicios.",
-            "fullDescription": "Una Landing page moderna para dar a conocer sobre Mythbots y conocer sus servicios. La cual fue desarrollada con React y TypeScript con estilos de TailwindCSS incluyendo un diseño completamente responsivo.",
+            "shortDescription": "Sitio web informativo para presentar MythBots y sus servicios.",
+            "fullDescription": "Desarrollé una página moderna y responsiva que facilita a los usuarios conocer MythBots y acceder a sus servicios de manera clara y atractiva.",
             "image": "/assets/projects/mythbots/SS_mythbots.webp",
             "tags": [
                 "React",
@@ -28,8 +28,8 @@
         {
             "id": "pallink",
             "title": "PalLink",
-            "shortDescription": "Landing page para dar a conocer sobre que es PalLink y cual es su proposito",
-            "fullDescription": "Un proyecto externo de apoyo a una startup llamada PalLink, la cual se tiene pensado a hacer una app web que permite a usuarios que usan un mod para servidores del video juego de Palworld. tener una documentacion clara de su mod y posteriormente extenderla a mas, como por ejemplo descargas anticipadas, mods para testers etc. La App web está diseñada para ser fácil de usar y facil de entender y accesible desde cualquier dispositivo con conexión a Internet. Esta desarrollada con React, TailwindCSS, CSS,en el frontend y Node.js en el backend, utilizando Socket.io para la funcionalidad de chat en tiempo real y MongoDB como base de datos.",
+            "shortDescription": "Plataforma web para la comunidad de PalLink, enfocada en la gestión y documentación de mods.",
+            "fullDescription": "Colaboré con un startup PalLink en el desarrollo de una plataforma web que centraliza la documentación, descarga de mods y gestión de mods para servidores de Palworld. La aplicación web está diseñada para ser intuitiva, escalable y accesible, permitiendo a los usuarios descargar los mods al igual que poder reportar algun bug y sirva de ser informativa, descargar recursos.",
             "image": "/assets/projects/pallink/SS_PalLink.webp",
             "tags": [
                 "React",
@@ -47,8 +47,8 @@
         {
             "id": "portafolio",
             "title": "Portafolio",
-            "shortDescription": "Pagina web para mostrar mis proyectos, habilidades y progreso.",
-            "fullDescription": "Un portafolio personal que exhibe mis proyectos más destacados, habilidades técnicas y trayectoria profesional. Desarrollado con tecnologías modernas para asegurar una experiencia de usuario fluida y atractiva.",
+            "shortDescription": "Portafolio personal para mostrar proyectos, habilidades y trayectoria profesional.",
+            "fullDescription": "Diseñé y desarrollé este portafolio para exhibir mis proyectos más relevantes, habilidades técnicas y experiencia profesional. El sitio está pensado para dar a conocer mi trabajo y demostrar mi enfoque en interfaces visuales atractivas, funcionales y adaptables a cualquier dispositivo.",
             "image": "/assets/projects/portafolio/SS_Portafolio.webp",
             "tags": [
                 "Next.js",
@@ -66,8 +66,8 @@
         {
             "id": "analisis-reseñas",
             "title": "Analisis de reseñas Steam",
-            "shortDescription": "Aplicacion hecha en python para hacer un analisis de sentimiento mediante reseñas de steam.",
-            "fullDescription": "Una aplicación para el análisis de reseñas de Steam que utiliza técnicas de procesamiento de lenguaje natural para determinar el sentimiento detrás de cada reseña. Desarrollada con Python y bibliotecas como NLTK y Scikit-learn, permite a los usuarios obtener información valiosa sobre la recepción de los juegos en la plataforma. y desplegada con Streamlit.",
+            "shortDescription": "Aplicación para analizar el sentimiento de reseñas de juegos en Steam.",
+            "fullDescription": "Desarrollé una aplicación que utiliza procesamiento de lenguaje natural para analizar el sentimiento de las reseñas de juegos en Steam. Permite a los usuarios obtener insights valiosos sobre la percepción de los títulos, facilitando ver patrones y el análisis de tendencias en la plataforma. y esta desplegada en streamlit.",
             "image": "/assets/projects/analisis-reseñas/SS_Streamlit.webp",
             "tags": [
                 "Python",

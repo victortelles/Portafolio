@@ -14,6 +14,11 @@
             "platform": "linkedin",
             "href": "https://www.linkedin.com/in/vmta/",
             "label": "LinkedIn Profile"
+        },
+        {
+            "platform": "email",
+            "href": "mailto:victor-tah@outlook.com",
+            "label": "Enviar correo"
         }
     ],
     "quickLinks": [
@@ -36,9 +41,21 @@
     ],
     "footer": {
         "copyright": "© 2025 AHTyler. Todos los derechos reservados.",
+        "privacy": {
+            "label": "Política de Privacidad",
+            "href": "/privacy"
+        },
         "credits": {
             "label": "Créditos",
             "href": "/credits"
+        },
+        "availability": {
+            "status": "Disponible",
+            "messages": {
+                "Disponible": "Actualmente disponible para nuevos proyectos y colaboraciones.",
+                "Medio Ocupado": "Con disponibilidad limitada, pero abierto a propuestas interesantes.",
+                "Ocupado": "Actualmente sin disponibilidad, pero puedes dejar tu mensaje para futuras oportunidades."
+            }
         }
     }
 }

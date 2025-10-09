@@ -1,5 +1,5 @@
 import type React from "react"
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa"
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa"
 import Image from "next/image"
 import content from "./footerData.json"
 import type { FooterContent } from "@/types/content"
@@ -16,6 +16,8 @@ const Footer: React.FC = () => {
                 return FaLinkedin
             case "twitter":
                 return FaTwitter
+            case "email":
+                return FaEnvelope
             default:
                 return FaGithub // Default icon
         }
@@ -43,8 +45,8 @@ const Footer: React.FC = () => {
                             
                             {/* Brand Name */}
                             <h3 className="font-mono text-2xl font-bold">
-                                <span className="text-[var(--color-primary)]">AH</span>
-                                <span className="text-[var(--color-base-content)]">Tyler</span>
+                                <span className="text-[var(--color-base-content)]">AH</span>
+                                <span className="text-[var(--color-primary)]">Tyler</span>
                             </h3>
                         </div>
 
@@ -70,6 +72,24 @@ const Footer: React.FC = () => {
                                     </a>
                                 )
                             })}
+                        </div>
+
+                        {/* Disponibilidad */}
+                        <div className="flex items-center gap-2 mt-2">
+                            <span
+                                className={`font-mono text-xs px-3 py-1 rounded-full ${
+                                    footerData.footer.availability.status === "Disponible"
+                                        ? "bg-[var(--color-success)] text-[var(--color-success-content)]"
+                                        : footerData.footer.availability.status === "Medio Ocupado"
+                                        ? "bg-[var(--color-warning)] text-[var(--color-warning-content)]"
+                                        : "bg-[var(--color-error)] text-[var(--color-error-content)]"
+                                }`}
+                            >
+                                {footerData.footer.availability.status}
+                            </span>
+                            <span className="font-sans text-xs text-[var(--color-neutral-content)]">
+                                {footerData.footer.availability.messages[footerData.footer.availability.status]}
+                            </span>
                         </div>
                     </div>
 
@@ -101,13 +121,25 @@ const Footer: React.FC = () => {
                     <p className="font-sans text-[var(--color-neutral-content)] text-sm text-center sm:text-left">
                         {footerData.footer.copyright}
                     </p>
+                    <div className="flex flex-col sm:flex-row items-center gap-2">
+                        {/* Creditos y Privacidad */}
+                        <a
+                            href={footerData.footer.credits.href}
+                            className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
+                        >
+                            {footerData.footer.credits.label}
+                        </a>
 
-                    <a
-                        href={footerData.footer.credits.href}
-                        className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
-                    >
-                        {footerData.footer.credits.label}
-                    </a>
+                        {/* Separador */}
+                        <span className="hidden sm:inline-block mx-2 text-[var(--color-base-content)]">|</span>
+
+                        <a
+                            href={footerData.footer.privacy.href}
+                            className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
+                        >
+                            {footerData.footer.privacy.label}
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>

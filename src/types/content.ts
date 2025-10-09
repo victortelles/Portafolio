@@ -88,9 +88,21 @@ export type FooterContent = {
     quickLinks: FooterQuickLink[]
     footer: {
         copyright: string
+        privacy: {
+            label: string
+            href: string
+        }
         credits: {
             label: string
             href: string
+        }
+        availability: {
+            status: "Disponible" | "Medio Ocupado" | "Ocupado"
+            messages: {
+                Disponible: string
+                "Medio Ocupado": string
+                Ocupado: string
+            }
         }
     }
 }

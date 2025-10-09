@@ -1,6 +1,6 @@
 {
     "title": "Habilidades Técnicas",
-    "description": "Habilidades tecnológicas que tengo noción y experiencia en ellas.",
+    "description": "A lo largo de mi trayectoria he utilizado y aprendido distintas tecnologías, lo que me permite adaptarme y aportar valor en diversos proyectos. Estas son algunas de las herramientas y lenguajes con los que tengo experiencia práctica.",
     "categories": [
         {
             "id": "frontend",
@@ -103,11 +103,10 @@
                     "color": "#ED8B00"
                 },
                 {
-                    "name":"Dart",
+                    "name": "Dart",
                     "icon": "SiDart",
                     "color": "#0175C2"
                 }
-
             ]
         },
         {
@@ -197,10 +196,9 @@
                     "color": "#009639"
                 },
                 {
-                    "name":"CI/CD",
-                    "icon":"SiCircleci",
-                    "color":"#343434"
-
+                    "name": "CI/CD",
+                    "icon": "SiCircleci",
+                    "color": "#343434"
                 }
             ]
         },
@@ -231,19 +229,9 @@
             ]
         },
         {
-            "id": "ai",
-            "name": "AI & ML",
+            "id": "datascientist",
+            "name": "Data Scientist",
             "skills": [
-                {
-                    "name": "OpenAI",
-                    "icon": "SiOpenai",
-                    "color": "#412991"
-                },
-                {
-                    "name": "Github Copilot",
-                    "icon": "SiGithubcopilot",
-                    "color": "#000000"
-                },
                 {
                     "name": "Jupyter Notebook",
                     "icon": "SiJupyter",
@@ -258,17 +246,47 @@
                     "name": "NumPy",
                     "icon": "SiNumpy",
                     "color": "#013243"
-                }
-            ]
-        },
-        {
-            "id": "extra",
-            "name": "Extra",
-            "skills": [
+                },
+                {
+                    "name": "Scikit-Learn",
+                    "icon": "SiScikitlearn",
+                    "color": "#F7931E"
+                },
                 {
                     "name": "matplotlib",
                     "icon": "SiMatplotlib",
                     "color": "#FCA326"
+                },
+                {
+                    "name":"seaborn",
+                    "icon":"SiSeaborn",
+                    "color":"#4C72B0"
+                },
+                {
+                    "name":"nltk",
+                    "icon":"SiNltk",
+                    "color":"#FF6C37"
+                }
+            ]
+        },
+        {
+            "id": "ai",
+            "name": "AI",
+            "skills": [
+                {
+                    "name": "OpenAI",
+                    "icon": "SiOpenai",
+                    "color": "#412991"
+                },
+                {
+                    "name": "Github Copilot",
+                    "icon": "SiGithubcopilot",
+                    "color": "#000000"
+                },
+                {
+                    "name": "Claude AI",
+                    "icon": "SiClaude",
+                    "color": "#150458"
                 }
             ]
         }

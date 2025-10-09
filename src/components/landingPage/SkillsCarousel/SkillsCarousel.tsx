@@ -42,16 +42,22 @@ const SkillsCarousel: React.FC = () => {
         <section className="py-20 bg-[var(--color-base-100)]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Encabezado de la sección */}
-                <div className="text-center mb-12">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="text-center mb-12"
+                >
                     {/* Título */}
                     <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
                         {skillsData.title}
                     </h2>
                     {/* Descripción */}
-                    <p className="font-sans text-lg sm:text-xl text-[var(--color-neutral-content)] max-w-3xl mx-auto">
+                    <p className="font-sans text-lg text-[var(--color-neutral-content)]/80 max-w-3xl mx-auto leading-relaxed text-justify px-6 py-4">
                         {skillsData.description}
                     </p>
-                </div>
+                </motion.div>
 
                 {/* Grid de categorías*/}
                 <motion.div

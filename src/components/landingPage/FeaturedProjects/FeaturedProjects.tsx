@@ -14,14 +14,23 @@ const FeaturedProjects: React.FC = () => {
         <section id="proyectos" className="py-16 px-4 sm:px-6 lg:px-8 bg-[var(--color-base-200)]">
             <div className="max-w-7xl mx-auto">
                 {/* Encabezado de la sección */}
-                <div className="text-center mb-12">
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.5 }}
+                    className="text-center mb-12"
+                >
+                    {/* Título */}
                     <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
                         {projectsData.title}
                     </h2>
-                    <p className="font-sans text-lg sm:text-xl text-[var(--color-neutral-content)] max-w-3xl mx-auto">
+
+                    {/* Descripción */}
+                    <p className="font-sans text-lg text-[var(--color-neutral-content)]/80 max-w-3xl mx-auto leading-relaxed text-justify px-6 py-4">
                         {projectsData.description}
                     </p>
-                </div>
+                </motion.div>
 
                 {/* Grid de proyectos */}
                 <motion.div

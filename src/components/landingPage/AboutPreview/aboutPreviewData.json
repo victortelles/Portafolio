@@ -5,7 +5,7 @@
     "profileCard": {
         "name": "Victor Telles",
         "role": "Ing. Desarrollo de Software",
-        "description": "Creando soluciones tecnológicas innovadoras",
+        "description": "Impulsando cambios a través del desarrollo de aplicaciones que resuelven retos cotidianos y empresariales.",
         "image": "/assets/chibi.webp",
         "socialLinks": {
             "github": "https://github.com/victortelles",
@@ -17,22 +17,22 @@
     "roleCards": [
         {
             "title": "Frontend",
-            "description": "Lorem ipsum dolor sit amet, interfaces modernas y responsivas",
+            "description": "Apasionado en crear interfaces intuitivas, visualmente atractivas y fáciles de usar, brindando una mejor experiencia accesible para todos los usuarios.",
             "icon": "monitor"
         },
         {
             "title": "Backend",
-            "description": "Lorem ipsum dolor sit amet, APIs robustas y escalables",
+            "description": "Desarrollo la lógica y estructura que da vida a cada proyecto, asegurando eficiencia, seguridad y un funcionamiento confiable en todo momento.",
             "icon": "server"
         },
         {
             "title": "Database",
-            "description": "Lorem ipsum dolor sit amet, estructuras de datos eficientes",
+            "description": "Organizo y gestiono la información de forma segura y eficiente, garantizando que los datos estén siempre disponibles y correctamente estructurados.",
             "icon": "database"
         },
         {
             "title": "DevOps",
-            "description": "Lorem ipsum dolor sit amet, automatización y despliegues",
+            "description": "Automatizo procesos, optimizo despliegues y mantengo la calidad en cada entrega, facilitando la integración y el crecimiento continuo de los proyectos.",
             "icon": "git-branch"
         }
     ],

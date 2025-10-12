@@ -1,0 +1,77 @@
+{
+    "title": "Formulario de Contacto",
+    "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
+    "description": "Completa el formulario y elige cómo enviar tu mensaje. Respondo en 1-3 días hábiles.",
+    "responseNote": "⏰ Tiempo de respuesta: Normalmente respondo entre 1-3 días. Si no recibes respuesta en una semana, por favor reenvía el formulario.",
+    "form": {
+        "fields": {
+            "name": {
+                "label": "Nombre completo",
+                "placeholder": "Tu nombre",
+                "required": true,
+                "validation": {
+                    "minLength": 2,
+                    "maxLength": 50,
+                    "errorMessage": "El nombre debe tener entre 2 y 50 caracteres"
+                }
+            },
+            "email": {
+                "label": "Correo electrónico",
+                "placeholder": "tu@email.com",
+                "required": true,
+                "validation": {
+                    "pattern": "email",
+                    "errorMessage": "Por favor ingresa un correo electrónico válido"
+                }
+            },
+            "subject": {
+                "label": "Asunto",
+                "placeholder": "¿De qué te gustaría hablar?",
+                "required": true,
+                "validation": {
+                    "minLength": 5,
+                    "maxLength": 100,
+                    "errorMessage": "El asunto debe tener entre 5 y 100 caracteres"
+                }
+            },
+            "message": {
+                "label": "Mensaje",
+                "placeholder": "Cuéntame sobre tu proyecto o idea...",
+                "required": true,
+                "validation": {
+                    "minLength": 20,
+                    "maxLength": 1000,
+                    "errorMessage": "El mensaje debe tener entre 20 y 1000 caracteres"
+                }
+            }
+        },
+        "submitButtons": {
+            "whatsapp": {
+                "label": "WhatsApp",
+                "text": "Enviar por WhatsApp",
+                "icon": "FaWhatsapp",
+                "phoneNumber": "+523929401715",
+                "backgroundColor": "bg-green-600",
+                "hoverColor": "hover:bg-green-700"
+            },
+            "email": {
+                "label": "Email",
+                "text": "Enviar por Email",
+                "icon": "FaEnvelope",
+                "emailAddress": "victor-tah@outlook.com",
+                "backgroundColor": "bg-[var(--color-primary)]",
+                "hoverColor": "hover:bg-[var(--color-accent)]"
+            }
+        }
+    },
+    "validation": {
+        "messages": {
+            "required": "Este campo es obligatorio",
+            "email": "Por favor ingresa un correo electrónico válido",
+            "minLength": "Muy corto",
+            "maxLength": "Muy largo",
+            "success": "¡Formulario válido! Elige cómo enviar tu mensaje.",
+            "error": "Por favor corrige los errores antes de continuar"
+        }
+    }
+}

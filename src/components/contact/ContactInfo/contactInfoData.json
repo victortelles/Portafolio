@@ -1,0 +1,42 @@
+{
+    "personalInfo": {
+        "name": "Victor Telles",
+        "role": "Full Stack Developer",
+        "email": "victor-tah@outlook.com",
+        "location": "Guadalajara, Jalisco",
+        "phone": "+52 392 940 1715"
+    },
+    "availability": {
+        "status": "Disponible para nuevos proyectos",
+        "description": "Actualmente acepto proyectos freelance y oportunidades laborales"
+    },
+    "responseTime": {
+        "message": "Respondo en menos de 24h",
+        "detail": "Normalmente respondo entre 1-3 días dependiendo de lo ocupado que me encuentre. Si no recibes una respuesta, por favor reenvía el mensaje."
+    },
+    "socialLinks": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/victortelles",
+            "icon": "FaGithub",
+            "description": "Revisa mis proyectos y código"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/vmta/",
+            "icon": "FaLinkedin", 
+            "description": "Conecta conmigo profesionalmente"
+        },
+        {
+            "name": "Website",
+            "url": "https://victortelles.dev",
+            "icon": "FaGlobe",
+            "description": "Visita mi sitio web personal"
+        }
+    ],
+    "preferredContact": {
+        "primary": "Email",
+        "secondary": "WhatsApp",
+        "note": "Prefiero email para consultas profesionales y WhatsApp para comunicación rápida, Las llamadas no son mi método preferido."
+    }
+}

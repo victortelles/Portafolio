@@ -2,10 +2,13 @@ import type React from "react"
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from "react-icons/fa"
 import Image from "next/image"
 import content from "./footerData.json"
-import type { FooterContent } from "@/types/content"
+import globalData from "@/data/globalData.json"
+import type { FooterContent } from "@/types/footer"
+import type { GlobalData } from "@/types/global"
 
 const Footer: React.FC = () => {
     const footerData = content as FooterContent
+    const global = globalData as GlobalData
 
     // función para obtener el icono social apropiado según la plataforma
     const getSocialIcon = (platform: string) => {
@@ -28,7 +31,7 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                    
+
                     {/* Brand Section */}
                     <div className="md:col-span-2 space-y-6">
                         <div className="flex items-center gap-4">
@@ -42,7 +45,7 @@ const Footer: React.FC = () => {
                                     sizes="48px"
                                 />
                             </div>
-                            
+
                             {/* Brand Name */}
                             <h3 className="font-mono text-2xl font-bold">
                                 <span className="text-[var(--color-base-content)]">AH</span>
@@ -76,19 +79,28 @@ const Footer: React.FC = () => {
 
                         {/* Disponibilidad */}
                         <div className="flex items-center gap-2 mt-2">
+                            <div
+                                className={`w-2 h-2 rounded-full animate-breathe ${
+                                    global.availability.status === "Disponible"
+                                        ? "bg-[var(--color-success)] shadow-lg shadow-[var(--color-success)]/50"
+                                        : global.availability.status === "Medio Ocupado"
+                                            ? "bg-[var(--color-warning)] shadow-lg shadow-[var(--color-warning)]/50"
+                                            : "bg-[var(--color-error)] shadow-lg shadow-[var(--color-error)]/50"
+                                }`}
+                            ></div>
                             <span
                                 className={`font-mono text-xs px-3 py-1 rounded-full ${
-                                    footerData.footer.availability.status === "Disponible"
-                                        ? "bg-[var(--color-success)] text-[var(--color-success-content)]"
-                                        : footerData.footer.availability.status === "Medio Ocupado"
-                                        ? "bg-[var(--color-warning)] text-[var(--color-warning-content)]"
-                                        : "bg-[var(--color-error)] text-[var(--color-error-content)]"
+                                    global.availability.status === "Disponible"
+                                        ? "bg-[var(--color-success)]/20 text-[var(--color-success)]"
+                                        : global.availability.status === "Medio Ocupado"
+                                            ? "bg-[var(--color-warning)]/20 text-[var(--color-warning)]"
+                                            : "bg-[var(--color-error)]/20 text-[var(--color-error)]"
                                 }`}
                             >
-                                {footerData.footer.availability.status}
+                                {global.availability.status}
                             </span>
                             <span className="font-sans text-xs text-[var(--color-neutral-content)]">
-                                {footerData.footer.availability.messages[footerData.footer.availability.status]}
+                                {global.availability.messages[global.availability.status]}
                             </span>
                         </div>
                     </div>

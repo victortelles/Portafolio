@@ -36,7 +36,7 @@
         },
         {
             "label": "Contacto",
-            "href": "/#contact"
+            "href": "/contact"
         }
     ],
     "footer": {
@@ -48,14 +48,6 @@
         "credits": {
             "label": "Créditos",
             "href": "/credits"
-        },
-        "availability": {
-            "status": "Disponible",
-            "messages": {
-                "Disponible": "Actualmente disponible para nuevos proyectos y colaboraciones.",
-                "Medio Ocupado": "Con disponibilidad limitada, pero abierto a propuestas interesantes.",
-                "Ocupado": "Actualmente sin disponibilidad, pero puedes dejar tu mensaje para futuras oportunidades."
-            }
         }
     }
 }

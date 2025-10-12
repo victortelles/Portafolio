@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Menu, X, User } from "lucide-react"
 import * as NavigationMenu from "@radix-ui/react-navigation-menu"
 import content from "./navbarData.json"
-import type { NavItem } from "@/types/content"
+import type { NavItem } from "@/types/navbar"
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false)

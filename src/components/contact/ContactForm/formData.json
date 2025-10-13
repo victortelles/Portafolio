@@ -1,7 +1,7 @@
 {
     "title": "Formulario de Contacto",
     "subtitle": "¿Tienes un proyecto en mente? ¡Hablemos!",
-    "description": "Completa el formulario y elige cómo enviar tu mensaje. Respondo en 1-3 días hábiles.",
+    "description": "Completa el formulario y elige cómo enviar tu mensaje.",
     "responseNote": "⏰ Tiempo de respuesta: Normalmente respondo entre 1-3 días. Si no recibes respuesta en una semana, por favor reenvía el formulario.",
     "form": {
         "fields": {

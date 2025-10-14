@@ -4,51 +4,76 @@
     "hobbies": [
         {
             "id": 1,
-            "title": "Gaming",
-            "description": "Los videojuegos me ayudan a relajarme y también me inspiran para crear mejores interfaces de usuario.",
+            "title": "Videojuegos",
+            "description": "Los videojuegos no solo son mi forma de relajarme y distraerme tras un día intenso, también me inspiran a resolver problemas difíciles y a la toma de desiciones. Diseñar interfaces intuitivas. Me motiva analizar cómo se entretiene y se guía al usuario, buscando siempre aplicar esas experiencias lúdicas en el desarrollo de productos digitales.",
             "icon": "FaGamepad",
             "category": "Entretenimiento",
-            "tags": ["League of Legends", "Valorant", "Minecraft", "The Witcher 3", "Estrategia", "Multijugador"]
+            "tags": [
+                "FPS",
+                "Shooter",
+                "Battle Royale",
+                "Cooperativo",
+                "Online",
+                "VR",
+                "Ritmo / Música",
+                "Indie",
+                "Competitivo",
+                "Supervivencia",
+                "Acción",
+                "RPG",
+                "Mundo Abierto",
+                "Cacería",
+                "Criaturas"
+            ]
         },
         {
             "id": 2,
-            "title": "Lectura técnica",
-            "description": "Leer libros de programación, arquitectura de software y nuevas tecnologías para mantenerme actualizado.",
-            "icon": "FaBook",
-            "category": "Educación",
-            "tags": ["Clean Code", "System Design", "JavaScript", "React", "Arquitectura", "Best Practices"]
+            "title": "Música",
+            "description": "La música es mi compañera indispensable durante el desarrollo. Escucho todo tipo de géneros, en español e inglés, lo cual también me ayuda a mejorar mi pronunciación y comprensión auditiva en inglés. La variedad musical me aporta energía, concentración y creatividad para programar.",
+            "icon": "FaMusic",
+            "category": "Arte",
+            "tags": [
+                "Lo-fi Hip Hop",
+                "Pop",
+                "Pop-Rock",
+                "Electrónica",
+                "Rock",
+                "Indie",
+                "Alternativo",
+                "Música Mexicana",
+                "Música en inglés",
+                "Y más..."
+            ]
         },
         {
             "id": 3,
-            "title": "Fotografía",
-            "description": "Capturar momentos y paisajes me ayuda a desarrollar mi ojo para el diseño y la composición visual.",
-            "icon": "FaCamera",
-            "category": "Arte",
-            "tags": ["Paisajes urbanos", "Fotografía nocturna", "Retratos", "Arquitectura", "Composición", "Edición"]
+            "title": "Deporte",
+            "description": "Practicar deportes es una de mis mayores fuentes de distracción y bienestar. Disfruto especialmente de actividades que requieren el uso de las manos, como el baloncesto, donde la colaboración en equipo es fundamental. El deporte me ayuda a despejar la mente, fortalecer lazos sociales y mantenerme saludable.",
+            "icon": "FaBasketballBall",
+            "category": "Salud",
+            "tags": [
+                "Baloncesto",
+                "Volleyball",
+                "Deportes de equipo",
+                "Competencia",
+                "Trabajo en equipo",
+                "Diversión",
+                "Socialización"
+            ]
         },
         {
             "id": 4,
-            "title": "Fitness",
-            "description": "Mantener una rutina de ejercicio regular me ayuda a mantener la mente clara y la energía alta.",
+            "title": "Ejercicio",
+            "description": "Mantenerme activo es esencial para mi bienestar físico y mental. El ejercicio, ya sea en el gimnasio, caminando o aceptando retos como andar en bicicleta, me ayuda a liberar estrés, transformar la energía negativa en positiva y mantener una actitud optimista frente a los desafíos diarios.",
             "icon": "FaDumbbell",
             "category": "Salud",
-            "tags": ["Gimnasio", "Cardio", "Yoga", "Caminatas", "Disciplina", "Bienestar"]
-        },
-        {
-            "id": 5,
-            "title": "Cocina",
-            "description": "Experimentar con nuevas recetas y sabores es como experimentar con nuevas tecnologías.",
-            "icon": "FaUtensils",
-            "category": "Creatividad",
-            "tags": ["Comida mexicana", "Pasta italiana", "Postres", "Comida asiática", "Experimentación", "Recetas"]
-        },
-        {
-            "id": 6,
-            "title": "Música",
-            "description": "Escuchar y descubrir nueva música me mantiene inspirado y productivo mientras programo.",
-            "icon": "FaMusic",
-            "category": "Arte",
-            "tags": ["Lo-fi Hip Hop", "Synthwave", "Jazz", "Electrónica", "Rock progresivo", "Concentración"]
+            "tags": [
+                "Gimnasio",
+                "Caminatas",
+                "Disciplina",
+                "Bienestar",
+                "Ciclismo"
+            ]
         }
     ]
 }

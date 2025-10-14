@@ -2,7 +2,6 @@ import AboutHero from "@/components/about/AboutHero/AboutHero"
 import PersonalValues from "@/components/about/PersonalValues/PersonalValues"
 import HobbiesSection from "@/components/about/HobbiesSection/HobbiesSection"
 import TechStack from "@/components/about/TechStack/TechStack"
-import PersonalTimeline from "@/components/about/PersonalTimeline/PersonalTimeline"
 import Navbar from "@/components/common/Navbar/Navbar"
 import ScrollToTopButton from "@/components/common/ScrollToTopButton/ScrollToTopButton"
 
@@ -23,9 +22,6 @@ export default function AboutPage() {
 
             {/* Stack tecnológico nuevo */}
             <TechStack />
-
-            {/* Timeline personal */}
-            <PersonalTimeline />
 
             {/* Botón flotante para volver al inicio */}
             <ScrollToTopButton />

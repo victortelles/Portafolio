@@ -4,59 +4,67 @@
         "title": "Desarrollador Full Stack",
         "location": "México",
         "email": "victor-tah@outlook.com",
-        "description": "Soy un desarrollador apasionado por crear soluciones innovadoras que impacten positivamente la vida de las personas. Con experiencia en desarrollo web full stack, me especializo en crear aplicaciones modernas, escalables y centradas en el usuario.",
-        "avatar": "/assets/chibi.webp",
-        "yearsOfExperience": 3,
-        "projectsCompleted": 25,
-        "technologiesUsed": 15,
         "currentRole": "Desarrollador Frontend",
-        "company": "Freelance"
+        "company": "Freelance",
+        "description": "Soy un desarrollador de software apasionado por crear soluciones innovadoras que impacten positivamente la vida de las personas. Con cierta experiencia en desarrollo web/movil como full stack, me especializo en crear aplicaciones base a las necesidades de los clientes."
     },
-    "quickFacts": [
+    "profileImage": {
+        "imageSrc": "/assets/chibi.webp",
+        "alt": "Foto"
+    },
+    "socialIcons": [
         {
-            "icon": "FaBullseye",
+            "name": "LinkedIn",
+            "icon": "FaLinkedin",
+            "color": "var(--color-info)",
+            "url": "https://www.linkedin.com/in/vmta/",
+            "orbitRadius": 200,
+            "speed": 20
+        },
+        {
+            "name": "GitHub",
+            "icon": "FaGithub",
+            "color": "var(--color-tertiary)",
+            "url": "https://github.com/victortelles",
+            "orbitRadius": 220,
+            "speed": 15
+        }
+    ],
+    "stats": [
+        {
+            "icon": "FaRegClock",
             "label": "Años de experiencia",
-            "value": "3+"
+            "value": 4,
+            "suffix": "+",
+            "color": "var(--color-warning)"
+        },
+        {
+            "icon": "FaCheckCircle",
+            "label": "Proyectos completados",
+            "value": 5,
+            "suffix": "+",
+            "color": "var(--color-success)"
         },
         {
             "icon": "FaCode",
-            "label": "Proyectos completados",
-            "value": "25+"
-        },
-        {
-            "icon": "FaRocket",
-            "label": "Tecnologías dominadas",
-            "value": "15+"
+            "label": "Tecnologias conocidas",
+            "value": 42,
+            "suffix": "+",
+            "color": "var(--color-info)"
         },
         {
             "icon": "FaCoffee",
             "label": "Tazas de café al día",
-            "value": "∞"
+            "value": 5,
+            "suffix": "",
+            "color": "var(--color-accent)",
+            "special": true
         }
     ],
-    "socialLinks": [
-        {
-            "platform": "LinkedIn",
-            "url": "https://linkedin.com/in/vmta",
-            "icon": "linkedin",
-            "username": "@vmta"
-        },
-        {
-            "platform": "GitHub",
-            "url": "https://github.com/victortelles",
-            "icon": "github",
-            "username": "@victortelles"
-        },
-        {
-            "platform": "Email",
-            "url": "mailto:victor-tah@outlook.com",
-            "icon": "email",
-            "username": "victor-tah@outlook.com"
-        }
-    ],
-    "currentStatus": {
-        "availability": "Disponible para proyectos",
-        "location": "México, trabajando remotamente",
-        "interests": "Buscando oportunidades en desarrollo web y aplicaciones móviles"
+    "sectionTexts": {
+        "title": "Acerca de",
+        "titleAccent": "mí",
+        "subtitle": "Conoce más sobre mi historia, experiencia y pasión por el desarrollo de software",
+        "quickStatsTitle": "Datos rápidos"
     }
 }

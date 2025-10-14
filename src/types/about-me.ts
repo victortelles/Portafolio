@@ -79,41 +79,6 @@ export interface HobbiesSectionData {
     hobbies: Hobby[]
 }
 
-// PersonalTimeline tipos
-export interface TimelineEvent {
-    id: number
-    year: string
-    quarter: string
-    title: string
-    type: string
-    icon: string
-    description: string
-    details: string[]
-    technologies: string[]
-    achievements: string[]
-    location: string
-}
-
-export interface TimelineStats {
-    totalYears: number
-    majorMilestones: number
-    technologiesLearned: number
-    projectsCompleted: number
-    currentFocus: string
-}
-
-export interface LifePhilosophy {
-    quote: string
-    values: string[]
-}
-
-export interface PersonalTimelineData {
-    sectionTitle: string
-    sectionDescription: string
-    timelineEvents: TimelineEvent[]
-    stats: TimelineStats
-    lifePhilosophy: LifePhilosophy
-}
 
 // TechStack nuevos tipos
 export interface TechItem {

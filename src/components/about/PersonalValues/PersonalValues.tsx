@@ -10,7 +10,7 @@ import type { PersonalValuesData } from "@/types/about-me"
 
 const PersonalValues: React.FC = () => {
     const [selectedValue, setSelectedValue] = useState<number | null>(null)
-    const { sectionTitle, sectionDescription, values, additionalInfo } = valuesData as PersonalValuesData
+    const { sectionTitle, sectionDescription, values } = valuesData as PersonalValuesData
 
     const getIcon = (iconName: string) => {
         const icons: { [key: string]: React.ReactNode } = {
@@ -103,16 +103,6 @@ const PersonalValues: React.FC = () => {
                             </div>
                         </div>
                     ))}
-                </div>
-
-                {/* Cita inspiracional */}
-                <div className="bg-[var(--color-base-100)] border-2 border-[var(--color-primary)] rounded-[var(--radius-box)] p-8 text-center">
-                    <blockquote className="font-sans text-lg lg:text-xl text-[var(--color-neutral-content)] italic mb-4">
-                        "{additionalInfo.quote}"
-                    </blockquote>
-                    <cite className="font-mono text-[var(--color-primary)] font-bold">
-                        — {additionalInfo.author}
-                    </cite>
                 </div>
             </div>
         </section>

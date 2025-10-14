@@ -51,16 +51,10 @@ export interface PersonalValue {
     keywords: string[]
 }
 
-export interface AdditionalInfo {
-    quote: string
-    author: string
-}
-
 export interface PersonalValuesData {
     sectionTitle: string
     sectionDescription: string
     values: PersonalValue[]
-    additionalInfo: AdditionalInfo
 }
 
 // HobbiesSection tipos

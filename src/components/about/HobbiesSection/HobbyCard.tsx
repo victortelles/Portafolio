@@ -88,7 +88,7 @@ const HobbyCard: React.FC<HobbyCardProps> = ({ hobby }) => {
                 {!showAllTags && hiddenTagsCount > 0 && (
                     <button
                         onClick={toggleTags}
-                        className={`px-3 py-1 text-xs font-mono rounded-[var(--radius-field)] border transition-colors duration-300 ${getCategoryColor(hobby.category)} bg-[var(--color-base-100)] border-current hover:bg-current hover:text-[var(--color-base-100)]`}
+                        className={`px-3 py-1 text-xs font-mono rounded-[var(--radius-field)] border transition-colors duration-300 ${getCategoryColor(hobby.category)} bg-[var(--color-base-100)] border-current hover:bg-current hover:text-[var(--color-base-100)] cursor-pointer`}
                     >
                         +{hiddenTagsCount}
                     </button>
@@ -96,7 +96,7 @@ const HobbyCard: React.FC<HobbyCardProps> = ({ hobby }) => {
                 {showAllTags && hobby.tags.length > visibleTags && (
                     <button
                         onClick={toggleTags}
-                        className="px-3 py-1 bg-[var(--color-base-300)] text-[var(--color-base-content)] text-xs font-mono rounded-[var(--radius-field)] hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-content)] transition-colors duration-300"
+                        className="px-3 py-1 bg-[var(--color-base-300)] text-[var(--color-base-content)] text-xs font-mono rounded-[var(--radius-field)] hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-content)] transition-colors duration-300 cursor-pointer"
                     >
                         Mostrar menos
                     </button>

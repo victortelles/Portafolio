@@ -5,6 +5,7 @@ import TechStack from "@/components/about/TechStack/TechStack"
 import Navbar from "@/components/common/Navbar/Navbar"
 import ScrollToTopButton from "@/components/common/ScrollToTopButton/ScrollToTopButton"
 import Skills from "@/components/about/Skills/Skills"
+import Footer from "@/components/common/Footer/Footer"
 
 export default function AboutPage() {
     return (
@@ -25,7 +26,10 @@ export default function AboutPage() {
             <HobbiesSection />
 
             {/* Stack tecnológico nuevo */}
-            <TechStack />
+            {/*<TechStack />*/}
+
+            {/* Footer */}
+            <Footer />
 
             {/* Botón flotante para volver al inicio */}
             <ScrollToTopButton />

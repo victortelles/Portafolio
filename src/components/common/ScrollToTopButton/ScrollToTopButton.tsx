@@ -36,7 +36,7 @@ const ScrollToTopButton: React.FC = () => {
             {isVisible && (
                 <button
                     onClick={scrollToTop}
-                    className="fixed bottom-8 right-8 z-50 p-3 bg-[var(--color-primary)] text-[var(--color-primary-content)] rounded-full shadow-lg hover:bg-[var(--color-primary)]/90 hover:shadow-xl transition-all duration-300 animate-bounce-in"
+                    className="fixed bottom-8 right-8 z-50 p-3 bg-[var(--color-primary)] text-[var(--color-primary-content)] rounded-full shadow-lg hover:bg-[var(--color-primary)]/90 hover:shadow-xl transition-all duration-300 animate-bounce-in cursor-pointer"
                     aria-label="Volver al inicio"
                 >
                     <FaArrowUp size={20} />

@@ -4,41 +4,45 @@
     "values": [
         {
             "id": 1,
-            "title": "Calidad del código",
-            "description": "Escribir código limpio, mantenible y bien documentado es fundamental para crear software que perdure en el tiempo.",
-            "icon": "🔧",
+            "title": "Responsabilidad",
+            "description": "Me comprometo a entregar resultados o avances poco a poco para asegurar la calidad del proyecto y cumplir con los plazos establecidos, estableciendo una organización y priorización de actividades.",
+            "icon": "FaLightbulb",
             "color": "primary",
             "keywords": [
-                "Clean Code",
-                "Documentación",
-                "Best Practices",
-                "Testing"
+                "Organización",
+                "Prioridad",
+                "Responsabilidad",
+                "Compromiso",
+                "Calidad",
+                "Plazos"
             ]
         },
         {
             "id": 2,
             "title": "Aprendizaje continuo",
             "description": "La tecnología evoluciona constantemente, por lo que mantenerse actualizado y aprender nuevas herramientas es esencial.",
-            "icon": "📚",
+            "icon": "FaLightbulb",
             "color": "secondary",
             "keywords": [
                 "Cursos",
+                "Videos",
                 "Certificaciones",
                 "Experimentación",
-                "Investigación"
+                "Practicar"
             ]
         },
         {
             "id": 3,
-            "title": "Colaboración efectiva",
+            "title": "Colaboración",
             "description": "El trabajo en equipo y la comunicación clara son clave para el éxito de cualquier proyecto de desarrollo.",
             "icon": "🤝",
             "color": "accent",
             "keywords": [
-                "Teamwork",
+                "Trabajo en equipo",
                 "Comunicación",
-                "Code Review",
-                "Mentoring"
+                "Feedback",
+                "Empatía",
+                "Escuchar"
             ]
         },
         {
@@ -56,15 +60,18 @@
         },
         {
             "id": 5,
-            "title": "Innovación responsable",
-            "description": "Implementar nuevas tecnologías de manera estratégica, evaluando beneficios y riesgos para el proyecto.",
+            "title": "Organización",
+            "description": "Mantengo una estructura de archivos clara y modular, lo que facilita la escalabilidad, el mantenimiento y colaboración en el proyecto.",
             "icon": "FaRocket",
             "color": "success",
             "keywords": [
-                "Innovación",
-                "Evaluación",
-                "Estrategia",
-                "Impacto"
+                "Modularidad",
+                "Mantenibilidad",
+                "Escalabilidad",
+                "Colaboración",
+                "Estructura",
+                "Claridad"
+            
             ]
         },
         {

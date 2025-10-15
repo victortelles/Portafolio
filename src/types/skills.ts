@@ -14,10 +14,15 @@ export interface SkillCard {
 
 //Datos de las habilidades
 export interface SkillsData {
-    sectionTitle: string
-    sectionSubtitle: string
-    softSkills: SkillCard[]
-    hardSkills: SkillCard[]
+    headerTitle: string;
+    headerTitle2: string;
+    headerDescription: string;
+    sectionTitle: string;
+    sectionSubtitle: string;
+    softSkills: SkillCard[];
+    hardSkills: SkillCard[];
+    softSkillsTitle: string;
+    hardSkillsTitle: string;
 }
 
 // Tipado para las

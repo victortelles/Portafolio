@@ -4,6 +4,7 @@ import HobbiesSection from "@/components/about/HobbiesSection/HobbiesSection"
 import TechStack from "@/components/about/TechStack/TechStack"
 import Navbar from "@/components/common/Navbar/Navbar"
 import ScrollToTopButton from "@/components/common/ScrollToTopButton/ScrollToTopButton"
+import Skills from "@/components/about/Skills/Skills"
 
 export default function AboutPage() {
     return (
@@ -16,6 +17,9 @@ export default function AboutPage() {
 
             {/* Valores personales */}
             <PersonalValues />
+
+            {/* Sección de habilidades */}
+            <Skills />
 
             {/* Hobbies y pasatiempos */}
             <HobbiesSection />

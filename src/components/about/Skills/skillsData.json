@@ -1,6 +1,11 @@
 {
+    "headerTitle": "Mis",
+    "headerTitle2": "Habilidades",
+    "headerDescription": "Competencias técnicas y interpersonales que me permiten crear soluciones efectivas",
     "sectionTitle": "Mis Habilidades",
     "sectionSubtitle": "Competencias técnicas y interpersonales que me permiten crear soluciones efectivas",
+    "softSkillsTitle": "Habilidades Blandas",
+    "hardSkillsTitle": "Habilidades Técnicas",
     "softSkills": [
         {
             "id": 1,
@@ -105,6 +110,7 @@
             ]
         }
     ],
+
     "hardSkills": [
         {
             "id": 6,

@@ -53,6 +53,7 @@ export interface PersonalValue {
 
 export interface PersonalValuesData {
     sectionTitle: string
+    sectionTitle2: string
     sectionDescription: string
     values: PersonalValue[]
 }
@@ -69,6 +70,7 @@ export interface Hobby {
 
 export interface HobbiesSectionData {
     sectionTitle: string
+    sectionTitle2: string
     sectionDescription: string
     hobbies: Hobby[]
 }

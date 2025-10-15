@@ -1,16 +1,16 @@
 "use client"
 
 import React, { useState } from "react"
-import { 
-    FaLightbulb, FaHeart, FaUsers, FaBullseye, FaHandshake, 
-    FaPalette, FaRocket, FaGraduationCap 
+import {
+    FaLightbulb, FaHeart, FaUsers, FaBullseye, FaHandshake,
+    FaPalette, FaRocket, FaGraduationCap
 } from "react-icons/fa"
 import valuesData from "./valuesData.json"
 import type { PersonalValuesData } from "@/types/about-me"
 
 const PersonalValues: React.FC = () => {
     const [selectedValue, setSelectedValue] = useState<number | null>(null)
-    const { sectionTitle, sectionDescription, values } = valuesData as PersonalValuesData
+    const { sectionTitle, sectionTitle2, sectionDescription, values } = valuesData as PersonalValuesData
 
     const getIcon = (iconName: string) => {
         const icons: { [key: string]: React.ReactNode } = {
@@ -55,8 +55,9 @@ const PersonalValues: React.FC = () => {
             <div className="max-w-7xl mx-auto">
                 {/* Encabezado de la sección */}
                 <div className="text-center mb-16">
-                    <h2 className="font-mono text-3xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
-                        {sectionTitle}
+                    <h2 className="font-mono text-3xl lg:text-5xl font-bold mb-4">
+                        <span className="text-[var(--color-base-content)]">{sectionTitle} </span>
+                        <span className="text-[var(--color-primary)]">{sectionTitle2}</span>
                     </h2>
                     <p className="font-sans text-lg text-[var(--color-neutral-content)] max-w-3xl mx-auto">
                         {sectionDescription}
@@ -91,11 +92,10 @@ const PersonalValues: React.FC = () => {
                                 {value.keywords.map((keyword: string, index: number) => (
                                     <span
                                         key={index}
-                                        className={`px-3 py-1 text-xs font-mono rounded-full border transition-all duration-300 hover:scale-105 ${
-                                            selectedValue === value.id 
-                                                ? `${getTextColorClass(value.color)} bg-current/10 border-current` 
+                                        className={`px-3 py-1 text-xs font-mono rounded-full border transition-all duration-300 hover:scale-105 ${selectedValue === value.id
+                                                ? `${getTextColorClass(value.color)} bg-current/10 border-current`
                                                 : 'text-[var(--color-base-content)] bg-[var(--color-base-300)] border-[var(--color-base-300)] hover:border-[var(--color-primary)]'
-                                        }`}
+                                            }`}
                                     >
                                         {keyword}
                                     </span>

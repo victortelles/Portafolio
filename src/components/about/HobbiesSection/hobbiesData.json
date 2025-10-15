@@ -1,5 +1,6 @@
 {
-    "sectionTitle": "Mis hobbies",
+    "sectionTitle": "Mis",
+    "sectionTitle2": "hobbies",
     "sectionDescription": "Las actividades que me inspiran y mantienen mi creatividad fuera del código",
     "hobbies": [
         {
@@ -21,9 +22,7 @@
                 "Supervivencia",
                 "Acción",
                 "RPG",
-                "Mundo Abierto",
-                "Cacería",
-                "Criaturas"
+                "Mundo Abierto"
             ]
         },
         {

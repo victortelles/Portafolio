@@ -1,7 +1,7 @@
 "use client"
 
-import React, { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import React, { useState, useEffect, useRef } from "react"
+import { motion, AnimatePresence, useInView } from "framer-motion"
 import {
     FaUsers, FaHandshake, FaClock, FaLightbulb, FaUserTie,
     FaCode, FaServer, FaDatabase, FaCogs, FaBug, FaSearchPlus
@@ -58,6 +58,10 @@ const Skills: React.FC = () => {
 
     const closeModal = () => setSelectedCard(null)
 
+    // Estado para activar la animación de entrada
+    const cardsSectionRef = useRef<HTMLDivElement>(null)
+    const inView = useInView(cardsSectionRef, { margin: "-100px 0px", once: true })
+
     return (
         <section className="py-20 bg-[var(--color-base-100)]">
             <div className="container mx-auto px-6">
@@ -69,24 +73,24 @@ const Skills: React.FC = () => {
                     transition={{ duration: 0.8 }}
                 >
                     <h2 className="font-mono text-3xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
-                        Mis <span className="text-[var(--color-primary)]">Habilidades</span>
+                        {data.headerTitle} <span className="text-[var(--color-primary)]">{data.headerTitle2}</span>
                     </h2>
                     <p className="font-sans text-lg text-[var(--color-neutral-content)] max-w-3xl mx-auto">
-                        Competencias técnicas y interpersonales que me permiten crear soluciones efectivas
+                        {data.headerDescription}
                     </p>
                 </motion.div>
 
                 {/* División en 2 columnas - Responsivo */}
-                <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto px-4">
+                <div ref={cardsSectionRef} className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12 max-w-7xl mx-auto px-4">
 
                     {/* Habilidades Blandas */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <h3 className="font-mono text-xl md:text-2xl font-bold text-[var(--color-secondary)] mb-6 md:mb-8 text-center">
-                            Habilidades Blandas
+                            {data.softSkillsTitle}
                         </h3>
                         <div className="relative h-[400px] sm:h-[500px] md:h-[700px] lg:h-[600px] flex justify-center">
                             <div className="relative w-[180px] sm:w-[220px] md:w-[320px] lg:w-[350px]">
@@ -112,13 +116,13 @@ const Skills: React.FC = () => {
                                                 x: xOffset,
                                                 scale: 0.8
                                             }}
-                                            animate={{
+                                            animate={inView ? {
                                                 opacity: 1,
                                                 y: yOffset,
                                                 rotate: rotation,
                                                 x: xOffset,
                                                 scale: 1
-                                            }}
+                                            } : {}}
                                             whileHover={{
                                                 y: yOffset - 25,
                                                 rotate: rotation + 3,
@@ -182,7 +186,7 @@ const Skills: React.FC = () => {
                                             </div>
 
                                             {/* Decoración de esquinas */}
-                                            <div className={`absolute top-3 left-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
+                                            <div className={`absolute top-8 left-2 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
                                             <div className={`absolute bottom-3 right-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
                                         </motion.div>
                                     )
@@ -194,11 +198,11 @@ const Skills: React.FC = () => {
                     {/* Habilidades Técnicas */}
                     <motion.div
                         initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
+                        animate={inView ? { opacity: 1, x: 0 } : {}}
                         transition={{ duration: 0.8, delay: 0.2 }}
                     >
                         <h3 className="font-mono text-xl md:text-2xl font-bold text-[var(--color-primary)] mb-6 md:mb-8 text-center">
-                            Habilidades Técnicas
+                            {data.hardSkillsTitle}
                         </h3>
                         <div className="relative h-[400px] sm:h-[500px] md:h-[700px] lg:h-[600px] flex justify-center mt-0 md:mt-24">
                             <div className="relative w-[180px] sm:w-[220px] md:w-[320px] lg:w-[350px]">
@@ -224,13 +228,13 @@ const Skills: React.FC = () => {
                                                 x: xOffset,
                                                 scale: 0.8
                                             }}
-                                            animate={{
+                                            animate={inView ? {
                                                 opacity: 1,
                                                 y: yOffset,
                                                 rotate: rotation,
                                                 x: xOffset,
                                                 scale: 1
-                                            }}
+                                            } : {}}
                                             whileHover={{
                                                 y: yOffset - 25,
                                                 rotate: rotation + 3,
@@ -294,7 +298,7 @@ const Skills: React.FC = () => {
                                             </div>
 
                                             {/* Decoración de esquinas */}
-                                            <div className={`absolute top-3 left-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
+                                            <div className={`absolute top-8 left-2 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
                                             <div className={`absolute bottom-3 right-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
                                         </motion.div>
                                     )

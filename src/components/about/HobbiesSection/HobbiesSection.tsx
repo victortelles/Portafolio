@@ -6,7 +6,7 @@ import hobbiesData from "./hobbiesData.json"
 import type { HobbiesSectionData } from "@/types/about-me"
 
 const HobbiesSection: React.FC = () => {
-    const { sectionTitle, sectionDescription, hobbies } = hobbiesData as HobbiesSectionData
+    const { sectionTitle, sectionTitle2, sectionDescription, hobbies } = hobbiesData as HobbiesSectionData
 
     return (
         <section className="relative py-20 lg:py-32 px-4 lg:px-8 bg-[var(--color-base-100)]">
@@ -20,8 +20,9 @@ const HobbiesSection: React.FC = () => {
                 {/* Encabezado de la sección */}
                 <div className="text-center mb-16">
                     { /* Titulo */}
-                    <h2 className="font-mono text-3xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
-                        {sectionTitle}
+                    <h2 className="font-mono text-3xl lg:text-5xl font-bold mb-4">
+                        <span style={{ color: "var(--color-base-content)" }}>{sectionTitle}</span>{" "}
+                        <span style={{ color: "var(--color-primary)" }}>{sectionTitle2}</span>
                     </h2>
 
                     { /* Descripción */}

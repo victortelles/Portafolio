@@ -1,11 +1,11 @@
 {
     "personalInfo": {
         "name": "Victor Telles",
-        "title": "Desarrollador Full Stack",
-        "location": "México",
+        "title": "Desarrollador Full Stack (Junior)",
+        "location": "Guadalajara Jal.",
         "email": "victor-tah@outlook.com",
-        "currentRole": "Desarrollador Frontend",
-        "company": "Freelance",
+        "currentRole": "Desarrollador de software",
+        "company": "",
         "description": "Soy un desarrollador de software apasionado por crear soluciones innovadoras que impacten positivamente la vida de las personas. Con cierta experiencia en desarrollo web/movil como full stack, me especializo en crear aplicaciones base a las necesidades de los clientes."
     },
     "profileImage": {

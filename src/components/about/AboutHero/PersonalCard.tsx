@@ -29,7 +29,7 @@ const PersonalCard: React.FC = () => {
                     </div>
                 </div>
                 <p className="font-mono text-sm text-[var(--color-accent)] mb-4">
-                    {personalInfo.currentRole} en {personalInfo.company}
+                    {personalInfo.currentRole} {personalInfo.company}
                 </p>
             </div>
 

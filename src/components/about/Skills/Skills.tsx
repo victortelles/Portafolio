@@ -151,14 +151,14 @@ const Skills: React.FC = () => {
                                             <div className={`absolute inset-0 ${colorClasses.bg} opacity-10`} />
 
                                             {/* Texto lateral izquierdo vertical */}
-                                            <div className="absolute left-2 top-4 transform -rotate-90 origin-left">
+                                            <div className="absolute left-3 top-6 transform -rotate-90 origin-left">
                                                 <span className={`font-mono text-xs font-bold ${colorClasses.text} opacity-60`}>
                                                     SOFT
                                                 </span>
                                             </div>
 
                                             {/* Texto lateral derecho vertical */}
-                                            <div className="absolute right-2 bottom-4 transform rotate-90 origin-right">
+                                            <div className="absolute right-3 bottom-6 transform rotate-90 origin-right">
                                                 <span className={`font-mono text-xs font-bold ${colorClasses.text} opacity-60`}>
                                                     SKILL
                                                 </span>
@@ -186,8 +186,8 @@ const Skills: React.FC = () => {
                                             </div>
 
                                             {/* Decoración de esquinas */}
-                                            <div className={`absolute top-8 left-2 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
-                                            <div className={`absolute bottom-3 right-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
+                                            <div className={`absolute top-10 left-2.5 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
+                                            <div className={`absolute bottom-6 right-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
                                         </motion.div>
                                     )
                                 })}
@@ -263,14 +263,14 @@ const Skills: React.FC = () => {
                                             <div className={`absolute inset-0 ${colorClasses.bg} opacity-10`} />
 
                                             {/* Texto lateral izquierdo vertical */}
-                                            <div className="absolute left-2 top-4 transform -rotate-90 origin-left">
+                                            <div className="absolute left-3 top-6 transform -rotate-90 origin-left">
                                                 <span className={`font-mono text-xs font-bold ${colorClasses.text} opacity-60`}>
                                                     TECH
                                                 </span>
                                             </div>
 
                                             {/* Texto lateral derecho vertical */}
-                                            <div className="absolute right-2 bottom-4 transform rotate-90 origin-right">
+                                            <div className="absolute right-3 bottom-6 transform rotate-90 origin-right">
                                                 <span className={`font-mono text-xs font-bold ${colorClasses.text} opacity-60`}>
                                                     SKILL
                                                 </span>
@@ -298,8 +298,8 @@ const Skills: React.FC = () => {
                                             </div>
 
                                             {/* Decoración de esquinas */}
-                                            <div className={`absolute top-8 left-2 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
-                                            <div className={`absolute bottom-3 right-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
+                                            <div className={`absolute top-10 left-2.5 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
+                                            <div className={`absolute bottom-6 right-3 w-2 h-2 rounded-full ${colorClasses.text.replace('text-', 'bg-')} opacity-40`} />
                                         </motion.div>
                                     )
                                 })}

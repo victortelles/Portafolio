@@ -110,48 +110,47 @@
             ]
         }
     ],
-
     "hardSkills": [
         {
             "id": 6,
-            "title": "Frontend Development",
-            "description": "Desarrollo de interfaces modernas y responsivas utilizando las últimas tecnologías.",
-            "detailedDescription": "Especialización en desarrollo frontend con experiencia sólida en React, Next.js y TypeScript. Enfoque en crear interfaces de usuario modernas, accesibles y altamente performantes con las mejores prácticas de la industria.",
-            "color": "primary",
-            "icon": "FaCode",
+            "title": "Calidad & Pruebas",
+            "description": "Implementación de pruebas y aseguramiento de la calidad del código.",
+            "detailedDescription": "Enfoque integral en calidad de software mediante testing automatizado y mejores prácticas de desarrollo. Experiencia en TDD, estrategia de pruebas y herramientas de calidad de codigo.",
+            "color": "error",
+            "icon": "FaBug",
             "items": [
-                "React & Next.js",
-                "TypeScript",
-                "Tailwind CSS",
-                "Responsive Design"
+                "Pruebas unitarias (Jest)",
+                "Pruebas de integración (Cypress)",
+                "Prueba de sistema (Selenium)",
+                "TDD & BDD",
+                "Cobertura de codigo"
             ],
             "keyFeatures": [
-                "Component architecture",
-                "State management",
-                "Performance optimization",
-                "Accessibility (a11y)",
-                "Progressive Web Apps"
+                "Automatizacion pruebas",
+                "Cobertura",
+                "Deteccion de fallos"
             ]
         },
         {
             "id": 7,
-            "title": "Backend Development",
-            "description": "Creación de APIs robustas y sistemas escalables del lado del servidor.",
-            "detailedDescription": "Desarrollo de arquitecturas backend escalables utilizando Node.js, Python y Java. Experiencia en diseño de APIs RESTful, microservicios y sistemas distribuidos con enfoque en performance y seguridad.",
-            "color": "secondary",
-            "icon": "FaServer",
+            "title": "Herramientas & DevOps",
+            "description": "Herramientas de desarrollo, versionado y automatización de procesos.",
+            "detailedDescription": "Implementacion de herramientas DevOps para automatización, CI/CD y gestión de infraestructura. Experiencia con containerización, orquestación y deployment automatizado.",
+            "color": "warning",
+            "icon": "FaCogs",
             "items": [
-                "Node.js & Express",
-                "Python",
-                "Java",
-                "RESTful APIs"
+                "Git & GitHub",
+                "Github Actions",
+                "Docker",
+                "CI/CD",
+                "VS Code"
             ],
             "keyFeatures": [
-                "Microservices architecture",
-                "API design",
-                "Authentication & Authorization",
-                "Caching strategies",
-                "Load balancing"
+                "Container orchestration",
+                "Infrastructure as Code",
+                "Automated testing",
+                "Monitoring & Logging",
+                "Deployment automation"
             ]
         },
         {
@@ -177,44 +176,44 @@
         },
         {
             "id": 9,
-            "title": "DevOps & Tools",
-            "description": "Herramientas de desarrollo, versionado y automatización de procesos.",
-            "detailedDescription": "Competencia en herramientas DevOps modernas para automatización, CI/CD y gestión de infraestructura. Experiencia con containerización, orquestación y deployment automatizado.",
-            "color": "warning",
-            "icon": "FaCogs",
+            "title": "Backend Development",
+            "description": "Creación de APIs robustas y sistemas escalables del lado del servidor.",
+            "detailedDescription": "Desarrollo de arquitecturas backend escalables utilizando Node.js, Python y Java. Experiencia en diseño de APIs RESTful, microservicios y sistemas distribuidos con enfoque en performance y seguridad.",
+            "color": "secondary",
+            "icon": "FaServer",
             "items": [
-                "Git & GitHub",
-                "Docker",
-                "CI/CD",
-                "VS Code"
+                "Node.js & Express",
+                "Python",
+                "Java",
+                "RESTful APIs"
             ],
             "keyFeatures": [
-                "Container orchestration",
-                "Infrastructure as Code",
-                "Automated testing",
-                "Monitoring & Logging",
-                "Deployment automation"
+                "Microservices architecture",
+                "API design",
+                "Authentication & Authorization",
+                "Caching strategies",
+                "Load balancing"
             ]
         },
         {
             "id": 10,
-            "title": "Testing & Quality",
-            "description": "Implementación de pruebas y aseguramiento de la calidad del código.",
-            "detailedDescription": "Enfoque integral en calidad de software mediante testing automatizado, code review y mejores prácticas de desarrollo. Experiencia en TDD, testing strategies y herramientas de quality assurance.",
-            "color": "error",
-            "icon": "FaBug",
+            "title": "Frontend Development",
+            "description": "Desarrollo de interfaces modernas y responsivas utilizando las últimas tecnologías.",
+            "detailedDescription": "Especialización en desarrollo frontend con experiencia sólida en React, Next.js y TypeScript. Enfoque en crear interfaces de usuario modernas, accesibles y altamente performantes con las mejores prácticas de la industria.",
+            "color": "primary",
+            "icon": "FaCode",
             "items": [
-                "Unit Testing",
-                "Integration Tests",
-                "Code Quality",
-                "Debugging"
+                "React & Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Responsive Design"
             ],
             "keyFeatures": [
-                "Test-Driven Development",
-                "Automated testing",
-                "Code coverage",
-                "Performance testing",
-                "Quality metrics"
+                "Component architecture",
+                "State management",
+                "Performance optimization",
+                "Accessibility (a11y)",
+                "Progressive Web Apps"
             ]
         }
     ]

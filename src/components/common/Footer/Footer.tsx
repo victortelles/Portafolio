@@ -80,22 +80,20 @@ const Footer: React.FC = () => {
                         {/* Disponibilidad */}
                         <div className="flex items-center gap-2 mt-2">
                             <div
-                                className={`w-2 h-2 rounded-full animate-breathe ${
-                                    global.availability.status === "Disponible"
+                                className={`w-2 h-2 rounded-full animate-breathe ${global.availability.status === "Disponible"
                                         ? "bg-[var(--color-success)] shadow-lg shadow-[var(--color-success)]/50"
                                         : global.availability.status === "Medio Ocupado"
                                             ? "bg-[var(--color-warning)] shadow-lg shadow-[var(--color-warning)]/50"
                                             : "bg-[var(--color-error)] shadow-lg shadow-[var(--color-error)]/50"
-                                }`}
+                                    }`}
                             ></div>
                             <span
-                                className={`font-mono text-xs px-3 py-1 rounded-full ${
-                                    global.availability.status === "Disponible"
+                                className={`font-mono text-xs px-3 py-1 rounded-full ${global.availability.status === "Disponible"
                                         ? "bg-[var(--color-success)]/20 text-[var(--color-success)]"
                                         : global.availability.status === "Medio Ocupado"
                                             ? "bg-[var(--color-warning)]/20 text-[var(--color-warning)]"
                                             : "bg-[var(--color-error)]/20 text-[var(--color-error)]"
-                                }`}
+                                    }`}
                             >
                                 {global.availability.status}
                             </span>
@@ -134,6 +132,18 @@ const Footer: React.FC = () => {
                         {footerData.footer.copyright}
                     </p>
                     <div className="flex flex-col sm:flex-row items-center gap-2">
+
+                        {/* FAQs */}
+                        <a
+                            href={footerData.footer.faqs.href}
+                            className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
+                        >
+                            {footerData.footer.faqs.label}
+                        </a>
+
+                        {/* Separador */}
+                        <span className="hidden sm:inline-block mx-2 text-[var(--color-base-content)]">|</span>
+
                         {/* Creditos y Privacidad */}
                         <a
                             href={footerData.footer.credits.href}

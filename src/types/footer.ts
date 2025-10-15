@@ -35,5 +35,9 @@ export type FooterContent = {
             label: string;
             href: string;
         };
+        faqs: {
+            label: string;
+            href: string;
+        };
     };
 };

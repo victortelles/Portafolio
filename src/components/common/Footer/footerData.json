@@ -48,6 +48,10 @@
         "credits": {
             "label": "Créditos",
             "href": "/credits"
+        },
+        "faqs": {
+            "label": "Preguntas Frecuentes",
+            "href": "/faqs"
         }
     }
 }

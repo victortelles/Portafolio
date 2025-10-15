@@ -1,0 +1,213 @@
+{
+    "sectionTitle": "Mis Habilidades",
+    "sectionSubtitle": "Competencias técnicas y interpersonales que me permiten crear soluciones efectivas",
+    "softSkills": [
+        {
+            "id": 1,
+            "title": "Comunicación en Equipo",
+            "description": "Habilidad para comunicar ideas de manera clara y colaborar efectivamente con equipos multidisciplinarios.",
+            "detailedDescription": "Capacidad excepcional para establecer comunicación efectiva tanto verbal como escrita, facilitando la colaboración entre diferentes equipos y stakeholders. Experiencia en presentaciones técnicas, documentación de proyectos y mediación en conflictos de equipo.",
+            "color": "primary",
+            "icon": "FaUsers",
+            "items": [
+                "Comunicación interpersonal",
+                "Trabajo colaborativo",
+                "Presentaciones técnicas",
+                "Documentación clara"
+            ],
+            "keyFeatures": [
+                "Facilitación de reuniones",
+                "Comunicación cross-funcional",
+                "Feedback constructivo",
+                "Resolución de conflictos"
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Adaptabilidad y Aprendizaje",
+            "description": "Capacidad para adaptarse rápidamente a nuevas tecnologías y metodologías de trabajo.",
+            "detailedDescription": "Mentalidad de crecimiento continuo con habilidad probada para asimilar nuevas tecnologías, frameworks y metodologías de desarrollo. Experiencia adaptándose a cambios organizacionales y tecnológicos manteniendo alta productividad.",
+            "color": "secondary",
+            "icon": "FaLightbulb",
+            "items": [
+                "Aprendizaje autodidacta",
+                "Flexibilidad metodológica",
+                "Adaptación tecnológica",
+                "Mentalidad de crecimiento"
+            ],
+            "keyFeatures": [
+                "Curva de aprendizaje rápida",
+                "Investigación independiente",
+                "Experimentación con nuevas tools",
+                "Adaptación a metodologías ágiles"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Gestión y Organización",
+            "description": "Competencia para organizar proyectos, gestionar tiempo y mantener altos estándares de calidad.",
+            "detailedDescription": "Habilidades sólidas en planificación estratégica, gestión del tiempo y organización de recursos. Experiencia coordinando múltiples proyectos simultáneamente mientras se mantienen estándares de calidad excepcionales.",
+            "color": "accent",
+            "icon": "FaClock",
+            "items": [
+                "Gestión del tiempo",
+                "Planificación estratégica",
+                "Organización de proyectos",
+                "Atención al detalle"
+            ],
+            "keyFeatures": [
+                "Priorización efectiva",
+                "Gestión de deadlines",
+                "Organización de recursos",
+                "Control de calidad"
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Resolución de Problemas",
+            "description": "Enfoque analítico para identificar y resolver problemas complejos de manera creativa.",
+            "detailedDescription": "Pensamiento analítico y sistemático para abordar desafíos técnicos complejos. Experiencia en debugging avanzado, optimización de procesos y desarrollo de soluciones innovadoras bajo presión.",
+            "color": "info",
+            "icon": "FaSearchPlus",
+            "items": [
+                "Análisis crítico",
+                "Pensamiento creativo",
+                "Debugging avanzado",
+                "Optimización de procesos"
+            ],
+            "keyFeatures": [
+                "Análisis root-cause",
+                "Soluciones creativas",
+                "Optimización de performance",
+                "Troubleshooting sistemático"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Liderazgo de Proyectos",
+            "description": "Capacidad para liderar equipos de desarrollo y guiar proyectos hacia el éxito.",
+            "detailedDescription": "Liderazgo técnico con experiencia guiando equipos de desarrollo desde la conceptualización hasta la entrega. Habilidad para tomar decisiones estratégicas, motivar equipos y asegurar la entrega exitosa de proyectos.",
+            "color": "success",
+            "icon": "FaUserTie",
+            "items": [
+                "Liderazgo técnico",
+                "Mentoría",
+                "Gestión de equipos",
+                "Toma de decisiones"
+            ],
+            "keyFeatures": [
+                "Mentoring de desarrolladores",
+                "Gestión de stakeholders",
+                "Toma de decisiones técnicas",
+                "Motivación de equipos"
+            ]
+        }
+    ],
+    "hardSkills": [
+        {
+            "id": 6,
+            "title": "Frontend Development",
+            "description": "Desarrollo de interfaces modernas y responsivas utilizando las últimas tecnologías.",
+            "detailedDescription": "Especialización en desarrollo frontend con experiencia sólida en React, Next.js y TypeScript. Enfoque en crear interfaces de usuario modernas, accesibles y altamente performantes con las mejores prácticas de la industria.",
+            "color": "primary",
+            "icon": "FaCode",
+            "items": [
+                "React & Next.js",
+                "TypeScript",
+                "Tailwind CSS",
+                "Responsive Design"
+            ],
+            "keyFeatures": [
+                "Component architecture",
+                "State management",
+                "Performance optimization",
+                "Accessibility (a11y)",
+                "Progressive Web Apps"
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Backend Development",
+            "description": "Creación de APIs robustas y sistemas escalables del lado del servidor.",
+            "detailedDescription": "Desarrollo de arquitecturas backend escalables utilizando Node.js, Python y Java. Experiencia en diseño de APIs RESTful, microservicios y sistemas distribuidos con enfoque en performance y seguridad.",
+            "color": "secondary",
+            "icon": "FaServer",
+            "items": [
+                "Node.js & Express",
+                "Python",
+                "Java",
+                "RESTful APIs"
+            ],
+            "keyFeatures": [
+                "Microservices architecture",
+                "API design",
+                "Authentication & Authorization",
+                "Caching strategies",
+                "Load balancing"
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Database Management",
+            "description": "Diseño y gestión de bases de datos relacionales y NoSQL.",
+            "detailedDescription": "Experiencia comprensiva en diseño de bases de datos, optimización de queries y gestión de datos tanto relacionales como NoSQL. Enfoque en performance, integridad de datos y escalabilidad.",
+            "color": "accent",
+            "icon": "FaDatabase",
+            "items": [
+                "MongoDB",
+                "PostgreSQL",
+                "MySQL",
+                "Database Design"
+            ],
+            "keyFeatures": [
+                "Schema design",
+                "Query optimization",
+                "Data modeling",
+                "Backup strategies",
+                "Performance tuning"
+            ]
+        },
+        {
+            "id": 9,
+            "title": "DevOps & Tools",
+            "description": "Herramientas de desarrollo, versionado y automatización de procesos.",
+            "detailedDescription": "Competencia en herramientas DevOps modernas para automatización, CI/CD y gestión de infraestructura. Experiencia con containerización, orquestación y deployment automatizado.",
+            "color": "warning",
+            "icon": "FaCogs",
+            "items": [
+                "Git & GitHub",
+                "Docker",
+                "CI/CD",
+                "VS Code"
+            ],
+            "keyFeatures": [
+                "Container orchestration",
+                "Infrastructure as Code",
+                "Automated testing",
+                "Monitoring & Logging",
+                "Deployment automation"
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Testing & Quality",
+            "description": "Implementación de pruebas y aseguramiento de la calidad del código.",
+            "detailedDescription": "Enfoque integral en calidad de software mediante testing automatizado, code review y mejores prácticas de desarrollo. Experiencia en TDD, testing strategies y herramientas de quality assurance.",
+            "color": "error",
+            "icon": "FaBug",
+            "items": [
+                "Unit Testing",
+                "Integration Tests",
+                "Code Quality",
+                "Debugging"
+            ],
+            "keyFeatures": [
+                "Test-Driven Development",
+                "Automated testing",
+                "Code coverage",
+                "Performance testing",
+                "Quality metrics"
+            ]
+        }
+    ]
+}

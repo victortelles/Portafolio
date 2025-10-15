@@ -174,7 +174,7 @@ const Skills: React.FC = () => {
 
                                                 {/* Descripción corta */}
                                                 <p className={`font-sans text-[10px] sm:text-xs md:text-sm ${colorClasses.text} opacity-80 text-center mb-1 sm:mb-2 md:mb-3 lg:mb-4`}>
-                                                    {skill.description.substring(0, 40)}...
+                                                    {skill.description.substring(0, 180)}
                                                 </p>
 
                                                 {/* Círculo central decorativo */}
@@ -286,7 +286,7 @@ const Skills: React.FC = () => {
 
                                                 {/* Descripción corta */}
                                                 <p className={`font-sans text-[10px] sm:text-xs md:text-sm ${colorClasses.text} opacity-80 text-center mb-1 sm:mb-2 md:mb-3 lg:mb-4`}>
-                                                    {skill.description.substring(0, 40)}...
+                                                    {skill.description.substring(0, 180)}
                                                 </p>
 
                                                 {/* Círculo central decorativo */}
@@ -353,9 +353,6 @@ const Skills: React.FC = () => {
 
                                             {/* Descripción detallada */}
                                             <div className="mb-8">
-                                                <h4 className="font-mono text-lg font-bold text-[var(--color-base-content)] mb-3">
-                                                    Descripción Detallada
-                                                </h4>
                                                 <p className="font-sans text-lg text-[var(--color-neutral-content)] leading-relaxed">
                                                     {selectedCard.detailedDescription}
                                                 </p>
@@ -404,36 +401,6 @@ const Skills: React.FC = () => {
                                                     ))}
                                                 </div>
                                             </div>
-
-                                            {/* Footer con estadísticas */}
-                                            <motion.div
-                                                className="pt-6 border-t border-[var(--color-base-300)]"
-                                                initial={{ opacity: 0 }}
-                                                animate={{ opacity: 1 }}
-                                                transition={{ delay: 0.5 }}
-                                            >
-                                                <div className="flex justify-center">
-                                                    <div className={`flex items-center gap-4 px-6 py-3 ${colorClasses.bg} border ${colorClasses.border}/20 rounded-[var(--radius-field)]`}>
-                                                        <div className="text-center">
-                                                            <span className={`font-mono text-lg font-bold ${colorClasses.text} block`}>
-                                                                {selectedCard.items.length}
-                                                            </span>
-                                                            <span className="font-sans text-xs text-[var(--color-neutral-content)]">
-                                                                Competencias
-                                                            </span>
-                                                        </div>
-                                                        <div className={`w-1 h-8 ${colorClasses.text.replace('text-', 'bg-')} opacity-30 rounded`} />
-                                                        <div className="text-center">
-                                                            <span className={`font-mono text-lg font-bold ${colorClasses.text} block`}>
-                                                                {selectedCard.keyFeatures.length}
-                                                            </span>
-                                                            <span className="font-sans text-xs text-[var(--color-neutral-content)]">
-                                                                Características
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </motion.div>
                                         </>
                                     )
                                 })()}

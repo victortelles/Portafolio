@@ -6,20 +6,21 @@
             "id": 1,
             "title": "Comunicación en Equipo",
             "description": "Habilidad para comunicar ideas de manera clara y colaborar efectivamente con equipos multidisciplinarios.",
-            "detailedDescription": "Capacidad excepcional para establecer comunicación efectiva tanto verbal como escrita, facilitando la colaboración entre diferentes equipos y stakeholders. Experiencia en presentaciones técnicas, documentación de proyectos y mediación en conflictos de equipo.",
+            "detailedDescription": "Capacidad para establecer comunicación efectiva tanto verbal como escrita, facilitando la colaboración entre diferentes equipos.",
             "color": "primary",
             "icon": "FaUsers",
             "items": [
-                "Comunicación interpersonal",
+                "Comunicación",
+                "Escucha activa",
                 "Trabajo colaborativo",
-                "Presentaciones técnicas",
-                "Documentación clara"
+                "Retroalimentación constructiva"
             ],
             "keyFeatures": [
-                "Facilitación de reuniones",
-                "Comunicación cross-funcional",
+                "Empatía",
+                "Claridad",
+                "Comunicación",
                 "Feedback constructivo",
-                "Resolución de conflictos"
+                "Adaptabilidad"
             ]
         },
         {
@@ -36,9 +37,9 @@
                 "Mentalidad de crecimiento"
             ],
             "keyFeatures": [
-                "Curva de aprendizaje rápida",
+                "Curva de aprendizaje",
                 "Investigación independiente",
-                "Experimentación con nuevas tools",
+                "Experimentación con nuevas herramientas",
                 "Adaptación a metodologías ágiles"
             ]
         },
@@ -46,7 +47,7 @@
             "id": 3,
             "title": "Gestión y Organización",
             "description": "Competencia para organizar proyectos, gestionar tiempo y mantener altos estándares de calidad.",
-            "detailedDescription": "Habilidades sólidas en planificación estratégica, gestión del tiempo y organización de recursos. Experiencia coordinando múltiples proyectos simultáneamente mientras se mantienen estándares de calidad excepcionales.",
+            "detailedDescription": "Habilidades sólidas en planificación estratégica, gestión del tiempo y organización de recursos, equilibrar tareas y evitar retrasos de proyectos.",
             "color": "accent",
             "icon": "FaClock",
             "items": [
@@ -56,10 +57,10 @@
                 "Atención al detalle"
             ],
             "keyFeatures": [
-                "Priorización efectiva",
-                "Gestión de deadlines",
-                "Organización de recursos",
-                "Control de calidad"
+                "Puntualidad",
+                "Organización de tareas",
+                "Control de calidad",
+                "Disciplina"
             ]
         },
         {
@@ -84,22 +85,23 @@
         },
         {
             "id": 5,
-            "title": "Liderazgo de Proyectos",
-            "description": "Capacidad para liderar equipos de desarrollo y guiar proyectos hacia el éxito.",
-            "detailedDescription": "Liderazgo técnico con experiencia guiando equipos de desarrollo desde la conceptualización hasta la entrega. Habilidad para tomar decisiones estratégicas, motivar equipos y asegurar la entrega exitosa de proyectos.",
+            "title": "Trabajo en equipo",
+            "description": "Capacidad para colaborar efectivamente con otros y contribuir al logro de objetivos comunes.",
+            "detailedDescription": "Experiencia en entornos de trabajo colaborativos, fomentando la comunicación abierta entre los miembros del equipo. Habilidad para resolver conflictos o proponer ideas.",
             "color": "success",
             "icon": "FaUserTie",
             "items": [
-                "Liderazgo técnico",
-                "Mentoría",
-                "Gestión de equipos",
-                "Toma de decisiones"
+                "Colaboración",
+                "Cooperación",
+                "Respeto",
+                "Toma de decisiones",
+                "Apoyo mutuo"
             ],
             "keyFeatures": [
-                "Mentoring de desarrolladores",
-                "Gestión de stakeholders",
+                "Tolerancia",
+                "Apertura a nuevas ideas",
                 "Toma de decisiones técnicas",
-                "Motivación de equipos"
+                "Responsabilidad compartida"
             ]
         }
     ],

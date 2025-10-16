@@ -44,8 +44,7 @@
             "keyFeatures": [
                 "Curva de aprendizaje",
                 "Investigación independiente",
-                "Experimentación con nuevas herramientas",
-                "Adaptación a metodologías ágiles"
+                "Experimentación con nuevas herramientas"
             ]
         },
         {
@@ -71,21 +70,18 @@
         {
             "id": 4,
             "title": "Resolución de Problemas",
-            "description": "Enfoque analítico para identificar y resolver problemas complejos de manera creativa.",
-            "detailedDescription": "Pensamiento analítico y sistemático para abordar desafíos técnicos complejos. Experiencia en debugging avanzado, optimización de procesos y desarrollo de soluciones innovadoras bajo presión.",
+            "description": "Identificar y resolver problemas complejos.",
+            "detailedDescription": "Analizar y abordar desafíos técnicos complejos. Realizar debugging y revisar para desarrollar de soluciones efectivas.",
             "color": "info",
             "icon": "FaSearchPlus",
             "items": [
                 "Análisis crítico",
-                "Pensamiento creativo",
-                "Debugging avanzado",
+                "Debugging",
                 "Optimización de procesos"
             ],
             "keyFeatures": [
-                "Análisis root-cause",
-                "Soluciones creativas",
-                "Optimización de performance",
-                "Troubleshooting sistemático"
+                "Analisis",
+                "Desarrollo de soluciones"
             ]
         },
         {
@@ -123,7 +119,7 @@
                 "Pruebas de integración (Cypress)",
                 "Prueba de sistema (Selenium)",
                 "TDD & BDD",
-                "Cobertura de codigo"
+                "Datos mock"
             ],
             "keyFeatures": [
                 "Automatizacion pruebas",
@@ -146,53 +142,49 @@
                 "VS Code"
             ],
             "keyFeatures": [
-                "Container orchestration",
-                "Infrastructure as Code",
-                "Automated testing",
-                "Monitoring & Logging",
-                "Deployment automation"
+                "Automatizacion Pipelines",
+                "Containerización",
+                "Pruebas automatizadas",
+                "Automatizacion de despliegues"
             ]
         },
         {
             "id": 8,
             "title": "Database Management",
             "description": "Diseño y gestión de bases de datos relacionales y NoSQL.",
-            "detailedDescription": "Experiencia comprensiva en diseño de bases de datos, optimización de queries y gestión de datos tanto relacionales como NoSQL. Enfoque en performance, integridad de datos y escalabilidad.",
+            "detailedDescription": "Experiencia comprensiva en diseño de bases de datos, consultas, queries y gestión de datos tanto relacionales como NoSQL. Enfoque en performance, integridad de datos y escalabilidad.",
             "color": "accent",
             "icon": "FaDatabase",
             "items": [
                 "MongoDB",
                 "PostgreSQL",
                 "MySQL",
-                "Database Design"
+                "Diagramas ER"
             ],
             "keyFeatures": [
-                "Schema design",
-                "Query optimization",
-                "Data modeling",
-                "Backup strategies",
-                "Performance tuning"
+                "Diseño de esquemas",
+                "Consultas query",
+                "Modelado de datos"
             ]
         },
         {
             "id": 9,
             "title": "Backend Development",
             "description": "Creación de APIs robustas y sistemas escalables del lado del servidor.",
-            "detailedDescription": "Desarrollo de arquitecturas backend escalables utilizando Node.js, Python y Java. Experiencia en diseño de APIs RESTful, microservicios y sistemas distribuidos con enfoque en performance y seguridad.",
+            "detailedDescription": "Desarrollo de arquitecturas backend escalables utilizando Node.js, Python. Experiencia en diseño de APIs RESTful.",
             "color": "secondary",
             "icon": "FaServer",
             "items": [
                 "Node.js & Express",
-                "Python",
-                "Java",
+                "Python & Django",
                 "RESTful APIs"
             ],
             "keyFeatures": [
-                "Microservices architecture",
-                "API design",
-                "Authentication & Authorization",
-                "Caching strategies",
-                "Load balancing"
+                "Arquitectura monolitica ",
+                "Diseño de APIs",
+                "Autenticacion & Autorizacion",
+                "Middlewares",
+                "Roles"
             ]
         },
         {

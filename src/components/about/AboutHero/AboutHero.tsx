@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import ProfileImageCard from "./ProfileImageCard"
 import PersonalCard from "./PersonalCard"
 import CurrentStatusCard from "./CurrentStatusCard"
+import LanguageCard from "./LanguageCard"
 import QuickStatsCard from "./QuickStatsCard"
 import data from "./aboutHeroData.json"
 
@@ -68,18 +69,30 @@ const AboutHero: React.FC = () => {
                         </motion.div>
                     </div>
 
-                    {/* Fila inferior - Estado actual y Datos rápidos */}
+                    {/* Fila inferior - Estado actual + Idiomas y Datos rápidos */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                        {/* Estado actual */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.8, delay: 1.0 }}
-                        >
-                            <CurrentStatusCard />
-                        </motion.div>
+                        {/* Columna izquierda - Estado actual e Idiomas */}
+                        <div className="space-y-8">
+                            {/* Estado actual */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, delay: 1.0 }}
+                            >
+                                <CurrentStatusCard />
+                            </motion.div>
 
-                        {/* Datos rápidos */}
+                            {/* Idiomas debajo del estado actual */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 50 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.8, delay: 1.1 }}
+                            >
+                                <LanguageCard />
+                            </motion.div>
+                        </div>
+
+                        {/* Columna derecha - Datos rápidos */}
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
                             animate={{ opacity: 1, y: 0 }}

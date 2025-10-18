@@ -66,5 +66,20 @@
         "titleAccent": "mí",
         "subtitle": "Conoce más sobre mi historia, experiencia y pasión por el desarrollo de software",
         "quickStatsTitle": "Datos rápidos"
+    },
+    "languageData": {
+        "title": "Idiomas",
+        "languages": [
+            {
+                "name": "Español",
+                "level": "Nativo",
+                "levelType": "native"
+            },
+            {
+                "name": "Inglés",
+                "level": "B2 (Intermedio)",
+                "levelType": "intermediate"
+            }
+        ]
     }
 }

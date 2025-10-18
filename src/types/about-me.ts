@@ -34,11 +34,23 @@ export interface CurrentStatus {
     interests: string
 }
 
+export interface Language {
+    name: string
+    level: string
+    levelType: "native" | "intermediate" | "advanced" | "basic"
+}
+
+export interface LanguageData {
+    title: string
+    languages: Language[]
+}
+
 export interface AboutHeroData {
     personalInfo: PersonalInfo
     quickFacts: QuickFact[]
     socialLinks: SocialLink[]
     currentStatus: CurrentStatus
+    languageData: LanguageData
 }
 
 // PersonalValues tipos

@@ -2,8 +2,8 @@
 
 import React, { useState } from "react"
 import {
-    FaLightbulb, FaHeart, FaUsers, FaBullseye, FaHandshake,
-    FaPalette, FaRocket, FaGraduationCap
+    FaLightbulb, FaHeart, FaUsers, FaHandshake,
+    FaPalette, FaRocket, FaGraduationCap, FaBalanceScale,
 } from "react-icons/fa"
 import valuesData from "./valuesData.json"
 import type { PersonalValuesData } from "@/types/about-me"
@@ -17,7 +17,7 @@ const PersonalValues: React.FC = () => {
             'FaLightbulb': <FaLightbulb />,
             'FaHeart': <FaHeart />,
             'FaUsers': <FaUsers />,
-            'FaBullseye': <FaBullseye />,
+            'FaBalanceScale': <FaBalanceScale/>,
             'FaHandshake': <FaHandshake />,
             'FaPalette': <FaPalette />,
             'FaRocket': <FaRocket />,

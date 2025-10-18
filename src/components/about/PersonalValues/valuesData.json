@@ -22,7 +22,7 @@
             "id": 2,
             "title": "Aprendizaje continuo",
             "description": "La tecnología evoluciona constantemente, por lo que mantenerse actualizado y aprender nuevas herramientas es esencial.",
-            "icon": "FaLightbulb",
+            "icon": "FaGraduationCap",
             "color": "secondary",
             "keywords": [
                 "Cursos",
@@ -36,7 +36,7 @@
             "id": 3,
             "title": "Colaboración",
             "description": "El trabajo en equipo y la comunicación clara son clave para el éxito de cualquier proyecto de desarrollo.",
-            "icon": "🤝",
+            "icon": "FaHandshake",
             "color": "accent",
             "keywords": [
                 "Trabajo en equipo",
@@ -79,7 +79,7 @@
             "id": 6,
             "title": "Ética profesional",
             "description": "Mantener la honestidad, transparencia y responsabilidad en cada aspecto del desarrollo de software.",
-            "icon": "⚖️",
+            "icon": "FaBalanceScale",
             "color": "warning",
             "keywords": [
                 "Transparencia",

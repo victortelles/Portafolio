@@ -1,6 +1,5 @@
 import type React from "react"
 import { ArrowRight, MessageCircle } from "lucide-react"
-import { FaChevronDown } from "react-icons/fa"
 import TerminalAnimation from "./TerminalAnimation"
 import BadgeComponent from "./BadgeComponent"
 import content from "./heroSectionData.json"

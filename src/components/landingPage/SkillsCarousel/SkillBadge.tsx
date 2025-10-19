@@ -2,8 +2,20 @@
 
 import type React from "react"
 import { useState } from "react"
-import * as FaIcons from "react-icons/fa"
-import * as SiIcons from "react-icons/si"
+import {
+    FaCode, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs,
+    FaPython, FaGitAlt, FaDatabase, FaAws, FaGithub, FaSass, FaDocker
+} from "react-icons/fa"
+import {
+    SiTypescript, SiTailwindcss, SiMongodb, SiPostgresql,
+    SiVite, SiNextdotjs, SiExpress, SiRedux, SiJest,
+    SiCypress, SiDocker as SiDockerSi, SiFigma, SiNestjs,
+    SiAngular, SiFlutter, SiDjango, SiFastapi, SiDart,
+    SiMysql, SiSupabase, SiVercel, SiNetlify, SiFirebase,
+    SiRender, SiGitlab, SiNginx, SiCircleci, SiPostman,
+    SiSelenium, SiJupyter, SiPandas, SiNumpy, SiScikitlearn,
+    SiOpenai, SiGithubcopilot, SiClaude
+} from "react-icons/si"
 import type { Skill } from "@/types/landingPage"
 
 interface SkillBadgeProps {
@@ -13,21 +25,15 @@ interface SkillBadgeProps {
 const SkillBadge: React.FC<SkillBadgeProps> = ({ skill }) => {
     const [isHovered, setIsHovered] = useState(false)
 
-    // Función para obtener el icono dinámicamente
-    const getIcon = (iconName: string) => {
-        // Busca en FontAwesome primero
-        const FaIcon = (FaIcons as any)[iconName]
-        if (FaIcon) return FaIcon
-
-        // Busca en Simple Icons después
-        const SiIcon = (SiIcons as any)[iconName]
-        if (SiIcon) return SiIcon
-
-        // Icono por defecto si no se encuentra
-        return FaIcons.FaCode
+    // Mapeo explícito de iconos usados
+    const iconMap: { [key: string]: React.ComponentType<{ size?: number; className?: string; style?: React.CSSProperties }> } = {
+        FaCode, FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaJs, FaPython, FaGitAlt, FaDatabase, FaAws, FaGithub, FaSass, FaDocker,
+        SiTypescript, SiTailwindcss, SiMongodb, SiPostgresql, SiVite, SiNextdotjs, SiExpress, SiRedux, SiJest, SiCypress,
+        SiDocker: SiDockerSi, SiFigma, SiNestjs, SiAngular, SiFlutter, SiDjango, SiFastapi, SiDart, SiMysql, SiSupabase,
+        SiVercel, SiNetlify, SiFirebase, SiRender, SiGitlab, SiNginx, SiCircleci, SiPostman, SiSelenium, SiJupyter, SiPandas,
+        SiNumpy, SiScikitlearn, SiOpenai, SiGithubcopilot, SiClaude
     }
-
-    const IconComponent = getIcon(skill.icon)
+    const IconComponent = iconMap[skill.icon] || FaCode
 
     return (
         <div

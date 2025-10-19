@@ -1,5 +1,6 @@
 
-import PersonalTimeline from "@/components/experience/PersonalTimeline/PersonalTimeline"
+import ExperienceHero from "@/components/experience/ExperienceHero/ExperienceHero"
+import ExperienceTimeline from "@/components/experience/ExperienceTimeline/ExperienceTimeline"
 import Navbar from "@/components/common/Navbar/Navbar"
 import ScrollToTopButton from "@/components/common/ScrollToTopButton/ScrollToTopButton"
 
@@ -9,8 +10,11 @@ export default function ExperiencePage() {
             {/* Navbar*/}
             <Navbar />
 
-            {/* Timeline personal */}
-            <PersonalTimeline />
+            {/* Hero Section */}
+            <ExperienceHero />
+
+            {/* Timeline de experiencias */}
+            <ExperienceTimeline />
 
             {/* Botón flotante para volver al inicio */}
             <ScrollToTopButton />

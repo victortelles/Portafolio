@@ -1,0 +1,148 @@
+{
+    "experiences": [
+        {
+            "id": "exp-001",
+            "title": "Desarrollador Full Stack",
+            "organization": "TechCorp Solutions",
+            "description": "Desarrollo de aplicaciones web completas utilizando tecnologías modernas para mejorar la experiencia del usuario y optimizar procesos empresariales.",
+            "eventType": "work",
+            "period": {
+                "start": "2023-01",
+                "end": "2024-06"
+            },
+            "location": "Remoto",
+            "workTime": "Tiempo Completo",
+            "role": "Desarrollador Full Stack",
+            "shortDescription": "Desarrollo de aplicaciones web completas utilizando tecnologías modernas para mejorar la experiencia del usuario y optimizar procesos empresariales.",
+            "keyAchievements": [
+                "Optimización del rendimiento de la aplicación en un 40%",
+                "Implementación de arquitectura microservicios",
+                "Liderazgo de equipo de 3 desarrolladores junior",
+                "Automatización de procesos de despliegue con CI/CD"
+            ],
+            "technologies": [
+                "React",
+                "Node.js",
+                "PostgreSQL",
+                "Docker",
+                "AWS"
+            ],
+            "links": [
+                {
+                    "title": "Proyecto Principal",
+                    "url": "https://github.com/usuario/proyecto"
+                }
+            ],
+            "expanded": false
+        },
+        {
+            "id": "exp-002",
+            "title": "Certificación AWS Solutions Architect",
+            "organization": "Amazon Web Services",
+            "description": "Certificación en arquitectura de soluciones en la nube de Amazon Web Services, enfocada en diseño de sistemas escalables y seguros.",
+            "eventType": "certification",
+            "period": {
+                "start": "2023-03",
+                "end": "2023-05"
+            },
+            "location": "Online",
+            "workTime": "Tiempo Parcial",
+            "role": "Estudiante",
+            "shortDescription": "Certificación en arquitectura de soluciones en la nube de Amazon Web Services, enfocada en diseño de sistemas escalables y seguros.",
+            "keyAchievements": [
+                "Dominio de servicios AWS principales (EC2, S3, RDS, Lambda)",
+                "Diseño de arquitecturas altamente disponibles",
+                "Implementación de mejores prácticas de seguridad",
+                "Optimización de costos en la nube"
+            ],
+            "technologies": [
+                "AWS",
+                "CloudFormation",
+                "IAM",
+                "VPC",
+                "Lambda"
+            ],
+            "links": [
+                {
+                    "title": "Certificado",
+                    "url": "https://aws.amazon.com/verification"
+                }
+            ],
+            "expanded": false
+        },
+        {
+            "id": "exp-003",
+            "title": "Aplicación de Gestión de Inventarios",
+            "organization": "Proyecto Freelance",
+            "description": "Desarrollo de una aplicación completa para gestión de inventarios de una empresa mediana, incluyendo dashboard administrativo y API REST.",
+            "eventType": "project",
+            "period": {
+                "start": "2022-08",
+                "end": "2023-02"
+            },
+            "location": "Freelance",
+            "workTime": "Proyecto",
+            "role": "Desarrollador Full Stack",
+            "shortDescription": "Desarrollo de una aplicación completa para gestión de inventarios de una empresa mediana, incluyendo dashboard administrativo y API REST.",
+            "keyAchievements": [
+                "Reducción del tiempo de gestión de inventario en 60%",
+                "Implementación de sistema de reportes automáticos",
+                "Integración con sistemas de facturación externos",
+                "Desarrollo de aplicación móvil complementaria"
+            ],
+            "technologies": [
+                "Next.js",
+                "Express.js",
+                "MongoDB",
+                "React Native",
+                "Chart.js"
+            ],
+            "links": [
+                {
+                    "title": "Demo",
+                    "url": "https://demo-inventario.com"
+                },
+                {
+                    "title": "GitHub",
+                    "url": "https://github.com/usuario/inventario-app"
+                }
+            ],
+            "expanded": false
+        },
+        {
+            "id": "exp-004",
+            "title": "Ingeniería en Sistemas Computacionales",
+            "organization": "Universidad Tecnológica",
+            "description": "Formación integral en desarrollo de software, estructuras de datos, algoritmos y metodologías de desarrollo ágil.",
+            "eventType": "education",
+            "period": {
+                "start": "2019-08",
+                "end": "2023-12"
+            },
+            "location": "Universidad Tecnológica",
+            "workTime": "Tiempo Completo",
+            "role": "Estudiante",
+            "shortDescription": "Formación integral en desarrollo de software, estructuras de datos, algoritmos y metodologías de desarrollo ágil.",
+            "keyAchievements": [
+                "Graduación con honores académicos",
+                "Participación en proyectos de investigación",
+                "Desarrollo de tesis sobre inteligencia artificial",
+                "Liderazgo en grupos de estudio colaborativo"
+            ],
+            "technologies": [
+                "Java",
+                "Python",
+                "C++",
+                "MySQL",
+                "Git"
+            ],
+            "links": [
+                {
+                    "title": "Tesis",
+                    "url": "https://repositorio.universidad.edu/tesis"
+                }
+            ],
+            "expanded": false
+        }
+    ]
+}

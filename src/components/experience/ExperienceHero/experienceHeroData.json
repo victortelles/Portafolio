@@ -1,0 +1,56 @@
+{
+    "title": "Mi Trayectoria Profesional",
+    "description": "Un recorrido por mi experiencia, proyectos y aprendizajes que han moldeado mi carrera como desarrollador",
+    "stats": [
+        {
+            "id": 1,
+            "label": "Certificaciones",
+            "count": 12,
+            "icon": "FaCertificate"
+        },
+        {
+            "id": 2,
+            "label": "Proyectos",
+            "count": 25,
+            "icon": "FaProjectDiagram"
+        },
+        {
+            "id": 3,
+            "label": "Tecnologías",
+            "count": 30,
+            "icon": "FaCode"
+        },
+        {
+            "id": 4,
+            "label": "Años de Experiencia",
+            "count": 3,
+            "icon": "FaCalendarAlt"
+        }
+    ],
+    "eventTypes": [
+        {
+            "id": "education",
+            "name": "Educación",
+            "color": "var(--color-info)",
+            "icon": "FaGraduationCap"
+        },
+        {
+            "id": "certification",
+            "name": "Certificaciones",
+            "color": "var(--color-success)",
+            "icon": "FaCertificate"
+        },
+        {
+            "id": "project",
+            "name": "Proyectos",
+            "color": "var(--color-warning)",
+            "icon": "FaProjectDiagram"
+        },
+        {
+            "id": "work",
+            "name": "Trabajos",
+            "color": "var(--color-secondary)",
+            "icon": "FaBriefcase"
+        }
+    ]
+}

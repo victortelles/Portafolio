@@ -1,39 +1,77 @@
 
-// PersonalTimeline tipos
-export interface TimelineEvent {
+// Tipos para ExperienceHero
+export interface StatCard {
     id: number
-    year: string
-    quarter: string
-    title: string
-    type: string
+    label: string
+    count: number
     icon: string
+}
+
+export interface EventType {
+    id: string
+    name: string
+    color: string
+    icon: string
+}
+
+export interface ExperienceHeroData {
+    title: string
     description: string
-    details: string[]
-    technologies: string[]
-    achievements: string[]
+    stats: StatCard[]
+    eventTypes: EventType[]
+}
+
+// Tipos para ExperienceTimeline
+export interface Period {
+    start: string
+    end: string | null
+}
+
+export interface Experience {
+    id: string
+    title: string
+    organization: string
+    description: string
+    eventType: string
+    period: Period
     location: string
+    workTime: string
+    role: string
+    shortDescription: string
+    keyAchievements: string[]
+    technologies: string[]
+    links?: ExperienceLink[]
+    expanded?: boolean
 }
 
-// Estadisticas del timeline
-export interface TimelineStats {
-    totalYears: number
-    majorMilestones: number
-    technologiesLearned: number
-    projectsCompleted: number
-    currentFocus: string
+export interface ExperienceLink {
+    title: string
+    url: string
 }
 
-// Filosofia de vida
-export interface LifePhilosophy {
-    quote: string
-    values: string[]
+export interface ExperienceTimelineData {
+    experiences: Experience[]
 }
 
-// Datos completos del timeline
-export interface PersonalTimelineData {
-    sectionTitle: string
-    sectionDescription: string
-    timelineEvents: TimelineEvent[]
-    stats: TimelineStats
-    lifePhilosophy: LifePhilosophy
+// Tipos para componentes
+export interface TimelineCardProps {
+    experience: Experience
+    eventType: EventType
+    isLast?: boolean
+}
+
+export interface EventTypeFilterProps {
+    eventTypes: EventType[]
+    activeFilter: string
+    onFilterChange: (filter: string) => void
+}
+
+export interface SearchFilterProps {
+    searchTerm: string
+    onSearchChange: (term: string) => void
+    placeholder?: string
+}
+
+export interface StatsCardsProps {
+    stats: StatCard[]
 }

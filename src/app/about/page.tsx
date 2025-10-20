@@ -9,30 +9,32 @@ import Footer from "@/components/common/Footer/Footer"
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen bg-[var(--color-base-100)]">
+        <div className="min-h-screen bg-[var(--color-base-100)]">
             {/* Navbar*/}
             <Navbar />
+            <main>
 
-            {/* Hero section con información personal */}
-            <AboutHero />
+                {/* Hero section con información personal */}
+                <AboutHero />
 
-            {/* Valores personales */}
-            <PersonalValues />
+                {/* Valores personales */}
+                <PersonalValues />
 
-            {/* Sección de habilidades */}
-            <Skills />
+                {/* Sección de habilidades */}
+                <Skills />
 
-            {/* Hobbies y pasatiempos */}
-            <HobbiesSection />
+                {/* Hobbies y pasatiempos */}
+                <HobbiesSection />
 
-            {/* Stack tecnológico nuevo */}
-            {/*<TechStack />*/}
+                {/* Stack tecnológico nuevo */}
+                {/*<TechStack />*/}
 
+            </main>
             {/* Footer */}
             <Footer />
 
             {/* Botón flotante para volver al inicio */}
             <ScrollToTopButton />
-        </main>
+        </div>
     )
 }

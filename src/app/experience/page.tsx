@@ -6,18 +6,20 @@ import ScrollToTopButton from "@/components/common/ScrollToTopButton/ScrollToTop
 
 export default function ExperiencePage() {
     return (
-        <main className="min-h-screen bg-[var(--color-base-100)]">
-            {/* Navbar*/}
-            <Navbar />
+        <div className="min-h-screen bg-[var(--color-base-100)]">
+            <main>
+                {/* Navbar*/}
+                <Navbar />
 
-            {/* Hero Section */}
-            <ExperienceHero />
+                {/* Hero Section */}
+                <ExperienceHero />
 
-            {/* Timeline de experiencias */}
-            <ExperienceTimeline />
+                {/* Timeline de experiencias */}
+                <ExperienceTimeline />
 
+            </main>
             {/* Botón flotante para volver al inicio */}
             <ScrollToTopButton />
-        </main>
+        </div>
     )
 }

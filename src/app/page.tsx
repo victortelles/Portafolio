@@ -18,9 +18,9 @@ const LandingPage: React.FC = () => {
                 <SkillsCarousel />
                 <FeaturedProjects />
                 <ContactCTA />
-                <ScrollToTopButton />
             </main>
             <Footer />
+            <ScrollToTopButton />
         </div>
 
     )

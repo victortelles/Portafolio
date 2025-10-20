@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="sticky top-0 z-50 bg-[var(--color-base-100)]/95 backdrop-blur-sm border-b border-[var(--color-base-300)]">
+        <nav className="sticky top-0 z-[9999] bg-[var(--color-base-100)]/95 backdrop-blur-sm border-b border-[var(--color-base-300)]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Brand */}
@@ -61,23 +61,25 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
 
-                {/* Mobile Navigation */}
-                {isOpen && (
-                    <div className="md:hidden border-t border-[var(--color-base-300)]">
-                        <div className="px-2 pt-2 pb-3 space-y-1">
-                            {content.navigation.map((item: NavItem) => (
-                                <a
-                                    key={item.label}
-                                    href={item.href}
-                                    className="font-mono block px-3 py-2 text-[var(--color-base-content)] hover:text-[var(--color-primary)] hover:bg-[var(--color-base-200)] rounded-[var(--radius-field)] transition-colors"
-                                >
-                                    {item.label}
-                                </a>
-                            ))}
-
-                        </div>
+                {/* Mobile Navigation animado */}
+                <div
+                    className={`md:hidden border-t border-[var(--color-base-300)] overflow-hidden transition-all duration-400 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'}`}
+                    style={{
+                        transitionProperty: 'max-height, opacity',
+                    }}
+                >
+                    <div className={`px-2 pt-2 pb-3 space-y-1 transition-opacity duration-300 ${isOpen ? 'opacity-100' : 'opacity-0'}`}>
+                        {content.navigation.map((item: NavItem) => (
+                            <a
+                                key={item.label}
+                                href={item.href}
+                                className="font-mono block px-3 py-2 text-[var(--color-base-content)] hover:text-[var(--color-primary)] hover:bg-[var(--color-base-200)] rounded-[var(--radius-field)] transition-colors"
+                            >
+                                {item.label}
+                            </a>
+                        ))}
                     </div>
-                )}
+                </div>
             </div>
         </nav>
     )

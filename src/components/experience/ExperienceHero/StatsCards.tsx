@@ -41,7 +41,7 @@ const StatsCards: React.FC<StatsCardsProps> = ({ stats }) => {
                                 <IconComponent />
                             </div>
                         </div>
-                        
+
                         {/* Texto centrado abajo */}
                         <div className="text-center">
                             <div className="text-sm font-sans" style={{ color: "var(--color-neutral-content)" }}>

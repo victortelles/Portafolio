@@ -20,7 +20,7 @@ const EventTypeFilter: React.FC<EventTypeFilterProps> = ({
     }
 
     return (
-        <div className="flex flex-wrap gap-2 mb-4">
+    <div className="flex flex-wrap gap-2 mb-4">
             {/* Botón "Todos" */}
             <button
                 onClick={() => onFilterChange("all")}
@@ -28,7 +28,8 @@ const EventTypeFilter: React.FC<EventTypeFilterProps> = ({
                 style={{
                     backgroundColor: activeFilter === "all" ? "var(--color-primary)" : "var(--color-base-200)",
                     color: activeFilter === "all" ? "var(--color-primary-content)" : "var(--color-base-content)",
-                    boxShadow: activeFilter === "all" ? "0 4px 6px -1px rgba(0, 0, 0, 0.1)" : "none"
+                    boxShadow: activeFilter === "all" ? "0 4px 6px -1px rgba(0, 0, 0, 0.1)" : "none",
+                    cursor: "pointer"
                 }}
             >
                 Todos
@@ -44,8 +45,8 @@ const EventTypeFilter: React.FC<EventTypeFilterProps> = ({
                         key={eventType.id}
                         onClick={() => onFilterChange(eventType.id)}
                         className={`flex items-center gap-2 px-4 py-2 rounded-full font-mono text-sm font-medium transition-all duration-300 hover:scale-105 ${isActive
-                                ? "shadow-lg transform scale-105"
-                                : "hover:shadow-md"
+                            ? "shadow-lg transform scale-105"
+                            : "hover:shadow-md"
                             }`}
                         style={{
                             backgroundColor: isActive
@@ -55,7 +56,8 @@ const EventTypeFilter: React.FC<EventTypeFilterProps> = ({
                                 ? "#ffffff"
                                 : eventType.color,
                             borderColor: eventType.color,
-                            border: `2px solid ${eventType.color}`
+                            border: `2px solid ${eventType.color}`,
+                            cursor: "pointer"
                         }}
                     >
                         <IconComponent className="text-sm" />

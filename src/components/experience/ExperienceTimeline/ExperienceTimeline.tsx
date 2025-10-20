@@ -17,7 +17,7 @@ const ExperienceTimeline: React.FC = () => {
     // Obtenemos los tipos de eventos del heroData
     const eventTypes: EventType[] = heroData.eventTypes
 
-    // Creamos un mapa para obtener fácilmente los datos del tipo de evento
+    // Mapa para obtener fácilmente los datos del tipo de evento
     const eventTypeMap = useMemo(() => {
         const map: { [key: string]: EventType } = {}
         eventTypes.forEach(eventType => {
@@ -52,7 +52,7 @@ const ExperienceTimeline: React.FC = () => {
     }, [activeFilter, searchTerm])
 
     return (
-        <section className="py-16 px-4 max-w-4xl mx-auto">
+    <section className="py-16 px-4 max-w-4xl mx-auto" style={{ overflowX: "hidden" }}>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

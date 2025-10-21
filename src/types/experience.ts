@@ -21,6 +21,35 @@ export interface ExperienceHeroData {
     eventTypes: EventType[]
 }
 
+// Tipos para texto de la interfaz de ExperienceTimeline
+export interface ResultsText {
+    showingAll: string
+    showingFiltered: string
+    of: string
+    experiencesLabel: string
+}
+
+export interface NoResultsFound {
+    title: string
+    description: string
+}
+
+export interface CardLabels {
+    technologies: string
+    keyAchievements: string
+    links: string
+}
+
+export interface ExperienceTimelineData {
+    sectionTitle: string
+    sectionTitleAccent: string
+    sectionDescription: string
+    resultsText: ResultsText
+    noResultsFound: NoResultsFound
+    cardLabels: CardLabels
+    experiences: Experience[]
+}
+
 // Tipos para ExperienceTimeline
 export interface Period {
     start: string
@@ -58,6 +87,7 @@ export interface TimelineCardProps {
     experience: Experience
     eventType: EventType
     isLast?: boolean
+    cardLabels: CardLabels
 }
 
 export interface EventTypeFilterProps {

@@ -8,13 +8,14 @@ import SearchFilter from "./SearchFilter"
 import TimelineCard from "./TimelineCard"
 import timelineData from "./experienceTimelineData.json"
 import heroData from "../ExperienceHero/experienceHeroData.json"
-import type { Experience, EventType } from "@/types/experience"
+import type { Experience, EventType, ExperienceTimelineData } from "@/types/experience"
 
 const ExperienceTimeline: React.FC = () => {
     const [activeFilter, setActiveFilter] = useState<string>("all")
     const [searchTerm, setSearchTerm] = useState<string>("")
 
-    // Obtenemos los tipos de eventos del heroData
+    // Obtenemos los datos del timeline
+    const data = timelineData as ExperienceTimelineData
     const eventTypes: EventType[] = heroData.eventTypes
 
     // Mapa para obtener fácilmente los datos del tipo de evento
@@ -28,7 +29,7 @@ const ExperienceTimeline: React.FC = () => {
 
     // Filtramos las experiencias según el filtro activo y término de búsqueda
     const filteredExperiences = useMemo(() => {
-        let filtered = timelineData.experiences
+        let filtered = data.experiences
 
         // Filtrar por tipo de evento
         if (activeFilter !== "all") {
@@ -52,21 +53,22 @@ const ExperienceTimeline: React.FC = () => {
     }, [activeFilter, searchTerm])
 
     return (
-    <section className="py-16 px-4 max-w-4xl mx-auto" style={{ overflowX: "hidden" }}>
-            <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-            >
-                {/* Título de la sección */}
-                <div className="text-center mb-12">
-                    <h2 className="text-4xl md:text-5xl font-bold mb-6 font-mono" style={{ color: "var(--color-base-content)" }}>
-                        Mi <span style={{ color: "var(--color-primary)" }}>Trayectoria</span>
-                    </h2>
-                    <p className="text-lg font-sans max-w-3xl mx-auto" style={{ color: "var(--color-neutral-content)" }}>
-                        Explora mi experiencia profesional y académica a través del tiempo
-                    </p>
-                </div>
+        <section className="py-16 px-4 md:px-8 lg:px-16 xl:px-32 w-full" style={{ overflowX: "hidden" }}>
+            <div className="max-w-none w-full">
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                >
+                    {/* Título de la sección */}
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl md:text-5xl font-bold mb-6 font-mono" style={{ color: "var(--color-base-content)" }}>
+                            {data.sectionTitle} <span style={{ color: "var(--color-primary)" }}>{data.sectionTitleAccent}</span>
+                        </h2>
+                        <p className="text-lg font-sans max-w-3xl mx-auto" style={{ color: "var(--color-neutral-content)" }}>
+                            {data.sectionDescription}
+                        </p>
+                    </div>
 
                 {/* Controles de filtrado */}
                 <div className="mb-8">
@@ -86,17 +88,17 @@ const ExperienceTimeline: React.FC = () => {
                 {/* Contador de resultados */}
                 <div className="mb-6">
                     <p className="text-sm font-mono" style={{ color: "var(--color-neutral-content)" }}>
-                        {filteredExperiences.length === timelineData.experiences.length
-                            ? `Mostrando todas las experiencias (${filteredExperiences.length})`
-                            : `Mostrando ${filteredExperiences.length} de ${timelineData.experiences.length} experiencias`
+                        {filteredExperiences.length === data.experiences.length
+                            ? `${data.resultsText.showingAll} (${filteredExperiences.length})`
+                            : `${data.resultsText.showingFiltered} ${filteredExperiences.length} ${data.resultsText.of} ${data.experiences.length} ${data.resultsText.experiencesLabel}`
                         }
                     </p>
                 </div>
 
                 {/* Timeline */}
-                <div className="relative min-h-[200px]">
+                <div className="relative min-h-[200px] w-full max-w-none flex justify-center">
                     {filteredExperiences.length > 0 ? (
-                        <div className="space-y-0">
+                        <div className="space-y-0 w-full">
                             {filteredExperiences.map((experience, index) => {
                                 const eventType = eventTypeMap[experience.eventType]
 
@@ -122,6 +124,7 @@ const ExperienceTimeline: React.FC = () => {
                                             experience={experience}
                                             eventType={eventType}
                                             isLast={index === filteredExperiences.length - 1}
+                                            cardLabels={data.cardLabels}
                                         />
                                     </motion.div>
                                 )
@@ -138,15 +141,16 @@ const ExperienceTimeline: React.FC = () => {
                                 <FaSearch className="mx-auto" style={{ color: "var(--color-neutral-content)" }} />
                             </div>
                             <h3 className="text-2xl font-semibold mb-4 font-sans" style={{ color: "var(--color-base-content)" }}>
-                                No se encontraron experiencias
+                                {data.noResultsFound.title}
                             </h3>
                             <p className="text-lg font-sans" style={{ color: "var(--color-neutral-content)" }}>
-                                Intenta ajustar los filtros o el término de búsqueda
+                                {data.noResultsFound.description}
                             </p>
                         </motion.div>
                     )}
                 </div>
-            </motion.div>
+                </motion.div>
+            </div>
         </section>
     )
 }

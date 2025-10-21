@@ -1,4 +1,22 @@
 {
+    "sectionTitle": "Mi",
+    "sectionTitleAccent": "Trayectoria",
+    "sectionDescription": "Explora mi experiencia profesional y académica a través del tiempo",
+    "resultsText": {
+        "showingAll": "Mostrando todas las experiencias",
+        "showingFiltered": "Mostrando",
+        "of": "de",
+        "experiencesLabel": "experiencias"
+    },
+    "noResultsFound": {
+        "title": "No se encontraron experiencias",
+        "description": "Intenta ajustar los filtros o el término de búsqueda"
+    },
+    "cardLabels": {
+        "technologies": "Tecnologías:",
+        "keyAchievements": "Logros clave:",
+        "links": "Enlaces:"
+    },
     "experiences": [
         {
             "id": "exp-001",

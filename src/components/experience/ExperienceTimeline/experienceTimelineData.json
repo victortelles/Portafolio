@@ -19,7 +19,7 @@
     },
     "experiences": [
         {
-            "id": "exp-001",
+            "id": "exp-009",
             "title": "Desarrollador Full Stack",
             "organization": "TechCorp Solutions",
             "description": "Desarrollo de aplicaciones web completas utilizando tecnologías modernas para mejorar la experiencia del usuario y optimizar procesos empresariales.",
@@ -54,7 +54,7 @@
             "expanded": false
         },
         {
-            "id": "exp-002",
+            "id": "exp-008",
             "title": "Certificación AWS Solutions Architect",
             "organization": "Amazon Web Services",
             "description": "Certificación en arquitectura de soluciones en la nube de Amazon Web Services, enfocada en diseño de sistemas escalables y seguros.",
@@ -89,7 +89,7 @@
             "expanded": false
         },
         {
-            "id": "exp-003",
+            "id": "exp-007",
             "title": "Aplicación de Gestión de Inventarios",
             "organization": "Proyecto Freelance",
             "description": "Desarrollo de una aplicación completa para gestión de inventarios de una empresa mediana, incluyendo dashboard administrativo y API REST.",
@@ -128,38 +128,69 @@
             "expanded": false
         },
         {
-            "id": "exp-004",
-            "title": "Ingeniería en Sistemas Computacionales",
-            "organization": "Universidad Tecnológica",
-            "description": "Formación integral en desarrollo de software, estructuras de datos, algoritmos y metodologías de desarrollo ágil.",
-            "eventType": "education",
+            "id": "exp-001",
+            "title": "Ayudante General en Reparación y Soporte Técnico",
+            "organization": "Soluciones y Equipamiento en Informática (SEI)",
+            "description": "Después de graduarme de la preparatoria, tomé un año sabático para reflexionar sobre mi futuro académico y profesional. Durante ese periodo, trabajé como ayudante general en una microempresa dedicada a la reparación de laptops, instalación de redes y soporte técnico para pequeñas/medianas empresas. Mi labor incluyó la instalación de drivers y software, limpieza y mantenimiento de hardware (como cambio de pasta térmica y eliminación de polvo), así como la reparación básica de impresoras y la instalación de componentes. Esta experiencia me permitió conocer el entorno laboral real, desarrollar habilidades técnicas y entender mejor el funcionamiento de los equipos informáticos.",
+            "eventType": "work",
             "period": {
-                "start": "2019-08",
-                "end": "2023-12"
+                "start": "2019-09",
+                "end": "2020-08"
             },
-            "location": "Universidad Tecnológica",
-            "workTime": "Tiempo Completo",
-            "role": "Estudiante",
-            "shortDescription": "Formación integral en desarrollo de software, estructuras de datos, algoritmos y metodologías de desarrollo ágil.",
+            "location": "Presencial, Jalisco",
+            "workTime": "Tiempo Parcial",
+            "role": "Ayudante General",
+            "shortDescription": "Trabajo como ayudante general en reparación de laptops, instalación de redes y mantenimiento de hardware y software en una microempresa de servicios informáticos.",
             "keyAchievements": [
-                "Graduación con honores académicos",
-                "Participación en proyectos de investigación",
-                "Desarrollo de tesis sobre inteligencia artificial",
-                "Liderazgo en grupos de estudio colaborativo"
+                "Instalación de drivers y software en equipos de cómputo",
+                "Mantenimiento y limpieza de hardware (pasta térmica, polvo, archivos temporales)",
+                "Reparación básica de impresoras y equipos",
+                "Instalación de componentes y redes para pequeñas empresas",
+                "Adquisición de experiencia laboral en el sector tecnológico"
             ],
             "technologies": [
-                "Java",
-                "Python",
-                "C++",
-                "MySQL",
-                "Git"
+                "Windows",
+                "Ubuntu",
+                "Herramientas de limpieza de hardware",
+                "Instaladores de drivers",
+                "Instalacion de software",
+                "Redes LAN/WAN",
+                "Impresoras"
             ],
-            "links": [
-                {
-                    "title": "Tesis",
-                    "url": "https://repositorio.universidad.edu/tesis"
-                }
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-000",
+            "title": "Carrera Técnica en Programación",
+            "organization": "CBTis 49",
+            "description": "Durante mi formación en el CBTis 49, tuve mi primer acercamiento formal a la programación y las tecnologías. Aprendí los fundamentos con HTML y C#, desarrollé proyectos básicos con Microsoft Access y Pseint, y realicé mis primeras prácticas en emuladores de Android Studio. También monté una tienda en línea con PrestaShop y exploré herramientas visuales como Adobe Dreamweaver. Esta etapa fue clave para despertar mi interés por el desarrollo de software.",
+            "eventType": "education",
+            "period": {
+                "start": "2016-08",
+                "end": "2019-08"
+            },
+            "location": "CBTis 49, Ocotlán, Jalisco",
+            "workTime": "Tiempo Completo",
+            "role": "Estudiante",
+            "shortDescription": "Primer contacto con la programación y tecnologías, aprendiendo fundamentos y herramientas que marcaron el inicio de mi trayectoria en el desarrollo de software.",
+            "keyAchievements": [
+                "Aprendizaje de fundamentos de programación con HTML y C#",
+                "Desarrollo de proyectos básicos con Microsoft Access y Pseint",
+                "Primeras prácticas en emuladores de Android Studio",
+                "Montaje de e-commerce con PrestaShop y hosting gratuito",
+                "Exploración de herramientas visuales como Adobe Dreamweaver"
             ],
+            "technologies": [
+                "HTML",
+                "Microsoft Access",
+                "C#",
+                "Pseint",
+                "Android Studio",
+                "PrestaShop",
+                "Adobe Dreamweaver"
+            ],
+            "links": [],
             "expanded": false
         }
     ]

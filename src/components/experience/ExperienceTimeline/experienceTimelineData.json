@@ -128,32 +128,70 @@
             "expanded": false
         },
         {
-            "id": "exp-002",
-            "title": "Inicio de Estudios Universitarios",
-            "organization": "ITESO - Universidad Jesuita de Guadalajara",
-            "description": "Al finalizar mi año sabático, investigué opciones universitarias fuera de mi ciudad para continuar en el ámbito de la tecnología y la programación. Ante la variedad de ramas tecnológicas, decidí realizar un examen de orientación vocacional, el cual me sugirió la carrera de Ingeniería en Sistemas Computacionales. Me inscribí en esa carrera, motivado por mi interés en el desarrollo de software. Más adelante, cuando la universidad abrió la carrera de Desarrollo de Software, realicé el cambio para alinearme mejor con mis intereses y objetivos profesionales.",
+            "id": "exp-003",
+            "title": "Segundo Semestre de Ingeniería en Sistemas Computacionales",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 2° Semestre",
+            "description": "En el segundo semestre cursé materias clave como 'Fundamentos de Ciencias Computacionales', 'Interconexión de Redes' y 'Programación Estructurada'. En Fundamentos de Ciencias Computacionales aprendí sobre lógica, conjuntos, funciones, relaciones, conteo y grafos, desarrollando habilidades para modelar y resolver problemas mediante herramientas matemáticas discretas. En Interconexión de Redes utilicé Cisco Packet Tracer para crear y configurar redes virtuales, practicar comandos de red y planificar topologías con switches y routers. En Programación Estructurada trabajé con el lenguaje C usando MingW y Eclipse, aprendiendo desde la sintaxis básica, declaración de variables, control de flujo, funciones, recursión, manejo de arreglos, cadenas, estructuras y uniones, hasta la representación de datos en memoria y conceptos fundamentales de la programación modular.",
             "eventType": "education",
             "period": {
-                "start": "2020-09",
-                "end": ""
+                "start": "2021-01",
+                "end": "2021-05"
             },
             "location": "Guadalajara, Jalisco",
-            "workTime": "Tiempo Completo",
+            "workTime": "Horario Escolar",
             "role": "Estudiante",
-            "shortDescription": "Ingreso a la universidad en el área de tecnología, iniciando en Ingeniería en Sistemas Computacionales y posteriormente cambiando a Desarrollo de Software.",
+            "shortDescription": "Segundo semestre enfocado en fundamentos matemáticos, redes y programación estructurada en C.",
             "keyAchievements": [
-                "Realización de examen de orientación vocacional para definir carrera",
-                "Ingreso a Ingeniería en Sistemas Computacionales",
-                "Cambio a la carrera de Desarrollo de Software para mayor afinidad profesional"
+                "Modelado y resolución de problemas con lógica, conjuntos y grafos",
+                "Configuración de redes virtuales y topologías con Cisco Packet Tracer",
+                "Desarrollo de programas en C aplicando estructuras, funciones y arreglos",
+                "Comprensión de la representación de datos en memoria y modularidad",
+                "Aplicación de conceptos de control de flujo, recursión y manejo de cadenas"
             ],
-            "technologies": [],
+            "technologies": [
+                "C",
+                "MingW",
+                "Eclipse",
+                "Cisco Packet Tracer",
+                "Matemáticas Discretas"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-002",
+            "title": "Inicio de Estudios Universitarios",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 1° Semestre",
+            "description": "Después de mi año sabático, decidí inscribirme en ITESO en la carrera de Ingeniería en Sistemas Computacionales. Durante el primer semestre, tuve mis primeras materias relacionadas con la programación, utilizando PSeInt para aprender a estructurar instrucciones y entender la lógica detrás de los algoritmos. Posteriormente, el primer lenguaje de programación que aprendí fue Python, para lo cual instalé el entorno de Python y utilicé el IDE PyCharm Edu. En la materia de 'Algoritmos y programación' aprendimos los conceptos básicos como operadores lógicos, sintaxis, condicionales, variables y estructuras simples en Python. Además, cursé la materia 'Introducción a redes computacionales', donde conocí los diferentes tipos y categorías de cables, tecnologías de red y el modelo OSI.",
+            "eventType": "education",
+            "period": {
+                "start": "2020-08",
+                "end": "2020-12"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Ingreso a ITESO en Ingeniería en Sistemas Computacionales, aprendiendo fundamentos de programación con PSeInt y Python, y conceptos básicos de redes.",
+            "keyAchievements": [
+                "Aprendizaje de lógica de programación con PSeInt",
+                "Primeros pasos en Python utilizando PyCharm Edu",
+                "Instalación y configuración de entornos de desarrollo",
+                "Comprensión de operadores, variables y estructuras básicas en Python",
+                "Introducción a redes: tipos de cables, categorías y modelo OSI"
+            ],
+            "technologies": [
+                "PSeInt",
+                "Python",
+                "PyCharm Edu",
+                "Redes"
+            ],
             "links": [],
             "expanded": false
         },
         {
             "id": "exp-001",
             "title": "Ayudante General en Reparación y Soporte Técnico",
-            "organization": "Soluciones y Equipamiento en Informática (SEI)",
+            "organization": "SEI - Soluciones y Equipamiento en Informática ",
             "description": "Después de graduarme de la preparatoria, tomé un año sabático para reflexionar sobre mi futuro académico y profesional. Durante ese periodo, trabajé como ayudante general en una microempresa dedicada a la reparación de laptops, instalación de redes y soporte técnico para pequeñas/medianas empresas. Mi labor incluyó la instalación de drivers y software, limpieza y mantenimiento de hardware (como cambio de pasta térmica y eliminación de polvo), así como la reparación básica de impresoras y la instalación de componentes. Esta experiencia me permitió conocer el entorno laboral real, desarrollar habilidades técnicas y entender mejor el funcionamiento de los equipos informáticos.",
             "eventType": "work",
             "period": {
@@ -161,7 +199,7 @@
                 "end": "2020-08"
             },
             "location": "Presencial, Jalisco",
-            "workTime": "Tiempo Parcial",
+            "workTime": "Medio Tiempo",
             "role": "Ayudante General",
             "shortDescription": "Trabajo como ayudante general en reparación de laptops, instalación de redes y mantenimiento de hardware y software en una microempresa de servicios informáticos.",
             "keyAchievements": [
@@ -186,15 +224,15 @@
         {
             "id": "exp-000",
             "title": "Carrera Técnica en Programación",
-            "organization": "CBTis 49",
+            "organization": "CBTis 49 - Centro de Estudios Tecnológicos Industrial y de Servicios No. 49",
             "description": "Durante mi formación en el CBTis 49, tuve mi primer acercamiento formal a la programación y las tecnologías. Aprendí los fundamentos con HTML y C#, desarrollé proyectos básicos con Microsoft Access y Pseint, y realicé mis primeras prácticas en emuladores de Android Studio. También monté una tienda en línea con PrestaShop y exploré herramientas visuales como Adobe Dreamweaver. Esta etapa fue clave para despertar mi interés por el desarrollo de software.",
             "eventType": "education",
             "period": {
                 "start": "2016-08",
                 "end": "2019-08"
             },
-            "location": "CBTis 49, Ocotlán, Jalisco",
-            "workTime": "Tiempo Completo",
+            "location": "Ocotlán, Jalisco",
+            "workTime": "Horario Escolar",
             "role": "Estudiante",
             "shortDescription": "Primer contacto con la programación y tecnologías, aprendiendo fundamentos y herramientas que marcaron el inicio de mi trayectoria en el desarrollo de software.",
             "keyAchievements": [

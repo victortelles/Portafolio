@@ -128,6 +128,29 @@
             "expanded": false
         },
         {
+            "id": "exp-002",
+            "title": "Inicio de Estudios Universitarios",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara",
+            "description": "Al finalizar mi año sabático, investigué opciones universitarias fuera de mi ciudad para continuar en el ámbito de la tecnología y la programación. Ante la variedad de ramas tecnológicas, decidí realizar un examen de orientación vocacional, el cual me sugirió la carrera de Ingeniería en Sistemas Computacionales. Me inscribí en esa carrera, motivado por mi interés en el desarrollo de software. Más adelante, cuando la universidad abrió la carrera de Desarrollo de Software, realicé el cambio para alinearme mejor con mis intereses y objetivos profesionales.",
+            "eventType": "education",
+            "period": {
+                "start": "2020-09",
+                "end": ""
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Tiempo Completo",
+            "role": "Estudiante",
+            "shortDescription": "Ingreso a la universidad en el área de tecnología, iniciando en Ingeniería en Sistemas Computacionales y posteriormente cambiando a Desarrollo de Software.",
+            "keyAchievements": [
+                "Realización de examen de orientación vocacional para definir carrera",
+                "Ingreso a Ingeniería en Sistemas Computacionales",
+                "Cambio a la carrera de Desarrollo de Software para mayor afinidad profesional"
+            ],
+            "technologies": [],
+            "links": [],
+            "expanded": false
+        },
+        {
             "id": "exp-001",
             "title": "Ayudante General en Reparación y Soporte Técnico",
             "organization": "Soluciones y Equipamiento en Informática (SEI)",

@@ -128,10 +128,66 @@
             "expanded": false
         },
         {
+            "id": "exp-005",
+            "title": "Diseño de Bases de Datos",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 4° Semestre",
+            "description": "En el cuarto semestre aprendí los fundamentos de bases de datos: llaves primarias y foráneas, entidades, tablas, atributos, relaciones, normalización y diagramas ER. Utilicé Oracle SQL para crear tablas, hacer consultas y practicar joins.",
+            "eventType": "education",
+            "period": {
+                "start": "2022-01",
+                "end": "2022-05"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Primer contacto con bases de datos y modelado relacional usando Oracle SQL.",
+            "keyAchievements": [
+                "Diseñé diagramas ER y normalización de tablas",
+                "Creé bases de datos y relaciones en Oracle SQL",
+                "Aprendí las diferencias sobre las llaves primarias y foráneas",
+                "Realicé consultas y joins entre tablas"
+            ],
+            "technologies": [
+                "Oracle SQL",
+                "Diagramas ER",
+                "Base de datos"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-004",
+            "title": "Ayudante General en Soporte Técnico",
+            "organization": "Muebles RITSA",
+            "description": "Durante las vacaciones de verano en la escuela estuve trabajando en RITSA dando mantenimiento a las computadoras y dispositivos de la empresa. Realicé reemplazo de discos duros, limpieza interna y de archivos temporales, instalación de impresoras y resolví dudas tecnológicas del personal.",
+            "eventType": "work",
+            "period": {
+                "start": "2021-06",
+                "end": "2021-08"
+            },
+            "location": "Ocotlán, Jalisco",
+            "workTime": "Temporal",
+            "role": "Ayudante General",
+            "shortDescription": "Soporte técnico y mantenimiento de computadoras en empresa local durante el verano.",
+            "keyAchievements": [
+                "Reemplazo de discos duros y limpieza de equipos",
+                "Eliminación de archivos temporales y optimización de PCs",
+                "Instalación de impresoras y soporte al personal"
+            ],
+            "technologies": [
+                "Windows",
+                "Herramientas de limpieza",
+                "Impresoras",
+                "Software"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
             "id": "exp-003",
             "title": "Segundo Semestre de Ingeniería en Sistemas Computacionales",
             "organization": "ITESO - Universidad Jesuita de Guadalajara - 2° Semestre",
-            "description": "En el segundo semestre cursé materias clave como 'Fundamentos de Ciencias Computacionales', 'Interconexión de Redes' y 'Programación Estructurada'. En Fundamentos de Ciencias Computacionales aprendí sobre lógica, conjuntos, funciones, relaciones, conteo y grafos, desarrollando habilidades para modelar y resolver problemas mediante herramientas matemáticas discretas. En Interconexión de Redes utilicé Cisco Packet Tracer para crear y configurar redes virtuales, practicar comandos de red y planificar topologías con switches y routers. En Programación Estructurada trabajé con el lenguaje C usando MingW y Eclipse, aprendiendo desde la sintaxis básica, declaración de variables, control de flujo, funciones, recursión, manejo de arreglos, cadenas, estructuras y uniones, hasta la representación de datos en memoria y conceptos fundamentales de la programación modular.",
+            "description": "En el segundo semestre en ITESO cursé materias como Fundamentos de Ciencias Computacionales, Interconexión de Redes y Programación Estructurada. Aprendí lógica, conjuntos, grafos, configuración de redes con Cisco Packet Tracer y programación en C usando Eclipse y MingW.",
             "eventType": "education",
             "period": {
                 "start": "2021-01",
@@ -162,7 +218,7 @@
             "id": "exp-002",
             "title": "Inicio de Estudios Universitarios",
             "organization": "ITESO - Universidad Jesuita de Guadalajara - 1° Semestre",
-            "description": "Después de mi año sabático, decidí inscribirme en ITESO en la carrera de Ingeniería en Sistemas Computacionales. Durante el primer semestre, tuve mis primeras materias relacionadas con la programación, utilizando PSeInt para aprender a estructurar instrucciones y entender la lógica detrás de los algoritmos. Posteriormente, el primer lenguaje de programación que aprendí fue Python, para lo cual instalé el entorno de Python y utilicé el IDE PyCharm Edu. En la materia de 'Algoritmos y programación' aprendimos los conceptos básicos como operadores lógicos, sintaxis, condicionales, variables y estructuras simples en Python. Además, cursé la materia 'Introducción a redes computacionales', donde conocí los diferentes tipos y categorías de cables, tecnologías de red y el modelo OSI.",
+            "description": "En mi primer semestre en ITESO, inicié en Ingeniería en Sistemas Computacionales. Aprendí lógica y algoritmos con PSeInt, programación básica en Python usando PyCharm Edu y conceptos esenciales de redes y cableado.",
             "eventType": "education",
             "period": {
                 "start": "2020-08",
@@ -192,7 +248,7 @@
             "id": "exp-001",
             "title": "Ayudante General en Reparación y Soporte Técnico",
             "organization": "SEI - Soluciones y Equipamiento en Informática ",
-            "description": "Después de graduarme de la preparatoria, tomé un año sabático para reflexionar sobre mi futuro académico y profesional. Durante ese periodo, trabajé como ayudante general en una microempresa dedicada a la reparación de laptops, instalación de redes y soporte técnico para pequeñas/medianas empresas. Mi labor incluyó la instalación de drivers y software, limpieza y mantenimiento de hardware (como cambio de pasta térmica y eliminación de polvo), así como la reparación básica de impresoras y la instalación de componentes. Esta experiencia me permitió conocer el entorno laboral real, desarrollar habilidades técnicas y entender mejor el funcionamiento de los equipos informáticos.",
+            "description": "Durante mi año sabático trabajé en soporte técnico y reparación de equipos en SEI, instalando software, limpiando hardware y aprendiendo sobre redes y mantenimiento en empresas pequeñas.",
             "eventType": "work",
             "period": {
                 "start": "2019-09",
@@ -225,7 +281,7 @@
             "id": "exp-000",
             "title": "Carrera Técnica en Programación",
             "organization": "CBTis 49 - Centro de Estudios Tecnológicos Industrial y de Servicios No. 49",
-            "description": "Durante mi formación en el CBTis 49, tuve mi primer acercamiento formal a la programación y las tecnologías. Aprendí los fundamentos con HTML y C#, desarrollé proyectos básicos con Microsoft Access y Pseint, y realicé mis primeras prácticas en emuladores de Android Studio. También monté una tienda en línea con PrestaShop y exploré herramientas visuales como Adobe Dreamweaver. Esta etapa fue clave para despertar mi interés por el desarrollo de software.",
+            "description": "En CBTis 49 tuve mi primer contacto con la programación, aprendiendo HTML, C#, Microsoft Access y Pseint. Realicé proyectos básicos, usé emuladores de Android Studio y monté una tienda online con PrestaShop.",
             "eventType": "education",
             "period": {
                 "start": "2016-08",

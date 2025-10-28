@@ -1,0 +1,163 @@
+{
+    "id": "reviewAnalysis",
+    "title": "Análisis de Sentimientos en Reseñas de Steam",
+    "subtitle": "Procesamiento de lenguaje natural y visualización de datos",
+    "shortDescription": "Aplicación para analizar sentimientos en reseñas de videojuegos de Steam usando técnicas de NLP y visualización de datos.",
+    "longDescription": "Este proyecto permite analizar reseñas de videojuegos obtenidas de la API de Steam, clasificando los sentimientos de los usuarios (positivos, negativos, enojados, felices) mediante procesamiento de lenguaje natural. Incluye visualización de estadísticas, generación de WordClouds, análisis de N-gramas y eliminación de stopwords para mejorar la calidad del análisis. El usuario ingresa la ID de un juego y la aplicación obtiene y procesa automáticamente las reseñas, mostrando resultados visuales y métricas relevantes.",
+    "category": "data-science",
+    "featured": false,
+    "status": "completed",
+    "startDate": "2025-04-01",
+    "endDate": "2025-04-05",
+    "teamSize": 1,
+    "role": "Data Science Developer",
+    "slug": "reviewAnalysis",
+    "technologies": [
+        {
+            "name": "Python",
+            "color": "#3776ab"
+        },
+        {
+            "name": "Streamlit",
+            "color": "#ff4b4b"
+        },
+        {
+            "name": "NLTK",
+            "color": "#4e9a06"
+        },
+        {
+            "name": "Pandas",
+            "color": "#150458"
+        },
+        {
+            "name": "Matplotlib",
+            "color": "#11557c"
+        },
+        {
+            "name": "Seaborn",
+            "color": "#16a085"
+        },
+        {
+            "name": "Requests",
+            "color": "#2d2d2d"
+        },
+        {
+            "name": "Pillow",
+            "color": "#f5e042"
+        },
+        {
+            "name": "WordCloud",
+            "color": "#5e60ce"
+        }
+    ],
+    "links": {
+        "demo":"https://6mlvyynq4ukyd4zxlgyo88.streamlit.app/",
+        "github":"https://github.com/victortelles/Stream_Analisis_Sentimiento_ReviewsGames.git"
+    },
+    "images": [
+        {
+            "id": 1,
+            "src": "/assets/projects/reviewAnalysis/SS_Streamlit.webp",
+            "alt": "Pagina principal análisis de reseñas",
+            "title": "Pagina principal",
+            "description": "Vista principal de la aplicación mostrando análisis y visualizaciones",
+            "isMain": true
+        },
+        {
+            "id": 2,
+            "src": "/assets/projects/reviewAnalysis/wordcloud.jpg",
+            "alt": "WordCloud generado a partir de reseñas",
+            "title": "WordCloud",
+            "description": "Nube de palabras generada con términos frecuentes"
+        }
+    ],
+    "context": "El proyecto surge de la necesidad de aprender y practicar técnicas de minería de datos y procesamiento de lenguaje natural aplicadas a datos reales de usuarios. Se eligieron las reseñas de Steam por su riqueza en opiniones y variedad de sentimientos expresados.",
+    "challenge": "El principal reto fue integrar la obtención de datos en tiempo real desde la API de Steam, procesar grandes volúmenes de texto y aplicar técnicas de NLP para clasificar sentimientos de manera precisa y visualmente atractiva.",
+    "solution": "Desarrollé una aplicación en Python utilizando Streamlit para la interfaz, NLTK para el procesamiento de texto, y librerías como pandas, matplotlib y seaborn para la visualización de datos. Se implementó extracción de N-gramas, generación de WordClouds y análisis de sentimientos con eliminación de stopwords.",
+    "impact": "La aplicación facilitó el análisis rápido y visual de grandes cantidades de reseñas, permitiendo identificar tendencias y sentimientos predominantes en juegos de Steam. Sirvió como base para futuros proyectos de minería de datos y análisis de texto.",
+    "relatedProjects": [
+        {
+            "id": "portafolio",
+            "slug": "portafolio",
+            "title": "Portafolio Personal",
+            "shortDescription": "Portafolio personal desarrollado con Next.js y TailwindCSS para mostrar proyectos y habilidades.",
+            "image": "/assets/projects/portafolio/SS_portafolio.webp",
+            "technologies": [
+                {
+                    "name": "Next.js",
+                    "color": "#000000"
+                },
+                {
+                    "name": "TailwindCSS",
+                    "color": "#06b6d4"
+                },
+                {
+                    "name": "TypeScript",
+                    "color": "#3178c6"
+                }
+            ]
+        },
+        {
+            "id": "mythbots",
+            "slug": "mythbots",
+            "title": "MythBots",
+            "shortDescription": "Sitio web informativo para presentar MythBots y sus servicios.",
+            "image": "/assets/projects/mythbots/SS_Mythbots.webp",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                },
+                {
+                    "name": "CSS",
+                    "color": "#5865f2"
+                },
+                {
+                    "name": "Typescript",
+                    "color": "#007acc"
+                },
+                {
+                    "name": "Node.js",
+                    "color": "#68a063"
+                },
+                {
+                    "name": "React.JS",
+                    "color": "#61dafb"
+                }
+            ]
+        },
+        {
+            "id": "pallink",
+            "title": "PalLink",
+            "shortDescription": "Plataforma web para la comunidad de PalLink, enfocada en la gestión y documentación de mods para Palworld.",
+            "technologies": [
+                {
+                    "name": "React",
+                    "color": "#61dafb"
+                },
+                {
+                    "name": "Node.js",
+                    "color": "#68a063"
+                },
+                {
+                    "name": "TailwindCSS",
+                    "color": "#06b6d4"
+                },
+                {
+                    "name": "Radix-UI",
+                    "color": "#000000"
+                },
+                {
+                    "name": "React-Icons",
+                    "color": "#e91e63"
+                },
+                {
+                    "name": "Embla Carousel",
+                    "color": "#8b5cf6"
+                }
+            ],
+            "image": "/assets/projects/pallink/SS_PalLink.webp",
+            "slug": "pallink"
+        }
+    ]
+}

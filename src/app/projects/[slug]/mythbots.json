@@ -1,0 +1,124 @@
+{
+    "id": "mythbots",
+    "title": "MythBots",
+    "subtitle": "Empresa de robotica y servicio de impresion 3D y educacion robotica",
+    "shortDescription": "Sitio web informativo para presentar MythBots y sus servicios.",
+    "longDescription": "Mythbots es una empresa dedicada a la robótica y la impresión 3D, ofreciendo servicios de educación en robótica. el sitio web proporciona informacion sobre sus servicios y esta desarrollado con React.JS para una rapidez y eficiencia.",
+    "category": "web",
+    "featured": true,
+    "status": "completed",
+    "startDate": "2025-06",
+    "endDate": "2025-07",
+    "teamSize": 1,
+    "role": "Full Stack Developer",
+    "slug": "mythbots",
+    "technologies": [
+        {
+            "name": "HTML",
+            "color": "#e34c26"
+        },
+        {
+            "name": "CSS",
+            "color": "#5865f2"
+        },
+        {
+            "name": "Typescript",
+            "color": "#007acc"
+        },
+        {
+            "name": "Node.js",
+            "color": "#68a063"
+        },
+        {
+            "name": "React.JS",
+            "color": "#61dafb"
+        }
+    ],
+    "links": {
+        "demo": "https://mythbots.com/",
+        "github": "https://github.com/victortelles/Mythbots_Static"
+    },
+    "images": [
+        {
+            "id": 1,
+            "src": "/assets/projects/mythbots/SS_Mythbots.webp",
+            "alt": "Panel principal de Mythbots mostrando la pagina de inicio",
+            "title": "Pagina de inicio",
+            "description": "Vista principal del sitio web de Mythbots con navegación clara y atractiva",
+            "isMain": true
+        },
+        {
+            "id": 2,
+            "src": "/assets/projects/mythbots/MythBotsFunko.webp",
+            "alt": "Funkos personalizados de MythBots",
+            "title": "",
+            "description": ""
+        },
+        {
+            "id": 3,
+            "src": "/assets/projects/mythbots/MythBots3D.webp",
+            "alt": "Sistema de economía virtual del bot",
+            "title": "",
+            "description": ""
+        },
+        {
+            "id": 4,
+            "src": "/assets/projects/mythbots/MythBotsResp.webp",
+            "alt": "Panel de moderación automática",
+            "title": "Pagina Responsiva",
+            "description": "Hago que el sitio web sea completamente responsivo, adaptándose a diferentes dispositivos y tamaños de pantalla para una experiencia de usuario óptima."
+        }
+    ],
+    "context": "MythBots es una empresa dedicada a la robótica y la impresión 3D, enfocada en educación tecnológica para jóvenes y adultos. Ofrecen servicios de impresión 3D personalizada y talleres de robótica educativa.",
+    "challenge": "La empresa necesitaba una plataforma web moderna para mostrar sus servicios de manera profesional, atraer nuevos clientes y gestionar eficientemente las consultas de sus servicios educativos y de impresión 3D.",
+    "solution": "Desarrollé un sitio web completamente responsivo utilizando React.js y TypeScript, implementando una arquitectura componetizada que permite fácil mantenimiento. Integré un sistema de navegación intuitiva, galerías de proyectos interactivas y formularios de contacto optimizados para conversión.",
+    "impact": "El sitio web mejoró significativamente la presencia digital de MythBots, aumentando las consultas de servicios en un 40% y proporcionando una experiencia de usuario profesional. Aprendí sobre optimización de performance en React y diseño centrado en el usuario para empresas B2B.",
+    "features": [],
+    "challenges": [],
+    "solutions": [],
+    "learnings": [],
+    "relatedProjects": [
+        {
+            "id": "pallink",
+            "title": "PalLink",
+            "shortDescription": "",
+            "technologies": [
+                {
+                    "name": "React",
+                    "color": "#61dafb"
+                },
+                {
+                    "name": "Node.js",
+                    "color": "#68a063"
+                },
+                {
+                    "name": "Socket.io",
+                    "color": "#010101"
+                }
+            ],
+            "image": "/assets/projects/pallink/SS_PalLink.webp",
+            "slug": "pallink"
+        },
+        {
+            "id": "reviewAnalysis",
+            "title": "Análisis de Reseñas",
+            "shortDescription": "Sistema de análisis de sentimientos con IA",
+            "technologies": [
+                {
+                    "name": "Python",
+                    "color": "#3776ab"
+                },
+                {
+                    "name": "Flask",
+                    "color": "#000000"
+                },
+                {
+                    "name": "scikit-learn",
+                    "color": "#f7931e"
+                }
+            ],
+            "image": "/assets/projects/reviewAnalysis/dashboard.jpg",
+            "slug": "reviewAnalysis"
+        }
+    ]
+}

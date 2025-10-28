@@ -1,0 +1,143 @@
+{
+    "id": "pallink",
+    "title": "PalLink",
+    "subtitle": "Plataforma web para comunidad de gaming",
+    "shortDescription": "Plataforma web para la comunidad de PalLink, enfocada en la gestión y documentación de mods para Palworld.",
+    "longDescription": "Desarrollé de forma integral la plataforma web de PalLink, una start-up enfocada en la comunidad de Palworld. El objetivo era centralizar la documentación, descarga de mods y recursos para servidores, facilitando la colaboración y el acceso seguro a herramientas para jugadores y desarrolladores de la comunidad de palworld. El proyecto incluyó desde el diseño de la arquitectura hasta el despliegue y optimización para escalabilidad. Actualmente el proyecto esta pausado hasta nuevos requerimientos solicitados",
+    "category": "web",
+    "featured": true,
+    "status": "paused",
+    "startDate": "2025-07",
+    "endDate": "2025-08",
+    "teamSize": 1,
+    "role": "Full Stack Developer",
+    "slug": "pallink",
+    "technologies": [
+        {
+            "name": "React",
+            "color": "#61dafb"
+        },
+        {
+            "name": "Node.js",
+            "color": "#68a063"
+        },
+        {
+            "name": "TailwindCSS",
+            "color": "#06b6d4"
+        },
+        {
+            "name": "Radix-UI",
+            "color": "#000000"
+        },
+        {
+            "name": "React-Icons",
+            "color": "#e91e63"
+        },
+        {
+            "name": "Embla Carousel",
+            "color": "#8b5cf6"
+        }
+    ],
+    "links": {
+        "demo": "https://pallink.net/"
+    },
+    "images": [
+        {
+            "id": 1,
+            "src": "/assets/projects/pallink/SS_PalLink.webp",
+            "alt": "Página principal de PalLink mostrando la interfaz principal",
+            "title": "Pagina principal",
+            "description": "Interfaz principal de la plataforma PalLink con navegación intuitiva",
+            "isMain": true
+        },
+        {
+            "id": 2,
+            "src": "/assets/projects/pallink/PalLink_OurMission.webp",
+            "alt": "Catálogo de mods disponibles en PalLink",
+            "title": "",
+            "description": ""
+        },
+        {
+            "id": 3,
+            "src": "/assets/projects/pallink/PalLink_OurTeam.webp",
+            "alt": "Panel de usuario personalizado",
+            "title": "",
+            "description": ""
+        },
+        {
+            "id": 4,
+            "src": "/assets/projects/pallink/PalLink_404.webp",
+            "alt": "Panel administrativo de la plataforma",
+            "title": "",
+            "description": ""
+        },
+        {
+            "id": 5,
+            "src": "/assets/projects/pallink/PalLink_Resp.webp",
+            "alt": "Vista móvil responsiva de PalLink",
+            "title": "",
+            "description": ""
+        }
+    ],
+    "context": "PalLink surge como respuesta a la necesidad de la comunidad de Palworld de contar con una plataforma centralizada para la gestión de mods, documentación técnica y recursos para servidores. La empresa buscaba una solución que facilitara la colaboración, el acceso seguro y el versionamiento de herramientas para jugadores y desarrolladores.",
+    "challenge": "El principal reto fue diseñar una plataforma escalable y segura que permitiera a los usuarios gestionar y descargar mods, acceder a documentación colaborativa y reportar bugs, todo en un entorno intuitivo y fácil de usar. Además, se requería implementar un sistema de autenticación y paneles diferenciados para usuarios y administradores.",
+    "solution": "Desarrollé una aplicación web full stack utilizando React, Node.js, Express y MongoDB. Implementé autenticación segura, panel administrativo, gestión de contenido, sistema de descarga de mods y documentación colaborativa. El diseño responsive y el uso de TailwindCSS aseguraron una experiencia óptima en cualquier dispositivo.",
+    "impact": "La plataforma permitió a la comunidad de Palworld acceder de forma centralizada y segura a recursos, mods y documentación, mejorando la colaboración y reduciendo la fragmentación de información. El proyecto sentó las bases para el crecimiento futuro de la comunidad y la integración de nuevas funcionalidades.",
+    "features": [],
+    "challenges": [],
+    "solutions": [],
+    "learnings": [],
+    "testimonials": [],
+    "relatedProjects": [
+        {
+            "id": "mythbots",
+            "slug": "mythbots",
+            "title": "MythBots",
+            "shortDescription": "Sitio web informativo para presentar MythBots y sus servicios.",
+            "image": "/assets/projects/mythbots/SS_Mythbots.webp",
+            "technologies": [
+                {
+                    "name": "HTML",
+                    "color": "#e34c26"
+                },
+                {
+                    "name": "CSS",
+                    "color": "#5865f2"
+                },
+                {
+                    "name": "Typescript",
+                    "color": "#007acc"
+                },
+                {
+                    "name": "Node.js",
+                    "color": "#68a063"
+                },
+                {
+                    "name": "React.JS",
+                    "color": "#61dafb"
+                }
+            ]
+        },
+        {
+            "id": "portafolio",
+            "slug": "portafolio",
+            "title": "Portafolio Personal",
+            "shortDescription": "Portafolio personal desarrollado con Next.js y TailwindCSS para mostrar proyectos y habilidades.",
+            "image": "/assets/projects/portafolio/main-view.jpg",
+            "technologies": [
+                {
+                    "name": "Next.js",
+                    "color": "#000000"
+                },
+                {
+                    "name": "TailwindCSS",
+                    "color": "#06b6d4"
+                },
+                {
+                    "name": "TypeScript",
+                    "color": "#3178c6"
+                }
+            ]
+        }
+    ]
+}

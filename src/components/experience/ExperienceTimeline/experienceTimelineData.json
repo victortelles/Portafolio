@@ -19,110 +19,71 @@
     },
     "experiences": [
         {
-            "id": "exp-009",
-            "title": "Desarrollador Full Stack",
-            "organization": "TechCorp Solutions",
-            "description": "Desarrollo de aplicaciones web completas utilizando tecnologías modernas para mejorar la experiencia del usuario y optimizar procesos empresariales.",
-            "eventType": "work",
-            "period": {
-                "start": "2023-01",
-                "end": "2024-06"
-            },
-            "location": "Remoto",
-            "workTime": "Tiempo Completo",
-            "role": "Desarrollador Full Stack",
-            "shortDescription": "Desarrollo de aplicaciones web completas utilizando tecnologías modernas para mejorar la experiencia del usuario y optimizar procesos empresariales.",
-            "keyAchievements": [
-                "Optimización del rendimiento de la aplicación en un 40%",
-                "Implementación de arquitectura microservicios",
-                "Liderazgo de equipo de 3 desarrolladores junior",
-                "Automatización de procesos de despliegue con CI/CD"
-            ],
-            "technologies": [
-                "React",
-                "Node.js",
-                "PostgreSQL",
-                "Docker",
-                "AWS"
-            ],
-            "links": [
-                {
-                    "title": "Proyecto Principal",
-                    "url": "https://github.com/usuario/proyecto"
-                }
-            ],
-            "expanded": false
-        },
-        {
             "id": "exp-008",
-            "title": "Certificación AWS Solutions Architect",
-            "organization": "Amazon Web Services",
-            "description": "Certificación en arquitectura de soluciones en la nube de Amazon Web Services, enfocada en diseño de sistemas escalables y seguros.",
+            "title": "Certificado de JavaScript (básico)",
+            "organization": "HackerRank",
+            "description": "Certificación en JavaScript básico, validando conocimientos en sintaxis, operadores, estructuras de control y funciones esenciales del lenguaje.",
             "eventType": "certification",
             "period": {
-                "start": "2023-03",
-                "end": "2023-05"
+                "start": "2024-08",
+                "end": "2024-08"
             },
             "location": "Online",
             "workTime": "Tiempo Parcial",
             "role": "Estudiante",
-            "shortDescription": "Certificación en arquitectura de soluciones en la nube de Amazon Web Services, enfocada en diseño de sistemas escalables y seguros.",
+            "shortDescription": "Certificación en fundamentos de JavaScript y programación básica.",
             "keyAchievements": [
-                "Dominio de servicios AWS principales (EC2, S3, RDS, Lambda)",
-                "Diseño de arquitecturas altamente disponibles",
-                "Implementación de mejores prácticas de seguridad",
-                "Optimización de costos en la nube"
+                "Validación de conocimientos en JavaScript básico",
+                "Resolución de ejercicios prácticos en HackerRank"
             ],
             "technologies": [
-                "AWS",
-                "CloudFormation",
-                "IAM",
-                "VPC",
-                "Lambda"
+                "JavaScript"
             ],
             "links": [
                 {
                     "title": "Certificado",
-                    "url": "https://aws.amazon.com/verification"
+                    "url": "https://www.hackerrank.com/certificates/1b4213eca7f6"
                 }
             ],
             "expanded": false
         },
         {
-            "id": "exp-007",
-            "title": "Aplicación de Gestión de Inventarios",
-            "organization": "Proyecto Freelance",
-            "description": "Desarrollo de una aplicación completa para gestión de inventarios de una empresa mediana, incluyendo dashboard administrativo y API REST.",
+            "id": "exp-009",
+            "title": "Análisis de Sentimientos en Reseñas de Steam",
+            "organization": "Proyecto Personal",
+            "description": "Desarrollé una aplicación para analizar sentimientos en reseñas de videojuegos de Steam usando procesamiento de lenguaje natural y visualización de datos. El sistema clasifica opiniones de usuarios, genera estadísticas y WordClouds, y permite explorar tendencias y emociones en los juegos.",
             "eventType": "project",
             "period": {
-                "start": "2022-08",
-                "end": "2023-02"
+                "start": "2025-04",
+                "end": "2025-05"
             },
-            "location": "Freelance",
-            "workTime": "Proyecto",
-            "role": "Desarrollador Full Stack",
-            "shortDescription": "Desarrollo de una aplicación completa para gestión de inventarios de una empresa mediana, incluyendo dashboard administrativo y API REST.",
+            "location": "ITESO",
+            "workTime": "Proyecto Escolar",
+            "role": "Data Science Developer",
+            "shortDescription": "App para analizar y visualizar sentimientos en reseñas de Steam usando NLP y gráficos.",
             "keyAchievements": [
-                "Reducción del tiempo de gestión de inventario en 60%",
-                "Implementación de sistema de reportes automáticos",
-                "Integración con sistemas de facturación externos",
-                "Desarrollo de aplicación móvil complementaria"
+                "Procesamiento de reseñas con técnicas de NLP",
+                "Clasificación de sentimientos y visualización de datos",
+                "Generación de WordClouds y análisis de N-gramas",
+                "Integración con la API de Steam para obtención de datos"
             ],
             "technologies": [
-                "Next.js",
-                "Express.js",
-                "MongoDB",
-                "React Native",
-                "Chart.js"
+                "Python",
+                "Streamlit",
+                "NLTK",
+                "Pandas",
+                "Matplotlib",
+                "Seaborn",
+                "WordCloud"
             ],
             "links": [
                 {
                     "title": "Demo",
-                    "url": "https://demo-inventario.com"
+                    "url": "https://6mlvyynq4ukyd4zxlgyo88.streamlit.app/"
                 },
                 {
                     "title": "GitHub",
-                    "url": "https://github.com/usuario/inventario-app"
+                    "url": "https://github.com/victortelles/Stream_Analisis_Sentimiento_ReviewsGames.git"
                 }
             ],
             "expanded": false

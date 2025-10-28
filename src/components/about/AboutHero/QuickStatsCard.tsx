@@ -52,8 +52,13 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ value, suffix, specia
 };
 
 
-const QuickStatsCard: React.FC = () => {
+interface QuickStatsCardProps {
+    stats?: any[];
+}
+
+const QuickStatsCard: React.FC<QuickStatsCardProps> = ({ stats: customStats }) => {
     const { stats, sectionTexts } = data;
+    const displayStats = customStats || stats;
 
     return (
         <div className="bg-[var(--color-base-200)] border-2 border-[var(--color-base-300)] rounded-[var(--radius-box)] p-6 hover:border-[var(--color-primary)] transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/20">
@@ -61,7 +66,7 @@ const QuickStatsCard: React.FC = () => {
                 {sectionTexts.quickStatsTitle}
             </h3>
             <div className="grid grid-cols-2 gap-4">
-                {stats.map((stat, index) => {
+                {displayStats.map((stat, index) => {
                     const IconComponent = iconMap[stat.icon as keyof typeof iconMap];
 
                     // Cada tarjeta estadística

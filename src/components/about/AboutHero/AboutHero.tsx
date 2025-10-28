@@ -1,16 +1,38 @@
 "use client"
 
-import React from "react"
+import React, { useMemo } from "react"
 import { motion } from "framer-motion"
 import ProfileImageCard from "./ProfileImageCard"
 import PersonalCard from "./PersonalCard"
 import CurrentStatusCard from "./CurrentStatusCard"
 import LanguageCard from "./LanguageCard"
 import QuickStatsCard from "./QuickStatsCard"
+import { getExperienceCount, getYearsOfExperience, getAllTechnologies } from "@/utils/experienceStats"
 import data from "./aboutHeroData.json"
 
 const AboutHero: React.FC = () => {
     const { sectionTexts } = data
+
+    // Obtener estadísticas dinámicas desde el JSON de experiencias
+    const experienceStats = useMemo(() => getExperienceCount(), [])
+    const yearsOfExperience = useMemo(() => getYearsOfExperience(), [])
+    const allTechnologies = useMemo(() => getAllTechnologies(), [])
+
+    // Crear estadísticas actualizadas dinámicamente
+    const dynamicQuickStats = useMemo(() => {
+        return data.stats.map(stat => {
+            switch (stat.label) {
+                case "Años de experiencia":
+                    return { ...stat, value: yearsOfExperience }
+                case "Proyectos completados":
+                    return { ...stat, value: experienceStats.projects }
+                case "Tecnologias conocidas":
+                    return { ...stat, value: allTechnologies.length }
+                default:
+                    return stat
+            }
+        })
+    }, [experienceStats, yearsOfExperience, allTechnologies])
 
     return (
         <section className="relative py-20 lg:py-32 px-4 lg:px-8">
@@ -98,7 +120,7 @@ const AboutHero: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 1.2 }}
                         >
-                            <QuickStatsCard />
+                            <QuickStatsCard stats={dynamicQuickStats} />
                         </motion.div>
                     </div>
                 </div>

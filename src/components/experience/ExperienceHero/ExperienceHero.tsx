@@ -1,14 +1,38 @@
 "use client"
 
-import React from "react"
+import React, { useMemo } from "react"
 import { motion } from "framer-motion"
 import { FaGraduationCap, FaCertificate, FaProjectDiagram, FaBriefcase } from "react-icons/fa"
 import StatsCards from "./StatsCards"
 import heroData from "./experienceHeroData.json"
+import { getExperienceCount, getYearsOfExperience, getAllTechnologies } from "@/utils/experienceStats"
 import type { ExperienceHeroData } from "@/types/experience"
 
 const ExperienceHero: React.FC = () => {
     const data = heroData as ExperienceHeroData
+
+    // Obtener estadísticas dinámicas desde el JSON de experiencias
+    const experienceStats = useMemo(() => getExperienceCount(), [])
+    const yearsOfExperience = useMemo(() => getYearsOfExperience(), [])
+    const allTechnologies = useMemo(() => getAllTechnologies(), [])
+
+    // Crear estadísticas actualizadas dinámicamente
+    const dynamicStats = useMemo(() => {
+        return data.stats.map(stat => {
+            switch (stat.label) {
+                case "Certificaciones":
+                    return { ...stat, count: experienceStats.certifications }
+                case "Proyectos":
+                    return { ...stat, count: experienceStats.projects }
+                case "Tecnologías":
+                    return { ...stat, count: allTechnologies.length }
+                case "Años de Experiencia":
+                    return { ...stat, count: yearsOfExperience }
+                default:
+                    return stat
+            }
+        })
+    }, [experienceStats, yearsOfExperience, allTechnologies, data.stats])
 
     const getIcon = (iconName: string) => {
         const iconMap: { [key: string]: React.ComponentType<any> } = {
@@ -191,7 +215,7 @@ const ExperienceHero: React.FC = () => {
                 </motion.div>
 
                 {/* Estadísticas */}
-                <StatsCards stats={data.stats} />
+                <StatsCards stats={dynamicStats} />
 
                 {/* Tags de Tipos de Eventos */}
                 <motion.div

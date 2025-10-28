@@ -37,7 +37,7 @@ const AboutHero: React.FC = () => {
                         {sectionTexts.title} <span className="text-[var(--color-primary)]">{sectionTexts.titleAccent}</span>
                     </motion.h1>
                     <motion.p
-                        className="font-sans text-lg lg:text-xl text-[var(--color-neutral-content)] max-w-3xl mx-auto"
+                        className="font-sans text-lg lg:text-xl text-[var(--color-neutral-content)] max-w-3xl mx-auto text-justify"
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}

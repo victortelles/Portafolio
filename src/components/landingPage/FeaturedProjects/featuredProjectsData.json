@@ -68,7 +68,7 @@
             "title": "Analisis de reseñas Steam",
             "shortDescription": "Aplicación para analizar el sentimiento de reseñas de juegos en Steam.",
             "fullDescription": "Desarrollé una aplicación que utiliza procesamiento de lenguaje natural para analizar el sentimiento de las reseñas de juegos en Steam. Permite a los usuarios obtener insights valiosos sobre la percepción de los títulos, facilitando ver patrones y el análisis de tendencias en la plataforma. y esta desplegada en streamlit.",
-            "image": "/assets/projects/analisis-reseñas/SS_Streamlit.webp",
+            "image": "/assets/projects/reviewAnalysis/SS_Streamlit.webp",
             "tags": [
                 "Python",
                 "Streamlit",
@@ -81,7 +81,7 @@
             "github": "https://github.com/victortelles/Stream_Analisis_Sentimiento_ReviewsGames.git",
             "demo": "https://6mlvyynq4ukyd4zxlgyo88.streamlit.app/",
             "featured": true,
-            "icon": "/assets/projects/analisis-reseñas/Streamlit.svg"
+            "icon": "/assets/projects/reviewAnalysis/Streamlit.svg"
         }
     ]
 }

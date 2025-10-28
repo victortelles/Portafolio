@@ -185,7 +185,7 @@ const ExperienceHero: React.FC = () => {
                     <h1 className="font-mono text-4xl lg:text-6xl font-bold mb-6" style={{ color: "var(--color-base-content)" }}>
                         {data.title.split(' ').slice(0, -1).join(' ')} <span style={{ color: "var(--color-primary)" }}>{data.title.split(' ').slice(-1)}</span>
                     </h1>
-                    <p className="font-sans text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed" style={{ color: "var(--color-neutral-content)" }}>
+                    <p className="font-sans text-lg lg:text-xl max-w-4xl mx-auto leading-relaxed text-justify" style={{ color: "var(--color-neutral-content)" }}>
                         {data.description}
                     </p>
                 </motion.div>

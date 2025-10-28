@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                     </h1>
 
                     {/* Subtitle */}
-                    <p className="font-sans text-xl sm:text-2xl lg:text-3xl font-semibold text-[var(--color-neutral-content)] mb-12 leading-relaxed max-w-3xl mx-auto">
+                    <p className="font-sans text-xl sm:text-2xl lg:text-3xl font-semibold text-[var(--color-neutral-content)] mb-12 leading-relaxed max-w-3xl mx-auto text-justify">
                         {heroData.subtitle}
                     </p>
 

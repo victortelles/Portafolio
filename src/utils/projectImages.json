@@ -1,0 +1,16 @@
+{
+    "projects": {
+        "mythbots": [
+            "MythBots_Logo.webp",
+            "commands-list.jpg"
+        ],
+        "pallink": [
+            "home-page.jpg",
+            "user-profile.jpg"
+        ]
+    },
+    "settings": {
+        "placeholderImage": "/assets/projects/placeholder.jpg",
+        "basePath": "/assets/projects"
+    }
+}

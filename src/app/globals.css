@@ -2,34 +2,34 @@
 @import "tailwindcss";
 
 :root {
-    --color-base-100: oklch(12% 0.042 264.695);
-    --color-base-200: oklch(20% 0.042 265.755);
-    --color-base-300: oklch(27% 0.041 260.031);
-    --color-base-content: oklch(96% 0.007 247.896);
-    --color-primary: oklch(62% 0.214 259.815);
-    --color-primary-content: oklch(28% 0.091 267.935);
-    --color-secondary: oklch(70% 0.213 47.604);
-    --color-secondary-content: oklch(27% 0.072 132.109);
-    --color-accent: oklch(78% 0.154 211.53);
-    --color-accent-content: oklch(27% 0.046 192.524);
-    --color-neutral: oklch(27% 0.041 260.031);
-    --color-neutral-content: oklch(98% 0.003 247.858);
-    --color-info: oklch(54% 0.245 262.881);
-    --color-info-content: oklch(97% 0.014 254.604);
-    --color-success: oklch(59% 0.145 163.225);
-    --color-success-content: oklch(97% 0.021 166.113);
-    --color-warning: oklch(68% 0.162 75.834);
-    --color-warning-content: oklch(98% 0.026 102.212);
-    --color-error: oklch(58% 0.253 17.585);
-    --color-error-content: oklch(96% 0.015 12.422);
-    --radius-selector: 2rem;
-    --radius-field: 0.5rem;
-    --radius-box: 0.5rem;
-    --size-selector: 0.25rem;
-    --size-field: 0.25rem;
-    --border: 1.5px;
-    --depth: 1;
-    --noise: 0;
+  --color-base-100: oklch(12% 0.042 264.695);
+  --color-base-200: oklch(20% 0.042 265.755);
+  --color-base-300: oklch(27% 0.041 260.031);
+  --color-base-content: oklch(96% 0.007 247.896);
+  --color-primary: oklch(62% 0.214 259.815);
+  --color-primary-content: oklch(28% 0.091 267.935);
+  --color-secondary: oklch(70% 0.213 47.604);
+  --color-secondary-content: oklch(27% 0.072 132.109);
+  --color-accent: oklch(78% 0.154 211.53);
+  --color-accent-content: oklch(27% 0.046 192.524);
+  --color-neutral: oklch(27% 0.041 260.031);
+  --color-neutral-content: oklch(98% 0.003 247.858);
+  --color-info: oklch(54% 0.245 262.881);
+  --color-info-content: oklch(97% 0.014 254.604);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(58% 0.253 17.585);
+  --color-error-content: oklch(96% 0.015 12.422);
+  --radius-selector: 2rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 0;
 }
 
 html {
@@ -48,13 +48,16 @@ body {
     transform: scale(0.3) translateY(20px);
     opacity: 0;
   }
+
   50% {
     transform: scale(1.1) translateY(-5px);
     opacity: 1;
   }
+
   70% {
     transform: scale(0.9) translateY(2px);
   }
+
   100% {
     transform: scale(1) translateY(0);
     opacity: 1;
@@ -66,6 +69,7 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -82,9 +86,12 @@ body {
 
 /* Animaciones para fondo tecnológico */
 @keyframes tech-pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 0.8;
   }
@@ -95,9 +102,11 @@ body {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     transform: translateX(100%);
     opacity: 0;
@@ -109,9 +118,11 @@ body {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   50% {
     opacity: 0.6;
   }
+
   100% {
     transform: translateX(100%);
     opacity: 0;
@@ -128,4 +139,56 @@ body {
 
 .light-beam {
   animation: light-beam 6s ease-in-out infinite;
+}
+
+/* Animaciones para proyectos */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+/* Utilidades para text clamp */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

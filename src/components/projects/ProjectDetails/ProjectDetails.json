@@ -1,0 +1,32 @@
+{
+    "sections": {
+        "context": {
+            "title": "Contexto de la Empresa",
+            "icon": "building"
+        },
+        "challenge": {
+            "title": "El Reto",
+            "icon": "target"
+        },
+        "solution": {
+            "title": "Mi Solución",
+            "icon": "lightbulb"
+        },
+        "impact": {
+            "title": "Resultados e Impacto",
+            "icon": "chart"
+        },
+        "features": {
+            "title": "Características Clave",
+            "icon": "features"
+        },
+        "challenges": {
+            "title": "Desafíos Encontrados",
+            "icon": "obstacle"
+        },
+        "learning":{
+            "title": "Lecciones Aprendidas",
+            "icon": "learning"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "statusLabels": {
+        "completed": "Completado",
+        "in-progress": "En Progreso",
+        "planned": "Planeado",
+        "paused": "Pausado"
+    },
+    "statusColors": {
+        "completed": "bg-[var(--color-success)]/20 text-[var(--color-success)] border-[var(--color-success)]/30",
+        "in-progress": "bg-[var(--color-warning)]/20 text-[var(--color-warning)] border-[var(--color-warning)]/30",
+        "planned": "bg-[var(--color-info)]/20 text-[var(--color-info)] border-[var(--color-info)]/30",
+        "paused": "bg-[var(--color-neutral)]/20 text-[var(--color-neutral-content)] border-[var(--color-neutral)]/30"
+    },
+    "ui": {
+        "featuredBadge": {
+            "icon": "★",
+            "text": "Destacado"
+        },
+        "moreTechnologies": {
+            "prefix": "+",
+            "suffix": " más"
+        }
+    },
+    "animations": {
+        "delayMultiplier": 100,
+        "hoverScale": {
+            "grid": "1.02",
+            "list": "1.01"
+        },
+        "imageScale": "1.10",
+        "transitionDuration": "500"
+    },
+    "layout": {
+        "imageHeight": {
+            "grid": "h-44 sm:h-48",
+            "list": "h-40 md:h-auto"
+        },
+        "techTagsLimit": {
+            "grid": 4,
+            "list": 6
+        }
+    }
+}

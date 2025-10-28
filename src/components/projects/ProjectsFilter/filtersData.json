@@ -1,0 +1,79 @@
+{
+    "filters": [
+        {
+            "id": "all",
+            "label": "Todos",
+            "value": "all",
+            "count": 14
+        },
+        {
+            "id": "web",
+            "label": "Web Apps",
+            "value": "web",
+            "count": 6
+        },
+        {
+            "id": "mobile",
+            "label": "Mobile",
+            "value": "mobile",
+            "count": 2
+        },
+        {
+            "id": "desktop",
+            "label": "Desktop",
+            "value": "desktop",
+            "count": 1
+        },
+        {
+            "id": "api",
+            "label": "APIs",
+            "value": "api",
+            "count": 1
+        },
+        {
+            "id": "ai",
+            "label": "AI/ML",
+            "value": "ai",
+            "count": 1
+        },
+        {
+            "id": "web3",
+            "label": "Web3",
+            "value": "web3",
+            "count": 1
+        }
+    ],
+    "sortOptions": [
+        {
+            "id": "newest",
+            "label": "Más recientes",
+            "value": "newest"
+        },
+        {
+            "id": "oldest",
+            "label": "Más antiguos",
+            "value": "oldest"
+        },
+        {
+            "id": "alphabetical",
+            "label": "Alfabético",
+            "value": "alphabetical"
+        },
+        {
+            "id": "featured",
+            "label": "Destacados",
+            "value": "featured"
+        }
+    ],
+    "ui": {
+        "labels": {
+            "view": "Vista:",
+            "filters": "Filtros",
+            "sortBy": "Ordenar por"
+        },
+        "viewModes": {
+            "grid": "Cuadrícula",
+            "list": "Lista"
+        }
+    }
+}

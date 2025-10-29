@@ -11,7 +11,7 @@
             "title": "Mythbots",
             "shortDescription": "Sitio web informativo para presentar MythBots y sus servicios.",
             "fullDescription": "Desarrollé una página moderna y responsiva que facilita a los usuarios conocer MythBots y acceder a sus servicios de manera clara y atractiva.",
-            "image": "/assets/projects/mythbots/SS_mythbots.webp",
+            "image": "/assets/projects/mythbots/SS_Mythbots.webp",
             "tags": [
                 "React",
                 "TypeScript",
@@ -23,7 +23,7 @@
             "github": "https://github.com/victortelles/Mythbots_Static",
             "demo": "https://mythbots.com/",
             "featured": true,
-            "icon": "/assets/projects/mythbots/Mythbots_Logo.webp"
+            "icon": "/assets/projects/mythbots/MythBots_Logo.webp"
         },
         {
             "id": "pallink",
@@ -61,7 +61,7 @@
             "github": "https://github.com/victortelles/Portafolio",
             "demo": null,
             "featured": true,
-            "icon": "/assets/projects/portafolio/AHTyler_logo.webp"
+            "icon": "/assets/projects/portafolio/AHTyler_Logo.webp"
         },
         {
             "id": "analisis-reseñas",

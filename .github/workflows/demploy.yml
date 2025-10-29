@@ -13,6 +13,16 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@v4
 
+            - name: Clean remote folder before deploy
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                  host: ${{ secrets.VDS_HOST }}
+                  username: ${{ secrets.VDS_USER }}
+                  key: ${{ secrets.VDS_SSH_KEY }}
+                  port: 22
+                  script: |
+                      sudo rm -rf /srv/ahtyler/portfolio/*
+
             - name: Copy files via SSH
               uses: appleboy/scp-action@v0.1.7
               with:

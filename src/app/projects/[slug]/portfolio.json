@@ -52,7 +52,7 @@
     "images": [
         {
             "id": 1,
-            "src": "/assets/projects/portafolio/SS_portafolio.webp",
+            "src": "/assets/projects/portafolio/SS_Portafolio.webp",
             "alt": "Página principal del portafolio",
             "title": "Pagina Principal",
             "description": "Vista principal del portafolio mostrando texto corto.",

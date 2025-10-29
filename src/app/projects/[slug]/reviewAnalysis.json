@@ -81,7 +81,7 @@
             "slug": "portafolio",
             "title": "Portafolio Personal",
             "shortDescription": "Portafolio personal desarrollado con Next.js y TailwindCSS para mostrar proyectos y habilidades.",
-            "image": "/assets/projects/portafolio/SS_portafolio.webp",
+            "image": "/assets/projects/portafolio/SS_Portafolio.webp",
             "technologies": [
                 {
                     "name": "Next.js",

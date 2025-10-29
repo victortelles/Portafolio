@@ -21,7 +21,7 @@ jobs:
                   key: ${{ secrets.VDS_SSH_KEY }}
                   port: 22
                   source: "."
-                  target: "/srv/AHTyler/portfolio"
+                  target: "/srv/ahtyler/portfolio"
 
             - name: Run deploy script via SSH
               uses: appleboy/ssh-action@v1.0.3
@@ -31,7 +31,7 @@ jobs:
                   key: ${{ secrets.VDS_SSH_KEY }}
                   port: 22
                   script: |
-                      cd /srv/AHTyler/portfolio
+                      cd /srv/ahtyler/portfolio
                       sudo pnpm install
                       sudo pnpm run build
                       sudo pm2 restart ahtyler-portfolio

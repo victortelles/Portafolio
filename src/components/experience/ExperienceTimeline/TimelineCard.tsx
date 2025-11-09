@@ -258,10 +258,10 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
                                                         href={link.url}
                                                         target="_blank"
                                                         rel="noopener noreferrer"
-                                                        className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium font-mono transition-colors hover:opacity-80"
+                                                        className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium font-mono transition-colors hover:opacity-80 text-[var(--color-primary-content)] hover:text-[var(--color-base-content)]"
                                                         style={{
                                                             backgroundColor: "var(--color-primary)",
-                                                            color: "var(--color-primary-content)"
+                                                            //color: "var(--color-primary-content)"
                                                         }}
                                                     >
                                                         {link.title}

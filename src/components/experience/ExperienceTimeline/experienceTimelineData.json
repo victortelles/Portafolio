@@ -19,7 +19,7 @@
     },
     "experiences": [
         {
-            "id": "exp-008",
+            "id": "exp-015",
             "title": "Certificado de JavaScript (básico)",
             "organization": "HackerRank",
             "description": "Certificación en JavaScript básico, validando conocimientos en sintaxis, operadores, estructuras de control y funciones esenciales del lenguaje.",
@@ -48,7 +48,7 @@
             "expanded": false
         },
         {
-            "id": "exp-009",
+            "id": "exp-014",
             "title": "Análisis de Sentimientos en Reseñas de Steam",
             "organization": "Proyecto Personal",
             "description": "Desarrollé una aplicación para analizar sentimientos en reseñas de videojuegos de Steam usando procesamiento de lenguaje natural y visualización de datos. El sistema clasifica opiniones de usuarios, genera estadísticas y WordClouds, y permite explorar tendencias y emociones en los juegos.",
@@ -89,9 +89,252 @@
             "expanded": false
         },
         {
+            "id": "exp-013",
+            "title": "Sistemas Escalables, Desarrollo Móvil, Minería de Datos y Pruebas de Software",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara",
+            "description": "En este semestre aprendí sobre diseño de sistemas escalables, abordando balanceo de carga, protocolos, seguridad y bases de datos. Desarrollé aplicaciones móviles con Dart y Flutter, integrando servicios de Firebase y aplicando conceptos de widgets y ciclos de vida. En minería de datos, utilicé Python y librerías especializadas para extracción, análisis y predicción sobre grandes volúmenes de datos. Profundicé en pruebas de software, realizando pruebas unitarias, de integración y E2E con herramientas como Jest y Selenium.",
+            "eventType": "education",
+            "period": {
+                "start": "2025-01",
+                "end": "2025-05"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Diseño de sistemas escalables, desarrollo móvil, minería de datos y pruebas de software.",
+            "keyAchievements": [
+                "Diseño y análisis de sistemas escalables con balanceo de carga, protocolos y seguridad",
+                "Desarrollo de aplicaciones móviles con Dart, Flutter y Firebase",
+                "Extracción y análisis de datos con Python y librerías de Big Data",
+                "Implementación de pruebas unitarias, de integración y E2E con Jest y Selenium"
+            ],
+            "technologies": [
+                "Dart",
+                "Flutter",
+                "Firebase",
+                "Python",
+                "Keras",
+                "Matplotlib",
+                "NLTK",
+                "NumPy",
+                "OpenCV",
+                "Pandas",
+                "Seaborn",
+                "Tensorflow",
+                "Jest",
+                "Selenium",
+                "SQL",
+                "NoSQL",
+                "JWT",
+                "OAuth"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-012",
+            "title": "Arquitectura de Software, Desarrollo en la Nube y Aplicaciones Cliente-Servidor",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 3° Semestre IDS",
+            "description": "En este semestre, adquirí conocimientos sobre arquitectura de software, explorando modelos monolíticos, distribuidos y microservicios, así como herramientas modernas para infraestructura en la nube como Docker, Kubernetes, Jenkins y Nginx. Aprendí desarrollo en la nube con AWS, trabajando con servicios como EC2, S3, Lambda y DynamoDB y otros mas y comprendiendo modelos de servicio y escalabilidad. En desarrollo cliente y servidor, utilicé frameworks como Angular, React y Node.js, aplicando conceptos de componentes, MVC, responsividad y buenas prácticas de seguridad en aplicaciones web.",
+            "eventType": "education",
+            "period": {
+                "start": "2024-08",
+                "end": "2024-12"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Fundamentos de arquitectura, desarrollo en la nube y aplicaciones cliente-servidor con enfoque en seguridad.",
+            "keyAchievements": [
+                "Diseño y análisis de arquitecturas monolíticas, distribuidas y de microservicios",
+                "Implementación de infraestructura en la nube con Docker, Kubernetes y Jenkins",
+                "Desarrollo de aplicaciones web cliente con Angular, React y Vue",
+                "Creación de APIs y servicios backend con Node.js y Express",
+                "Integración de servicios AWS y comprensión de modelos de servicio y escalabilidad",
+                "Aplicación de buenas prácticas de seguridad en desarrollo de software"
+            ],
+            "technologies": [
+                "Docker",
+                "Kubernetes",
+                "Jenkins",
+                "Nginx",
+                "AWS",
+                "EC2",
+                "S3",
+                "SNS",
+                "Lambda",
+                "DynamoDB",
+                "Angular",
+                "React",
+                "Vue",
+                "Node.js",
+                "Express",
+                "Typescript",
+                "MongoDB"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-010",
+            "title": "Bases de Datos No Relacionales, Calidad y Diseño de Software",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 8° ISC / 2° IDS Semestre",
+            "description": "En este semestre tuve mi primer contacto con bases de datos no relacionales, trabajando con MongoDB, colecciones y documentos, y aprendiendo sobre diferentes modelos y lenguajes como DQL, CQL y MQL. Analicé cuándo es conveniente utilizar SQL frente a NoSQL según las necesidades del proyecto. Además, cursé calidad de software, donde conocí pruebas de caja blanca, negra y dinámicas, y herramientas como SonarQube, Karate y Cucumber para medir y asegurar la calidad del código. En diseño de software, reforcé buenas prácticas de la industria, estudiando patrones de diseño, refactorización, programación orientada a objetos y enfoques ágiles e iterativos, así como modelos predictivos como cascada, sashimi, incremental y modelo V.",
+            "eventType": "education",
+            "period": {
+                "start": "2024-01",
+                "end": "2024-05"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Bases de datos NoSQL, calidad de software y diseño con patrones y metodologías ágiles.",
+            "keyAchievements": [
+                "Implementación y manejo de bases de datos no relacionales con MongoDB",
+                "Comparación y análisis entre SQL y NoSQL para distintos escenarios",
+                "Aplicación de pruebas de software (caja blanca, negra y dinámicas)",
+                "Uso de herramientas de calidad como SonarQube, Karate y Cucumber",
+                "Estudio y aplicación de patrones de diseño y refactorización",
+                "Comprensión y uso de enfoques ágiles, iterativos e incrementales en el diseño de software",
+                "Análisis de modelos predictivos como cascada, sashimi, incremental y modelo V"
+            ],
+            "technologies": [
+                "MongoDB",
+                "NoSQL",
+                "SQL",
+                "SonarQube",
+                "Karate",
+                "Cucumber",
+                "Patrones de Diseño",
+                "Agile",
+                "Modelos Predictivos"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-009",
+            "title": "Diseño de Interfaces UX/UI, Control de Versiones y Requerimientos de Software",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 7° Semestre ISC",
+            "description": "En el séptimo semestre, ciclo de otoño 2023, profundicé en el diseño de interfaces de usuario aplicando metodologías UX, principios de Jakob Nielsen y técnicas de prototipado con Figma para crear wireframes y prototipos interactivos. Aprendí el uso de sistemas de control de versiones como Git, trabajando con GitHub y GitLab en proyectos colaborativos, gestionando ramas, resolviendo conflictos y aplicando buenas prácticas de integración de código. Además, adquirí conocimientos sobre requerimientos de software, técnicas para levantamiento de requisitos, uso de Trello para gestión de tareas y trabajo en equipo. Complementé mi formación con una introducción a la arquitectura de computadoras y programación en lenguaje ensamblador utilizando Ripes y RISC-V.",
+            "eventType": "education",
+            "period": {
+                "start": "2023-08",
+                "end": "2023-12"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Aprendizaje de diseño UX/UI, control de versiones con Git y técnicas de requerimientos de software.",
+            "keyAchievements": [
+                "Diseño de interfaces y prototipos con Figma aplicando principios UX/UI",
+                "Aplicación de metodologías UX y principios de Jakob Nielsen en proyectos",
+                "Gestión de código y colaboración con sistemas de control de versiones Git",
+                "Resolución de conflictos, manejo de ramas y flujo de trabajo en GitHub y GitLab",
+                "Levantamiento y gestión de requerimientos de software usando Trello",
+                "Introducción a la arquitectura de computadoras y programación en ensamblador con Ripes y RISC-V"
+            ],
+            "technologies": [
+                "Figma",
+                "UX/UI",
+                "Git",
+                "GitHub",
+                "GitLab",
+                "Docker",
+                "Trello",
+                "Ripes",
+                "RISC-V",
+                "Lenguaje Ensamblador"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-008",
+            "title": "Cambio de Carrera a Ingeniería en Desarrollo de Software",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara",
+            "description": "Después de concluir el 6° semestre, decidí cambiarme de Ingeniería en Sistemas Computacionales (ISC) a Ingeniería en Desarrollo de Software (IDS), aprovechando la apertura de la nueva carrera. El cambio fue sencillo debido a la similitud de materias y enfoques entre ambas especialidades.",
+            "eventType": "education",
+            "period": {
+                "start": "2023-06",
+                "end": "2023-08"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Transición Académica",
+            "role": "Estudiante",
+            "shortDescription": "Transición de ISC a IDS por apertura de la nueva carrera, manteniendo continuidad académica.",
+            "keyAchievements": [
+                "Cambio exitoso de carrera universitaria",
+                "Adaptación rápida por similitud de materias y enfoque"
+            ],
+            "technologies": [],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-007",
+            "title": "Desarrollo de Aplicaciones Web y Diseño de Estructuras de Datos",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 6° Semestre ISC",
+            "description": "En el sexto semestre, durante el ciclo de primavera 2023, tuve mi primer acercamiento al desarrollo de aplicaciones y servicios web, aprendiendo los fundamentos esenciales de HTML, CSS y JavaScript puro para comprender el funcionamiento básico de la web sin frameworks. Además, adquirí conocimientos sobre el diseño y manejo de estructuras de datos como pilas, colas y profundicé en la selección y aplicación de algoritmos de ordenamiento y búsqueda, analizando sus ventajas y casos de uso óptimos.",
+            "eventType": "education",
+            "period": {
+                "start": "2023-01",
+                "end": "2023-05"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Primer contacto con desarrollo web y fundamentos de estructuras de datos y algoritmos de ordenamiento.",
+            "keyAchievements": [
+                "Desarrollo de aplicaciones web básicas con HTML, CSS y JavaScript vanilla",
+                "Comprensión de la estructura y funcionamiento de la web sin frameworks",
+                "Diseño y manejo de estructuras de datos como pilas y colas",
+                "Análisis y aplicación de algoritmos de ordenamiento y búsqueda",
+                "Evaluación de casos de uso para seleccionar el algoritmo o estructura más eficiente"
+            ],
+            "technologies": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Estructuras de Datos",
+                "Algoritmos"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
+            "id": "exp-06",
+            "title": "Fundamentos de Programación Orientada a Objetos con Java",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 5° Semestre ISC",
+            "description": "Durante el quinto semestre, en el ciclo de otoño 2022, aprendí los principios de la programación orientada a objetos utilizando Java y el IDE Eclipse. Profundicé en los pilares fundamentales: polimorfismo, herencia, encapsulación y abstracción. Además, desarrollé habilidades en la definición de clases, atributos y métodos, aplicando buenas prácticas de diseño y estructura de código.",
+            "eventType": "education",
+            "period": {
+                "start": "2022-08",
+                "end": "2022-12"
+            },
+            "location": "Guadalajara, Jalisco",
+            "workTime": "Horario Escolar",
+            "role": "Estudiante",
+            "shortDescription": "Aprendizaje de programación orientada a objetos en Java, aplicando los pilares y buenas prácticas de desarrollo.",
+            "keyAchievements": [
+                "POO: Polimorfismo, Herencia, Encapsulación y Abstracción",
+                "Conocimientos de los pilares de la programación orientada a objetos",
+                "Diseño y desarrollo de clases, atributos y métodos en Java",
+                "Uso de Eclipse para programar aplicaciones orientadas a objetos",
+                "Aplicación de buenas prácticas en la organización y reutilización de código"
+            ],
+            "technologies": [
+                "Java",
+                "Eclipse",
+                "Programación Orientada a Objetos"
+            ],
+            "links": [],
+            "expanded": false
+        },
+        {
             "id": "exp-005",
             "title": "Diseño de Bases de Datos",
-            "organization": "ITESO - Universidad Jesuita de Guadalajara - 4° Semestre",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 4° Semestre ISC",
             "description": "En el cuarto semestre aprendí los fundamentos de bases de datos: llaves primarias y foráneas, entidades, tablas, atributos, relaciones, normalización y diagramas ER. Utilicé Oracle SQL para crear tablas, hacer consultas y practicar joins.",
             "eventType": "education",
             "period": {
@@ -147,7 +390,7 @@
         {
             "id": "exp-003",
             "title": "Segundo Semestre de Ingeniería en Sistemas Computacionales",
-            "organization": "ITESO - Universidad Jesuita de Guadalajara - 2° Semestre",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 2° Semestre ISC",
             "description": "En el segundo semestre en ITESO cursé materias como Fundamentos de Ciencias Computacionales, Interconexión de Redes y Programación Estructurada. Aprendí lógica, conjuntos, grafos, configuración de redes con Cisco Packet Tracer y programación en C usando Eclipse y MingW.",
             "eventType": "education",
             "period": {
@@ -178,7 +421,7 @@
         {
             "id": "exp-002",
             "title": "Inicio de Estudios Universitarios",
-            "organization": "ITESO - Universidad Jesuita de Guadalajara - 1° Semestre",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 1° Semestre ISC",
             "description": "En mi primer semestre en ITESO, inicié en Ingeniería en Sistemas Computacionales. Aprendí lógica y algoritmos con PSeInt, programación básica en Python usando PyCharm Edu y conceptos esenciales de redes y cableado.",
             "eventType": "education",
             "period": {

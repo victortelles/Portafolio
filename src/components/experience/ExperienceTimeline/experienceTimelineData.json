@@ -91,7 +91,7 @@
         {
             "id": "exp-013",
             "title": "Sistemas Escalables, Desarrollo Móvil, Minería de Datos y Pruebas de Software",
-            "organization": "ITESO - Universidad Jesuita de Guadalajara",
+            "organization": "ITESO - Universidad Jesuita de Guadalajara - 4 ° Semestre IDS",
             "description": "En este semestre aprendí sobre diseño de sistemas escalables, abordando balanceo de carga, protocolos, seguridad y bases de datos. Desarrollé aplicaciones móviles con Dart y Flutter, integrando servicios de Firebase y aplicando conceptos de widgets y ciclos de vida. En minería de datos, utilicé Python y librerías especializadas para extracción, análisis y predicción sobre grandes volúmenes de datos. Profundicé en pruebas de software, realizando pruebas unitarias, de integración y E2E con herramientas como Jest y Selenium.",
             "eventType": "education",
             "period": {

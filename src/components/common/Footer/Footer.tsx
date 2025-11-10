@@ -27,8 +27,16 @@ const Footer: React.FC = () => {
     }
 
     return (
-        <footer className="bg-[var(--color-base-200)] border-t border-[var(--color-base-300)]">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <footer className="bg-[var(--color-base-200)] border-t border-[var(--color-base-300)] relative overflow-hidden">
+            {/* SVG decorativo izquierdo (gatete) */}
+            <div className="hidden lg:block absolute left-0 top-0 h-full z-0 pointer-events-none select-none" style={{opacity:0.02}}>
+                <img src="assets/extras/gatete_izq.svg" alt="Decoración Gatete" className="h-full w-auto" style={{filter:'grayscale(1) brightness(0.1) contrast(2)', color:'var(--color-primary-content)'}} />
+            </div>
+            {/* SVG decorativo derecho (BG_Loona_Footer) */}
+            <div className="absolute right-0 top-0 h-full z-0 pointer-events-none select-none" style={{opacity:0.02}}>
+                <img src="assets/extras/BG_Loona_Footer_der.svg" alt="Decoración Loona"className="h-full w-auto" style={{filter:'grayscale(1) brightness(0.1) contrast(2)', color:'var(--color-primary-content)'}} />
+            </div>
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Main Footer Content */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
 

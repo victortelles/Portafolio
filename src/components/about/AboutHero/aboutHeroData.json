@@ -9,7 +9,7 @@
         "description": "Soy un desarrollador de software apasionado por crear soluciones innovadoras que impacten positivamente la vida de las personas. Con cierta experiencia en desarrollo web/movil como full stack, me especializo en crear aplicaciones base a las necesidades de los clientes."
     },
     "profileImage": {
-        "imageSrc": "/assets/chibi.webp",
+        "imageSrc": "/assets/me.webp",
         "alt": "Foto"
     },
     "socialIcons": [

@@ -60,7 +60,7 @@
                 "icon": "FaEnvelope",
                 "emailAddress": "victor-tah@outlook.com",
                 "backgroundColor": "bg-[var(--color-primary)]",
-                "hoverColor": "hover:bg-[var(--color-accent)]"
+                "hoverColor": "hover:bg-[var(--color-info)]"
             }
         }
     },

@@ -40,9 +40,10 @@ const Navbar: React.FC = () => {
                                 <NavigationMenu.Item key={item.label}>
                                     <NavigationMenu.Link
                                         href={item.href}
-                                        className="font-mono text-[var(--color-base-content)] hover:text-[var(--color-primary)] transition-colors px-3 py-2 text-sm font-medium"
+                                        className="relative group font-mono text-[var(--color-base-content)] hover:text-[var(--color-primary)] transition-colors px-3 py-2 text-sm font-medium"
                                     >
                                         {item.label}
+                                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full"></span>
                                     </NavigationMenu.Link>
                                 </NavigationMenu.Item>
                             ))}

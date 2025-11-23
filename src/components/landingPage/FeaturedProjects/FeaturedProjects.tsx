@@ -23,7 +23,7 @@ const FeaturedProjects: React.FC = () => {
                 >
                     {/* Título */}
                     <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
-                        {projectsData.title}
+                        &lt;{projectsData.title.split(' ').slice(0, -1).join(' ')} <span className="text-[var(--color-primary)]">{projectsData.title.split(' ').slice(-1)}</span> /&gt;
                     </h2>
 
                     {/* Descripción */}

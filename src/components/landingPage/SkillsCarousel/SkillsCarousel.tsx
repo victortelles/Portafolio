@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState } from "react"
 import { ChevronDown, ChevronUp } from "lucide-react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import SkillBadge from "./SkillBadge"
 import content from "./skillsData.json"
 import type { SkillsCarouselData, SkillCategory } from "@/types/landingPage"
@@ -21,17 +21,6 @@ const SkillsCarousel: React.FC = () => {
     }
 
     const isExpanded = (categoryId: string) => expandedCategories.includes(categoryId)
-
-    const getVisibleSkills = (category: SkillCategory) => {
-        const maxVisible = 4 // 1 fila x 4 columnas
-        const isCurrentlyExpanded = isExpanded(category.id)
-
-        if (category.skills.length <= maxVisible || isCurrentlyExpanded) {
-            return category.skills
-        }
-
-        return category.skills.slice(0, maxVisible)
-    }
 
     // Variable para expandir o contraer la lista de tecnologías
     const shouldShowExpandButton = (category: SkillCategory) => {
@@ -51,7 +40,7 @@ const SkillsCarousel: React.FC = () => {
                 >
                     {/* Título */}
                     <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
-                        {skillsData.title}
+                        &lt;{skillsData.title.split(' ').slice(0, -1).join(' ')} <span className="text-[var(--color-primary)]">{skillsData.title.split(' ').slice(-1)}</span> /&gt;
                     </h2>
                     {/* Descripción */}
                     <p className="font-sans text-lg text-[var(--color-neutral-content)]/80 max-w-3xl mx-auto leading-relaxed text-justify px-6 py-4">
@@ -72,7 +61,7 @@ const SkillsCarousel: React.FC = () => {
                             }
                         }
                     }}
-                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-8"
+                    className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 gap-8 items-start"
                 >
                     {skillsData.categories.map((category) => (
                         <motion.div
@@ -84,7 +73,7 @@ const SkillsCarousel: React.FC = () => {
                             className="group"
                         >
                             {/* Card de categoría */}
-                            <div className="bg-[var(--color-base-200)] border-2 border-[var(--color-base-300)] hover:border-[var(--color-primary)] rounded-[var(--radius-box)] p-6 transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/20">
+                            <div className="bg-[var(--color-base-200)] border-2 border-[var(--color-base-300)] hover:border-[var(--color-primary)] rounded-[var(--radius-box)] p-6 transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/20 flex flex-col">
                                 {/* Título de la categoría */}
                                 <div className="text-center mb-6">
                                     <h3 className="font-mono text-xl font-bold text-[var(--color-primary)] mb-2">
@@ -95,14 +84,38 @@ const SkillsCarousel: React.FC = () => {
 
                                 {/* Grid de tecnologías */}
                                 <div className="grid grid-cols-4 gap-3 mb-4">
-                                    {getVisibleSkills(category).map((skill, index) => (
-                                        <SkillBadge key={`${skill.name}-${index}`} skill={skill} />
+                                    {/* Siempre mostrar los primeros 4 */}
+                                    {category.skills.slice(0, 4).map((skill, index) => (
+                                        <div key={`${skill.name}-initial-${index}`}>
+                                            <SkillBadge skill={skill} />
+                                        </div>
                                     ))}
                                 </div>
 
+                                {/* Contenedor expandible para el resto */}
+                                <AnimatePresence>
+                                    {isExpanded(category.id) && (
+                                        <motion.div
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.3, ease: "easeInOut" }}
+                                            className="overflow-hidden"
+                                        >
+                                            <div className="grid grid-cols-4 gap-3 mb-4">
+                                                {category.skills.slice(4).map((skill, index) => (
+                                                    <div key={`${skill.name}-expanded-${index}`}>
+                                                        <SkillBadge skill={skill} />
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+
                                 {/* Botón de expansión */}
                                 {shouldShowExpandButton(category) && (
-                                    <div className="flex justify-center">
+                                    <div className="flex justify-center mt-auto pt-2">
                                         <button
                                             onClick={() => toggleCategory(category.id)}
                                             className="flex items-center gap-2 px-4 py-2 text-sm font-mono text-[var(--color-primary)] hover:text-[var(--color-primary-content)] hover:bg-[var(--color-primary)] border border-[var(--color-primary)] rounded-[var(--radius-field)] transition-all duration-300 cursor-pointer"

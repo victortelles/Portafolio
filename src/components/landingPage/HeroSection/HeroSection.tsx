@@ -1,3 +1,5 @@
+"use client"
+
 import type React from "react"
 import { ArrowRight, MessageCircle } from "lucide-react"
 import TerminalAnimation from "./TerminalAnimation"
@@ -34,13 +36,15 @@ const HeroSection: React.FC = () => {
                     <TerminalAnimation data={terminal} />
 
                     {/* Main Title */}
-                    <h1 className="font-mono text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                        <span className="text-[var(--color-base-content)]">{heroData.title.prefix}</span>{" "}
-                        <span className="text-[var(--color-primary)]">{heroData.title.main}</span>
-                    </h1>
+                    <div className="mb-8">
+                        <h1 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight tracking-tight">
+                            <span className="text-[var(--color-secondary)] mr-3 opacity-80">{heroData.title.prefix}</span>
+                            <span className="text-[var(--color-primary)]">{heroData.title.main}</span>
+                        </h1>
+                    </div>
 
                     {/* Subtitle */}
-                    <p className="font-sans text-xl sm:text-2xl lg:text-3xl font-semibold text-[var(--color-neutral-content)] mb-12 leading-relaxed max-w-3xl mx-auto text-justify">
+                    <p className="font-mono text-lg sm:text-xl text-[var(--color-neutral-content)] mb-12 max-w-2xl mx-auto opacity-90">
                         {heroData.subtitle}
                     </p>
 

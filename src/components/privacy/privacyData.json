@@ -1,0 +1,28 @@
+{
+    "title": "Politicas de Privacidad",
+    "lastUpdated": "Noviembre 2025",
+    "introduction": "Bienvenido a mi portafolio. La transparencia es fundamental en el desarrollo de software, y esta política describe cómo (no) recopilo y manejo tu información.",
+    "sections": [
+        {
+            "id": "data-collection",
+            "title": "Recopilación de Datos",
+            "content": "Este sitio web es principalmente un portafolio estático. No utilizo cookies de rastreo, analíticas invasivas ni bases de datos para almacenar información personal de los visitantes, a excepción de la información que proporcionas voluntariamente a través del formulario de contacto."
+        },
+        {
+            "id": "contact-form",
+            "title": "Formulario de Contacto",
+            "content": "Si decides contactarme a través del formulario, la información que envías (nombre, correo electrónico, mensaje) se utiliza únicamente para responder a tu consulta. Estos datos no se comparten con terceros ni se utilizan para listas de marketing."
+        },
+        {
+            "id": "tech-stack",
+            "title": "Tecnologías y Terceros",
+            "content": "Este sitio está construido con Next.js y alojado en Vercel (o similar). Puede incluir enlaces a mis perfiles en GitHub, LinkedIn u otros sitios externos. Ten en cuenta que estos sitios tienen sus propias políticas de privacidad."
+        },
+        {
+            "id": "rights",
+            "title": "Tus Derechos",
+            "content": "Como usuario, tienes derecho a solicitar información sobre los datos que haya podido recibir de ti y pedir su eliminación. Para cualquier duda relacionada con la privacidad, puedes contactarme directamente."
+        }
+    ],
+    "footer": "Esta política es de código abierto, al igual que gran parte de mi trabajo."
+}

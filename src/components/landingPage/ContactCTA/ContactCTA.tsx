@@ -246,7 +246,7 @@ const ContactCTA: React.FC = () => {
                         {/* Header */}
                         <div className="text-center mb-12">
                             <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
-                                {data.title}
+                                &lt;{data.title.split(' ').slice(0, -1).join(' ')} <span className="text-[var(--color-primary)]">{data.title.split(' ').slice(-1)}</span> /&gt;
                             </h2>
                             <h3 className="font-mono text-xl sm:text-2xl text-[var(--color-primary)] mb-6">
                                 {data.subtitle}
@@ -443,12 +443,12 @@ const ContactCTA: React.FC = () => {
                                                     maxLength={captcha.captchaCode.length}
                                                     disabled={captcha.isBlocked}
                                                     className={`w-full px-3 py-2 bg-[var(--color-base-100)] border-2 ${captcha.isBlocked
-                                                            ? "border-[var(--color-error)] bg-[var(--color-error)]/10"
-                                                            : captcha.isValid
-                                                                ? "border-[var(--color-success)]"
-                                                                : captcha.userInput.length === captcha.captchaCode.length && !captcha.isValid
-                                                                    ? "border-[var(--color-error)]"
-                                                                    : "border-[var(--color-base-300)]"
+                                                        ? "border-[var(--color-error)] bg-[var(--color-error)]/10"
+                                                        : captcha.isValid
+                                                            ? "border-[var(--color-success)]"
+                                                            : captcha.userInput.length === captcha.captchaCode.length && !captcha.isValid
+                                                                ? "border-[var(--color-error)]"
+                                                                : "border-[var(--color-base-300)]"
                                                         } focus:border-[var(--color-primary)] rounded-[var(--radius-field)] font-mono text-center text-[var(--color-base-content)] placeholder-[var(--color-neutral-content)]/50 transition-colors duration-300 focus:outline-none tracking-wider uppercase`}
                                                 />
 

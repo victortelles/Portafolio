@@ -27,14 +27,14 @@ const Footer: React.FC = () => {
     }
 
     return (
-    <footer className="bg-[var(--color-base-200)] border-t border-[var(--color-base-300)] relative overflow-hidden">
+        <footer className="bg-[var(--color-base-200)] border-t border-[var(--color-base-300)] relative overflow-hidden">
             {/* SVG decorativo izquierdo (gatete) */}
-            <div className="hidden lg:block absolute left-0 top-0 h-full z-0 pointer-events-none select-none" style={{opacity:0.02}}>
-                <img src="assets/extras/gatete_izq.svg" alt="Decoración Gatete" className="h-full w-auto" style={{filter:'grayscale(1) brightness(0.1) contrast(2)', color:'var(--color-primary-content)'}} />
+            <div className="hidden lg:block absolute left-0 top-0 h-full z-0 pointer-events-none select-none" style={{ opacity: 0.06 }}>
+                <img src="assets/extras/gatete_izq.svg" alt="Decoración Gatete" className="h-full w-auto" style={{ filter: 'grayscale(1) brightness(0.1) contrast(2)', color: 'var(--color-primary-content)' }} />
             </div>
             {/* SVG decorativo derecho (BG_Loona_Footer) */}
-            <div className="absolute right-0 top-0 h-full z-0 pointer-events-none select-none" style={{opacity:0.02}}>
-                <img src="assets/extras/BG_Loona_Footer_der.svg" alt="Decoración Loona"className="h-full w-auto" style={{filter:'grayscale(1) brightness(0.1) contrast(2)', color:'var(--color-primary-content)'}} />
+            <div className="absolute right-0 top-0 h-full z-0 pointer-events-none select-none" style={{ opacity: 0.06 }}>
+                <img src="assets/extras/BG_Loona_Footer_der.svg" alt="Decoración Loona" className="h-full w-auto" style={{ filter: 'grayscale(1) brightness(0.1) contrast(2)', color: 'var(--color-primary-content)' }} />
             </div>
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 {/* Main Footer Content */}
@@ -89,18 +89,18 @@ const Footer: React.FC = () => {
                         <div className="flex items-center gap-2 mt-2">
                             <div
                                 className={`w-2 h-2 rounded-full animate-breathe ${global.availability.status === "Disponible"
-                                        ? "bg-[var(--color-success)] shadow-lg shadow-[var(--color-success)]/50"
-                                        : global.availability.status === "Medio Ocupado"
-                                            ? "bg-[var(--color-warning)] shadow-lg shadow-[var(--color-warning)]/50"
-                                            : "bg-[var(--color-error)] shadow-lg shadow-[var(--color-error)]/50"
+                                    ? "bg-[var(--color-success)] shadow-lg shadow-[var(--color-success)]/50"
+                                    : global.availability.status === "Medio Ocupado"
+                                        ? "bg-[var(--color-warning)] shadow-lg shadow-[var(--color-warning)]/50"
+                                        : "bg-[var(--color-error)] shadow-lg shadow-[var(--color-error)]/50"
                                     }`}
                             ></div>
                             <span
                                 className={`font-mono text-xs px-3 py-1 rounded-full ${global.availability.status === "Disponible"
-                                        ? "bg-[var(--color-success)]/20 text-[var(--color-success)]"
-                                        : global.availability.status === "Medio Ocupado"
-                                            ? "bg-[var(--color-warning)]/20 text-[var(--color-warning)]"
-                                            : "bg-[var(--color-error)]/20 text-[var(--color-error)]"
+                                    ? "bg-[var(--color-success)]/20 text-[var(--color-success)]"
+                                    : global.availability.status === "Medio Ocupado"
+                                        ? "bg-[var(--color-warning)]/20 text-[var(--color-warning)]"
+                                        : "bg-[var(--color-error)]/20 text-[var(--color-error)]"
                                     }`}
                             >
                                 {global.availability.status}
@@ -121,9 +121,10 @@ const Footer: React.FC = () => {
                                 <li key={link.label}>
                                     <a
                                         href={link.href}
-                                        className="font-sans text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 text-sm block py-1"
+                                        className="relative group inline-block font-sans text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 text-sm py-1"
                                     >
                                         {link.label}
+                                        <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full"></span>
                                     </a>
                                 </li>
                             ))}
@@ -144,9 +145,10 @@ const Footer: React.FC = () => {
                         {/* FAQs */}
                         <a
                             href={footerData.footer.faqs.href}
-                            className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
+                            className="relative group font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300"
                         >
                             {footerData.footer.faqs.label}
+                            <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full"></span>
                         </a>
 
                         {/* Separador */}
@@ -155,9 +157,10 @@ const Footer: React.FC = () => {
                         {/* Creditos y Privacidad */}
                         <a
                             href={footerData.footer.credits.href}
-                            className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
+                            className="relative group font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300"
                         >
                             {footerData.footer.credits.label}
+                            <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full"></span>
                         </a>
 
                         {/* Separador */}
@@ -165,9 +168,10 @@ const Footer: React.FC = () => {
 
                         <a
                             href={footerData.footer.privacy.href}
-                            className="font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 underline-offset-4 hover:underline"
+                            className="relative group font-mono text-sm text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300"
                         >
                             {footerData.footer.privacy.label}
+                            <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full"></span>
                         </a>
                     </div>
                 </div>

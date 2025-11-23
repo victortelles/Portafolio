@@ -42,16 +42,16 @@
     "footer": {
         "copyright": "© 2025 AHTyler. Todos los derechos reservados.",
         "privacy": {
-            "label": "Política de Privacidad",
+            "label": "",
             "href": "/privacy"
         },
         "credits": {
             "label": "Créditos",
-            "href": "/credits"
+            "href": "/resources"
         },
         "faqs": {
             "label": "Preguntas Frecuentes",
-            "href": "/faqs"
+            "href": "/resources"
         }
     }
 }

@@ -1,9 +1,9 @@
 {
     "title": {
-        "prefix": "Ing.",
-        "main": "Desarrollo De Software"
+        "prefix": "const developer =",
+        "main": "\"FullStack Engineer\";"
     },
-    "subtitle": "Con +4 años de experiencia, creo aplicaciones web y móviles con diseño moderno. Mi enfoque está en la parte visual y en ofrecer soluciones prácticas a necesidades reales.",
+    "subtitle": "// Transformando ideas complejas en experiencias web fluidas y escalables.",
     "badges": [
         {
             "title": "Frontend",
@@ -11,7 +11,7 @@
             "color": "var(--color-primary)"
         },
         {
-            "title": "Backend", 
+            "title": "Backend",
             "icon": "server",
             "color": "var(--color-secondary)"
         },
@@ -36,5 +36,5 @@
         "href": "/contact",
         "variant": "ghost"
     },
-    "backgroundImage": "/assets/background.jpg"
+    "backgroundImage": "/assets/developer_hero.png"
 }

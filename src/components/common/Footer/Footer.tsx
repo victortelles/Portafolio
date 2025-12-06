@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                         </div>
 
                         {/* Tagline */}
-                        <p className="font-sans text-[var(--color-neutral-content)] max-w-md leading-relaxed">
+                        <p className="font-mono text-[var(--color-neutral-content)] max-w-md leading-relaxed">
                             {footerData.brand.tagline}
                         </p>
 
@@ -105,7 +105,7 @@ const Footer: React.FC = () => {
                             >
                                 {global.availability.status}
                             </span>
-                            <span className="font-sans text-xs text-[var(--color-neutral-content)]">
+                            <span className="font-mono text-xs text-[var(--color-neutral-content)]">
                                 {global.availability.messages[global.availability.status]}
                             </span>
                         </div>
@@ -121,7 +121,7 @@ const Footer: React.FC = () => {
                                 <li key={link.label}>
                                     <a
                                         href={link.href}
-                                        className="relative group inline-block font-sans text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 text-sm py-1"
+                                        className="relative group inline-block font-mono text-[var(--color-neutral-content)] hover:text-[var(--color-primary)] transition-colors duration-300 text-sm py-1"
                                     >
                                         {link.label}
                                         <span className="absolute left-0 bottom-0 w-0 h-[1px] bg-[var(--color-primary)] transition-all duration-300 group-hover:w-full"></span>
@@ -137,7 +137,7 @@ const Footer: React.FC = () => {
 
                 {/* Bottom Footer */}
                 <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-                    <p className="font-sans text-[var(--color-neutral-content)] text-sm text-center sm:text-left">
+                    <p className="font-mono text-[var(--color-neutral-content)] text-sm text-center sm:text-left">
                         {footerData.footer.copyright}
                     </p>
                     <div className="flex flex-col sm:flex-row items-center gap-2">

@@ -36,7 +36,7 @@ const AboutPreview: React.FC = () => {
                     className="text-center mb-16"
                 >
                     {/* Titulo */}
-                    <h2 className="font-mono text-3xl sm:text-4xl font-bold text-[var(--color-base-content)] mb-6">
+                    <h2 className="font-mono text-3xl sm:text-4xl lg:text-5xl font-bold text-[var(--color-base-content)] mb-4">
                         &lt;{data.title.split(' ').slice(0, -1).join(' ')} <span className="text-[var(--color-primary)]">{data.title.split(' ').slice(-1)}</span> /&gt;
                     </h2>
 

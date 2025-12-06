@@ -4,6 +4,7 @@ import type React from "react"
 import { useState, useRef, useEffect } from "react"
 import { FaGithub, FaExternalLinkAlt, FaChevronDown, FaChevronUp, FaCog } from "react-icons/fa"
 import Image from "next/image"
+import { motion, AnimatePresence } from "framer-motion"
 import type { Project } from "@/types/landingPage"
 
 interface ProjectCardProps {
@@ -60,12 +61,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         }
     }
 
-    const description = isExpanded ? project.fullDescription : project.shortDescription
     const shouldShowToggle = project.shortDescription.length !== project.fullDescription.length
     const hiddenTagsCount = project.tags.length - visibleTags
 
     return (
-        <div className="group bg-[var(--color-base-200)] border-2 border-[var(--color-base-300)] hover:border-[var(--color-primary)] rounded-[var(--radius-box)] overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/20 flex flex-col h-full">
+        <div className="group bg-[var(--color-base-200)] border-2 border-[var(--color-base-300)] hover:border-[var(--color-primary)] rounded-[var(--radius-box)] overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-[var(--color-primary)]/20 flex flex-col">
             {/* Imagen del proyecto */}
             <div className="relative h-48 sm:h-56 overflow-hidden">
                 {!imageError ? (
@@ -141,11 +141,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     </div>
                 </div>
 
-                {/* Descripción */}
+                {/* Descripción con animación expandible */}
                 <div className="mb-4">
+                    {/* Descripción corta siempre visible */}
                     <p className="font-sans text-[var(--color-neutral-content)] leading-relaxed">
-                        {description}
+                        {project.shortDescription}
                     </p>
+
+                    {/* Contenedor expandible para descripción completa */}
+                    <AnimatePresence>
+                        {isExpanded && shouldShowToggle && (
+                            <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.4, ease: "easeInOut" }}
+                                className="overflow-hidden"
+                            >
+                                <p className="font-sans text-[var(--color-neutral-content)] leading-relaxed mt-2">
+                                    {project.fullDescription}
+                                </p>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
+
+                    {/* Botón de expansión */}
                     {shouldShowToggle && (
                         <button
                             onClick={toggleDescription}
@@ -166,10 +186,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                     )}
                 </div>
 
-                {/* Tags de tecnologías */}
+                {/* Tags de tecnologías con animación expandible */}
                 <div ref={tagsContainerRef} className="w-full mt-auto">
+                    {/* Tags visibles inicialmente */}
                     <div ref={tagsRef} className="flex flex-wrap gap-2">
-                        {(showAllTags ? project.tags : project.tags.slice(0, visibleTags)).map((tag, index) => (
+                        {project.tags.slice(0, visibleTags).map((tag, index) => (
                             <span
                                 key={index}
                                 className="px-3 py-1 bg-[var(--color-base-300)] text-[var(--color-base-content)] text-xs font-mono rounded-[var(--radius-field)] hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-content)] transition-colors duration-300 whitespace-nowrap"
@@ -185,15 +206,37 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                                 +{hiddenTagsCount}
                             </button>
                         )}
-                        {showAllTags && project.tags.length > 3 && (
-                            <button
-                                onClick={toggleTags}
-                                className="px-3 py-1 bg-[var(--color-neutral)]/20 text-[var(--color-neutral-content)] text-xs font-mono rounded-[var(--radius-field)] hover:bg-[var(--color-neutral)] hover:text-[var(--color-neutral-content)] transition-colors duration-300 whitespace-nowrap border border-[var(--color-neutral)]/30"
-                            >
-                                Mostrar menos
-                            </button>
-                        )}
                     </div>
+
+                    {/* Contenedor expandible para tags adicionales */}
+                    <AnimatePresence>
+                        {showAllTags && (
+                            <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: "auto", opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.4, ease: "easeInOut" }}
+                                className="overflow-hidden"
+                            >
+                                <div className="flex flex-wrap gap-2 mt-2">
+                                    {project.tags.slice(visibleTags).map((tag, index) => (
+                                        <span
+                                            key={`expanded-${index}`}
+                                            className="px-3 py-1 bg-[var(--color-base-300)] text-[var(--color-base-content)] text-xs font-mono rounded-[var(--radius-field)] hover:bg-[var(--color-primary)] hover:text-[var(--color-primary-content)] transition-colors duration-300 whitespace-nowrap"
+                                        >
+                                            {tag}
+                                        </span>
+                                    ))}
+                                    <button
+                                        onClick={toggleTags}
+                                        className="px-3 py-1 bg-[var(--color-neutral)]/20 text-[var(--color-neutral-content)] text-xs font-mono rounded-[var(--radius-field)] hover:bg-[var(--color-neutral)] hover:text-[var(--color-neutral-content)] transition-colors duration-300 whitespace-nowrap border border-[var(--color-neutral)]/30"
+                                    >
+                                        Mostrar menos
+                                    </button>
+                                </div>
+                            </motion.div>
+                        )}
+                    </AnimatePresence>
                 </div>
             </div>
         </div>

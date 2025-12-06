@@ -119,7 +119,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
                         {/* Header */}
                         <div className="flex flex-col sm:flex-row justify-between items-start mb-4 gap-3 sm:gap-0">
                             <div className="flex-1 w-full">
-                                <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 sm:mb-3 font-sans" style={{ color: "var(--color-base-content)" }}>
+                                <h3 className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-3 font-mono" style={{ color: "var(--color-base-content)" }}>
                                     {experience.title}
                                 </h3>
                                 <p className="font-mono text-sm sm:text-base mb-3 sm:mb-4 font-medium" style={{ color: "var(--color-primary)" }}>

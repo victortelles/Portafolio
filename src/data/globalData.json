@@ -1,6 +1,6 @@
 {
     "availability": {
-        "status": "Medio Ocupado",
+        "status": "Disponible",
         "messages": {
             "Disponible": "Actualmente disponible para nuevos proyectos y colaboraciones.",
             "Medio Ocupado": "Con disponibilidad limitada, pero abierto a propuestas interesantes.",

@@ -63,14 +63,56 @@ export const getProjects = (): Experience[] => {
 }
 
 /**
- * Obtiene todas las tecnologías utilizadas
- * @returns Array único de todas las tecnologías
+ * Lista de conceptos, metodologías y términos generales que NO son tecnologías específicas
+ * Estos se excluyen del conteo de tecnologías en las estadísticas
+ */
+const NON_TECHNOLOGY_TERMS = [
+    'UX/UI',
+    'Agile',
+    'Patrones de Diseño',
+    'Modelos Predictivos',
+    'Estructuras de Datos',
+    'Algoritmos',
+    'Programación Orientada a Objetos',
+    'Diagramas ER',
+    'Base de datos',
+    'Matemáticas Discretas',
+    'Redes',
+    'Software',
+    'WordCloud',
+    'Herramientas de limpieza',
+    'Herramientas de limpieza de hardware',
+    'Instaladores de drivers',
+    'Instalacion de software',
+    'Redes LAN/WAN',
+    'PyCharm Edu',
+    'Redes',
+    "Cisco Packet Tracer",
+    'Impresoras',
+    'Eclipse',
+    'Figma',
+    'Trello',
+    'Ripes',
+    'RISC-V',
+    'Lenguaje Ensamblador',
+    ''
+]
+
+/**
+ * Obtiene todas las tecnologías utilizadas (lenguajes, frameworks, herramientas específicas)
+ * Excluye conceptos metodológicos y términos genéricos
+ * @returns Array único de todas las tecnologías reales (sin duplicados)
  */
 export const getAllTechnologies = (): string[] => {
     const allTechnologies = timelineData.experiences
         .flatMap(exp => exp.technologies)
-        .filter(tech => tech) // Filtrar valores vacíos
+        .filter(tech => tech && tech.trim()) // Filtrar valores vacíos y strings solo con espacios
+        .map(tech => tech.trim()) // Normalizar eliminando espacios al inicio y final
+        .filter(tech => !NON_TECHNOLOGY_TERMS.includes(tech)) // Excluir conceptos y metodologías
 
-    // Eliminar duplicados y ordenar alfabéticamente
-    return [...new Set(allTechnologies)].sort()
+    // Eliminar duplicados usando Set (compara valores exactos después de normalización)
+    // y ordenar alfabéticamente de forma case-insensitive
+    return [...new Set(allTechnologies)].sort((a, b) => 
+        a.toLowerCase().localeCompare(b.toLowerCase())
+    )
 }
